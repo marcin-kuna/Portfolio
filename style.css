@@ -3,3 +3,109 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Hero Section */
+
+@keyframes noise-animation {
+    0% { background-position: 0% 0%; }
+    10% { background-position: -5% -5%; }
+    20% { background-position: -10% 5%; }
+    30% { background-position: 5% -10%; }
+    40% { background-position: -5% 15%; }
+    50% { background-position: -10% 5%; }
+    60% { background-position: 5% 5%; }
+    70% { background-position: 0% 10%; }
+    80% { background-position: -5% -5%; }
+    90% { background-position: 10% 5%; }
+}
+
+section.hero {
+    display: flex;
+    background: url('img/bg-noise.png'), #000;
+    background-size: 300px 300px;
+    animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
+}
+
+.column {
+    position: relative;
+    height: 100%;
+}
+
+.column-left, .column-right {
+    width: 5%;
+}
+
+.column-center {
+    width: 15%;
+}
+
+.column-left, .column-center {
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.column-right {
+    border-left: 1px solid rgba(255, 255, 255, .1);
+}
+
+@font-face {
+    font-family: 'steelfishextrabold';
+    src: url('fonts/steelfish_eb-webfont.woff2') format('woff2'),
+         url('fonts/steelfish_eb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'voltagelight';
+    src: url('fonts/voltagelight-3zzg3-webfont.woff2') format('woff2'),
+         url('fonts/voltagelight-3zzg3-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'voltageregular';
+    src: url('fonts/voltage-x33mr-webfont.woff2') format('woff2'),
+         url('fonts/voltage-x33mr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hero-header {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 5px;
+    white-space: nowrap;
+}
+
+.hero-header h1 {
+    font-family: 'steelfishextrabold';
+    /* font-family: 'voltagelight'; */
+    /* font-family: 'voltageregular'; */
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .5);
+    font-size: 100px;
+}
+
+.hero-header span {
+    color: red;
+
+    
+}
+
+.hero-header span.span-higher {
+    position: relative;
+    bottom: 10px;
+}
+
+.hero-header span.span-lower {
+    position: relative;
+    top: 10px;
+}
