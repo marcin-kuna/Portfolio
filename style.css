@@ -1,3 +1,33 @@
+/* 
+Colors (do black):
+color: #B82601; embers
+color: #FF533D; coral
+color: #F53240; bright coral
+*/
+@font-face {
+    font-family: 'steelfishextrabold';
+    src: url('fonts/steelfish_eb-webfont.woff2') format('woff2'),
+         url('fonts/steelfish_eb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'voltagelight';
+    src: url('fonts/voltagelight-3zzg3-webfont.woff2') format('woff2'),
+         url('fonts/voltagelight-3zzg3-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'voltageregular';
+    src: url('fonts/voltage-x33mr-webfont.woff2') format('woff2'),
+         url('fonts/voltage-x33mr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -30,6 +60,88 @@ section {
     height: 100vh;
 }
 
+nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    z-index: 10;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    padding-left: 0;
+    transition: all .2s ease-in-out;
+}
+
+nav ul li:hover {
+    padding-left: 5px;
+}
+
+.column-5 {
+    z-index: 20;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-family: 'steelfishextrabold';
+    font-size: 80px;
+    text-transform: uppercase;
+    
+
+    /* visibility: hidden; */
+    opacity: 0;
+    pointer-events: none;
+    margin-left: -80px;
+    transition-property: margin-left, opacity;
+    transition-duration: .3s, .5s;
+}
+
+.nav-link-1 {
+    transition-delay: .5s;
+}
+
+.nav-link-2 {
+    transition-delay: .6s;
+}
+
+.nav-link-3 {
+    transition-delay: .7s;
+}
+
+.nav-link-4 {
+    transition-delay: .8s;
+}
+
+.nav-link.menu-open {
+    /* visibility: visible; */
+    opacity: 1;
+    pointer-events: all;
+    margin-left: 0;
+}
+
+section.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    left: -10%;
+    z-index: 5;
+}
+
+main {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+
 /* Hero Section */
 
 @keyframes noise-animation {
@@ -61,12 +173,13 @@ section.hero {
 
 .bg-change {
     /* W lewo */
-    /* position: absolute;
+    position: absolute;
     top: 0;
-    right: 0; */
+    right: 0;
+    /* W prawo */
     width: 0;
     height: 100%;
-    background: url('img/bg-noise.png'), #ccc;
+    background: url('img/bg-noise.png'), rgb(204, 204, 204, .9);
     background-size: 300px 300px;
     animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
     transition: width .5s;
@@ -76,39 +189,16 @@ section.hero {
     width: 100%;
 }
 
-@font-face {
-    font-family: 'steelfishextrabold';
-    src: url('fonts/steelfish_eb-webfont.woff2') format('woff2'),
-         url('fonts/steelfish_eb-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'voltagelight';
-    src: url('fonts/voltagelight-3zzg3-webfont.woff2') format('woff2'),
-         url('fonts/voltagelight-3zzg3-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'voltageregular';
-    src: url('fonts/voltage-x33mr-webfont.woff2') format('woff2'),
-         url('fonts/voltage-x33mr-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .hero-header {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 100px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 5px;
     white-space: nowrap;
     pointer-events: none;
-    /* z-index: 10; */
+    /* z-index: 5; */
 }
 
 .hero-header h1 {
@@ -116,12 +206,16 @@ section.hero {
     /* font-family: 'voltagelight'; */
     /* font-family: 'voltageregular'; */
     text-transform: uppercase;
-    color: rgba(255, 255, 255, .5);
+    color: #FFF;
+    /* color: rgba(255, 255, 255, .5); */
     font-size: 100px;
 }
 
 .hero-header span {
-    color: red;
+    color: #dd0000;
+    /* color: #B82601; */
+    /* color: #FF533D;
+    color: #F53240; */
 }
 
 .hero-header span.span-higher {
@@ -159,7 +253,7 @@ header {
     top: 5vh;
     right: calc(5% - 30px);
     cursor: pointer;
-    /* transition: all .5s ease-in-out; */
+    transition: all .5s ease-in-out;
 }
 
 .menu-btn-burger {
@@ -178,6 +272,10 @@ header {
     background-color: #FFF;
     transition: all .5s ease-in-out;
 }
+
+/* .menu-btn:hover .menu-btn-burger, .menu-btn:hover .menu-btn-burger::before, .menu-btn:hover .menu-btn-burger::after {
+    background-color: rgb(212, 0, 0);
+} */
 
 .menu-btn-burger::before {
     transform: translateX(-16px);
