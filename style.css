@@ -4,8 +4,29 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+    background: url('img/bg-noise.png'), #000;
+    background-size: 300px 300px;
+    animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+   
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
 section {
-    width: 100vw;
+    /* width 100% = 100vw - scrollbar */
+    width: 100%;
     height: 100vh;
 }
 
@@ -26,30 +47,33 @@ section {
 
 section.hero {
     display: flex;
-    background: url('img/bg-noise.png'), #000;
-    background-size: 300px 300px;
-    animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
+    position: relative;
+    left: -10%;
 }
 
 .column {
     position: relative;
     height: 100%;
+    min-width: 15%;
+    /* thin instead 1px - hack for chrome bad rendering */
+    border-right: thin solid rgba(255, 255, 255, .1);
 }
 
-.column-left, .column-right {
-    width: 5%;
+.bg-change {
+    /* W lewo */
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    width: 0;
+    height: 100%;
+    background: url('img/bg-noise.png'), #ccc;
+    background-size: 300px 300px;
+    animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
+    transition: width .5s;
 }
 
-.column-center {
-    width: 15%;
-}
-
-.column-left, .column-center {
-    border-right: 1px solid rgba(255, 255, 255, .1);
-}
-
-.column-right {
-    border-left: 1px solid rgba(255, 255, 255, .1);
+.bg-change.slide {
+    width: 100%;
 }
 
 @font-face {
@@ -83,6 +107,8 @@ section.hero {
     top: 100px;
     left: 5px;
     white-space: nowrap;
+    pointer-events: none;
+    /* z-index: 10; */
 }
 
 .hero-header h1 {
@@ -96,8 +122,6 @@ section.hero {
 
 .hero-header span {
     color: red;
-
-    
 }
 
 .hero-header span.span-higher {
@@ -108,4 +132,72 @@ section.hero {
 .hero-header span.span-lower {
     position: relative;
     top: 10px;
+}
+
+/* About */
+
+
+/* Header, Menu, Nav */
+
+header {
+    width: 100%;
+    /* background-color: #fff; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.menu-btn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #FFF; */
+    position: absolute;
+    top: 5vh;
+    right: calc(5% - 30px);
+    cursor: pointer;
+    /* transition: all .5s ease-in-out; */
+}
+
+.menu-btn-burger {
+    width: 4px;
+    height: 40px;
+    background-color: #FFF;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 40px;
+    background-color: #FFF;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before {
+    transform: translateX(-16px);
+}
+
+.menu-btn-burger::after {
+    transform: translateX(16px);
+}
+
+.menu-btn.menu-open .menu-btn-burger {
+    transform: translateY(50px);
+    background: transparent;
+}
+
+.menu-btn.menu-open .menu-btn-burger::before {
+    transform: rotate(45deg) translate(-35px, -35px);
+    background-color: #000;
+}
+
+.menu-btn.menu-open .menu-btn-burger::after {
+    transform: rotate(-45deg) translate(35px, -35px);
+    background-color: #000;
 }
