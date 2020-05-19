@@ -15,7 +15,7 @@
 .menu-btn-burger {
     width: 4px;
     height: 40px;
-    background-color: #FFF;
+    background-color: $text-color;
     transition: all .5s ease-in-out;
 }
 
@@ -25,7 +25,7 @@
     position: absolute;
     width: 4px;
     height: 40px;
-    background-color: #FFF;
+    background-color: $text-color;
     transition: all .5s ease-in-out;
 }
 
@@ -48,10 +48,10 @@
 
 .menu-btn.menu-open .menu-btn-burger::before {
     transform: rotate(45deg) translate(-35px, -35px);
-    background-color: #000;
+    background-color: $primary-color;
 }
 
 .menu-btn.menu-open .menu-btn-burger::after {
     transform: rotate(-45deg) translate(35px, -35px);
-    background-color: #000;
+    background-color: $primary-color;
 }

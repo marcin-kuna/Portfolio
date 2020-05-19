@@ -5,6 +5,11 @@ color: #FF533D; coral
 color: #F53240; bright coral
 */
 
+$primary-color: #000;
+$secondary-color: rgba(204, 204, 204, .9);
+$accent-color: #dd0000;
+$text-color: #FFF;
+
 @font-face {
     font-family: 'steelfishextrabold';
     src: url('../fonts/steelfish_eb-webfont.woff2') format('woff2'),
@@ -50,22 +55,22 @@ color: #F53240; bright coral
 
 body {
     overflow-x: hidden;
-    background: url('../img/bg-noise.png'), #000;
+    background: url('../img/bg-noise.png'), $primary-color;
     background-size: 300px 300px;
     animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
 }
 
 body::-webkit-scrollbar {
-    width: 10px;
+    width: 4px;
 }
    
 body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px $primary-color;
 }
    
 body::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    outline: 1px solid slategrey;
+    background-color: $text-color;
+    // outline: 1px solid white;
 }
 
 main {
