@@ -1,0 +1,44 @@
+section.hero {
+    display: flex;
+    position: relative;
+    left: -10%;
+}
+
+.hero-header {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    white-space: nowrap;
+    pointer-events: none;
+    /* z-index: 5; */
+}
+
+.hero-header h1 {
+    font-family: 'steelfishextrabold';
+    /* font-family: 'voltagelight'; */
+    /* font-family: 'voltageregular'; */
+    text-transform: uppercase;
+    color: #FFF;
+    /* color: rgba(255, 255, 255, .5); */
+    font-size: 100px;
+}
+
+.hero-header span {
+    color: #dd0000;
+    /* color: #B82601; */
+    /* color: #FF533D;
+    color: #F53240; */
+}
+
+.hero-header span.span-higher {
+    position: relative;
+    bottom: 10px;
+}
+
+.hero-header span.span-lower {
+    position: relative;
+    top: 10px;
+}

@@ -1,0 +1,89 @@
+nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    z-index: 10;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    padding-left: 0;
+    transition: all .2s ease-in-out;
+}
+
+nav ul li:hover {
+    padding-left: 5px;
+}
+
+// For menu transform
+.column-5 {
+    z-index: 20;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-family: 'steelfishextrabold';
+    font-size: 80px;
+    text-transform: uppercase;
+    /* visibility: hidden; */
+    opacity: 0;
+    pointer-events: none;
+    margin-left: -80px;
+    transition-property: margin-left, opacity;
+    transition-duration: .3s, .5s;
+}
+
+.nav-link-1 {
+    transition-delay: .5s;
+}
+
+.nav-link-2 {
+    transition-delay: .6s;
+}
+
+.nav-link-3 {
+    transition-delay: .7s;
+}
+
+.nav-link-4 {
+    transition-delay: .8s;
+}
+
+.nav-link.menu-open {
+    /* visibility: visible; */
+    opacity: 1;
+    pointer-events: all;
+    margin-left: 0;
+}
+
+section.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    left: -10%;
+    z-index: 5;
+}
+
+.bg-change {
+    /* W lewo */
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* W prawo */
+    width: 0;
+    height: 100%;
+    background: url('../img/bg-noise.png'), rgba(204, 204, 204, .9);
+    background-size: 300px 300px;
+    animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
+    transition: width .5s;
+}
+
+.bg-change.slide {
+    width: 100%;
+}
