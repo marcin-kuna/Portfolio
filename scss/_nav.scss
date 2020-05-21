@@ -4,7 +4,6 @@ nav {
     transform: translateY(-50%);
     left: 5px;
     z-index: 10;
-
     height: 50vh;
 }
 
@@ -46,11 +45,6 @@ nav ul li:hover::after {
     width: 100%; 
     // left: 0; od środka
 }
-
-// nav ul li:hover {
-//     padding-left: 5px;
-//     text-decoration: underline;
-// }
 
 // For menu transformX
 .column-5 {
