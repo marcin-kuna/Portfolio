@@ -1,14 +1,27 @@
-/* 
-Colors (do black):
-color: #B82601; embers
-color: #FF533D; coral
-color: #F53240; bright coral
-*/
-
-$primary-color: #000;
-$secondary-color: rgba(204, 204, 204, .9);
-$accent-color: #dd0000;
-$text-color: #FFF;
+$primary-color: #e5dada;
+$secondary-color: #002642;
+$accent-color: #e59500;
+$text-color: #02040f;
+// $primary-color: #edebd7;
+// $secondary-color: #6e675f;
+// $accent-color: #e3b23c;
+// $text-color: #423e37;
+// $primary-color: #bfc0c0;
+// $secondary-color: #4f5d75;
+// $accent-color: #ef8354;
+// $text-color: #2d3142;
+// $primary-color: #ccc5b9;
+// $secondary-color: #403d39;
+// $accent-color: #eb5e28;
+// $text-color: #252422;
+// $primary-color: #8d99ae;
+// $secondary-color: #333533;
+// $accent-color: #ef233c;
+// $text-color: #2b2d42;
+// $primary-color: #e8eddf;
+// $secondary-color: #333533;
+// $accent-color: #bb0a21;
+// $text-color: #242423;
 
 @font-face {
     font-family: 'steelfishextrabold';
@@ -76,7 +89,7 @@ body::-webkit-scrollbar-thumb {
 main {
     position: absolute;
     width: 100%;
-    // height: 100vh;
+    // height: 100%;
     top: 0;
     left: 0;
 }
@@ -92,5 +105,21 @@ section {
     height: 100%;
     min-width: 15%;
     /* thin instead 1px - hack for chrome bad rendering */
-    border-right: thin solid rgba(255, 255, 255, .1);
+    // border-right: thin solid rgba(255, 255, 255, .1);
+}
+
+.hero .column {
+    border-right: thin solid $text-color;
+}
+
+.about {
+    background-color: red;
+}
+
+.works {
+    background-color: green;
+}
+
+.contact {
+    background-color: blue;
 }

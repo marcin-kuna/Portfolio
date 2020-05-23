@@ -6,13 +6,21 @@ const navLinks = document.querySelectorAll('.nav-link')
 
 let menuOpen = false
 
-menuBtn.addEventListener('click', () => {
-    menuBtn.classList.toggle('menu-open')
+function disableScrolling(){
+    // var x=window.scrollX;
+    var y=window.pageYOffset;
+    window.onscroll=function(){window.scrollTo(0, y);};
+}
 
+function enableScrolling(){
+    window.onscroll=function(){};
+}
+
+const openMenu = () => {
+    menuBtn.classList.toggle('menu-open')
     navLinks.forEach(element => {
         element.classList.toggle('menu-open')
     })
-
     if(menuOpen === false) {
         bgChange.forEach(element => {
             element.classList.add('slide')
@@ -24,9 +32,17 @@ menuBtn.addEventListener('click', () => {
             })
         }, 1000)
     }
-
     menuOpen = !menuOpen
-})
+
+    if(menuOpen) {
+        disableScrolling()
+    } else {
+        enableScrolling()
+    }
+    
+}
+
+menuBtn.addEventListener('click', openMenu)
 
 // SMOOTH SCROLL
 
@@ -34,25 +50,7 @@ navLinks.forEach(elem => elem.addEventListener('click', navLinkClick));
 
 function navLinkClick(event) {
     smoothScroll(event);
-    menuBtn.classList.toggle('menu-open')
-
-    navLinks.forEach(element => {
-        element.classList.toggle('menu-open')
-    })
-
-    if(menuOpen === false) {
-        bgChange.forEach(element => {
-            element.classList.add('slide')
-        })
-    } else {
-        setTimeout(() => {
-            bgChange.forEach(element => {
-                element.classList.remove('slide')
-            })
-        }, 1000)
-    }
-
-    menuOpen = !menuOpen
+    openMenu()
 }
 
 function smoothScroll(event) {

@@ -15,7 +15,7 @@ section.hero {
     left: 5px;
     white-space: nowrap;
     pointer-events: none;
-    /* z-index: 5; */
+    z-index: 5;
 
     // background-color: #fff;
 }
@@ -23,8 +23,7 @@ section.hero {
 .hero-header h1 {
     font-family: 'steelfishextrabold';
     line-height: .8;
-    /* font-family: 'voltagelight'; */
-    /* font-family: 'voltageregular'; */
+    font-weight: 700;
     text-transform: uppercase;
     color: $text-color;
     font-size: 100px;

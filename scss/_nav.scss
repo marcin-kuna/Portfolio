@@ -35,14 +35,14 @@ nav ul li::after {
     display: block;
     height: 8px;
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     background: $accent-color;
     transition: width .3s ease, left .3s ease;
     width: 0;
 }
 
 nav ul li:hover::after {
-    width: 100%; 
+    width: 100%;
     // left: 0; od środka
 }
 
@@ -114,4 +114,5 @@ section.menu-overlay {
 
 .bg-change.slide {
     width: 100%;
+    border-right: thin solid $primary-color;
 }

@@ -1,9 +1,3 @@
-/* 
-Colors (do black):
-color: #B82601; embers
-color: #FF533D; coral
-color: #F53240; bright coral
-*/
 @font-face {
   font-family: 'steelfishextrabold';
   src: url("../fonts/steelfish_eb-webfont.woff2") format("woff2"), url("../fonts/steelfish_eb-webfont.woff") format("woff");
@@ -100,7 +94,7 @@ color: #F53240; bright coral
 
 body {
   overflow-x: hidden;
-  background: url("../img/bg-noise.png"), #000;
+  background: url("../img/bg-noise.png"), #e5dada;
   background-size: 300px 300px;
   animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
 }
@@ -110,12 +104,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px #000;
-          box-shadow: inset 0 0 6px #000;
+  -webkit-box-shadow: inset 0 0 6px #e5dada;
+          box-shadow: inset 0 0 6px #e5dada;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #FFF;
+  background-color: #02040f;
 }
 
 main {
@@ -136,7 +130,22 @@ section {
   height: 100%;
   min-width: 15%;
   /* thin instead 1px - hack for chrome bad rendering */
-  border-right: thin solid rgba(255, 255, 255, 0.1);
+}
+
+.hero .column {
+  border-right: thin solid #02040f;
+}
+
+.about {
+  background-color: red;
+}
+
+.works {
+  background-color: green;
+}
+
+.contact {
+  background-color: blue;
 }
 
 header {
@@ -171,7 +180,7 @@ header {
 .menu-btn-burger {
   width: 4px;
   height: 40px;
-  background-color: #FFF;
+  background-color: #02040f;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
@@ -182,7 +191,7 @@ header {
   position: absolute;
   width: 4px;
   height: 40px;
-  background-color: #FFF;
+  background-color: #02040f;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
@@ -209,13 +218,13 @@ header {
 .menu-btn.menu-open .menu-btn-burger::before {
   -webkit-transform: rotate(45deg) translate(-35px, -35px);
           transform: rotate(45deg) translate(-35px, -35px);
-  background-color: #000;
+  background-color: #e5dada;
 }
 
 .menu-btn.menu-open .menu-btn-burger::after {
   -webkit-transform: rotate(-45deg) translate(35px, -35px);
           transform: rotate(-45deg) translate(35px, -35px);
-  background-color: #000;
+  background-color: #e5dada;
 }
 
 nav {
@@ -263,8 +272,8 @@ nav ul li::after {
   display: block;
   height: 8px;
   position: absolute;
-  z-index: -1;
-  background: #dd0000;
+  z-index: 1;
+  background: #e59500;
   -webkit-transition: width .3s ease, left .3s ease;
   transition: width .3s ease, left .3s ease;
   width: 0;
@@ -280,7 +289,7 @@ nav ul li:hover::after {
 
 .nav-link {
   text-decoration: none;
-  color: #000;
+  color: #e5dada;
   font-family: 'steelfishextrabold';
   line-height: .8;
   font-size: 80px;
@@ -341,7 +350,7 @@ section.menu-overlay {
   /* W prawo */
   width: 0;
   height: 100%;
-  background: url("../img/bg-noise.png"), rgba(204, 204, 204, 0.9);
+  background: url("../img/bg-noise.png"), #002642;
   background-size: 300px 300px;
   animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
   -webkit-transition: width .5s;
@@ -350,6 +359,7 @@ section.menu-overlay {
 
 .bg-change.slide {
   width: 100%;
+  border-right: thin solid #e5dada;
 }
 
 section.hero {
@@ -379,21 +389,20 @@ section.hero {
   left: 5px;
   white-space: nowrap;
   pointer-events: none;
-  /* z-index: 5; */
+  z-index: 5;
 }
 
 .hero-header h1 {
   font-family: 'steelfishextrabold';
   line-height: .8;
-  /* font-family: 'voltagelight'; */
-  /* font-family: 'voltageregular'; */
+  font-weight: 700;
   text-transform: uppercase;
-  color: #FFF;
+  color: #02040f;
   font-size: 100px;
 }
 
 .hero-header span {
-  color: #dd0000;
+  color: #e59500;
 }
 
 .hero-header span.span-higher {

@@ -1,3 +1,13 @@
+Z-INDEX
+
+Header 100
+Column-5 20
+Nav 10
+Overlay 5
+Hero-header 5
+Li::after 1
+
+
 TODO
 
 0) Sass refactor
@@ -5,3 +15,4 @@ TODO
 2) Nav in column-6/outside?
 3) Menu hover + nav-link transition delay?
 4) Menu transition timing
+5) Transition for "I LOVE DESIGN" (opacity?) + rest of hero header (slide?)

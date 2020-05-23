@@ -1,6 +1,7 @@
 const body = document.body;
 const main = document.querySelector('main');
 
+
 let sx = 0;
 let sy = 0;
 let dx = sx;
@@ -15,10 +16,8 @@ main.style.left = 0;
 window.addEventListener('scroll', scroll);
 
 function scroll() {
-    // sx = window.pageXOffset; //oryginał
-    // sy = window.pageYOffset; //oryginał
-    sx = window.pageXOffset*.4;
-    sy = window.pageYOffset*.4;
+    sx = window.pageXOffset;
+    sy = window.pageYOffset;
 }
 
 window.requestAnimationFrame(render);
@@ -37,3 +36,4 @@ function render() {
 function lerp(a, b, n) {
     return (1 - n) * a + n * b;
 }
+
