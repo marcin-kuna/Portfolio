@@ -1,7 +1,7 @@
-$primary-color: #e5dada;
-$secondary-color: #002642;
-$accent-color: #e59500;
-$text-color: #02040f;
+// $primary-color: #e5dada;
+// $secondary-color: #002642;
+// $accent-color: #e59500;
+// $text-color: #02040f;
 // $primary-color: #edebd7;
 // $secondary-color: #6e675f;
 // $accent-color: #e3b23c;
@@ -18,31 +18,15 @@ $text-color: #02040f;
 // $secondary-color: #333533;
 // $accent-color: #ef233c;
 // $text-color: #2b2d42;
-// $primary-color: #e8eddf;
-// $secondary-color: #333533;
-// $accent-color: #bb0a21;
-// $text-color: #242423;
+$primary-color: #e8eddf;
+$secondary-color: #333533;
+$accent-color: #bb0a21;
+$text-color: #242423;
 
 @font-face {
     font-family: 'steelfishextrabold';
     src: url('../fonts/steelfish_eb-webfont.woff2') format('woff2'),
          url('../fonts/steelfish_eb-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'voltagelight';
-    src: url('../fonts/voltagelight-3zzg3-webfont.woff2') format('woff2'),
-         url('../fonts/voltagelight-3zzg3-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'voltageregular';
-    src: url('../fonts/voltage-x33mr-webfont.woff2') format('woff2'),
-         url('../fonts/voltage-x33mr-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -98,28 +82,44 @@ section {
     /* width 100% = 100vw - scrollbar */
     width: 100%;
     height: 100vh;
+
+    display: flex;
+    position: relative;
+    left: -10%;
 }
 
 .column {
     position: relative;
     height: 100%;
     min-width: 15%;
-    /* thin instead 1px - hack for chrome bad rendering */
-    // border-right: thin solid rgba(255, 255, 255, .1);
+    border-right: thin solid $text-color;   // thin instead 1px - 'hack' for chrome bad rendering
 }
 
-.hero .column {
-    border-right: thin solid $text-color;
-}
+.bookmark {
+    // width: 15%;
+    height: 30px;
+    position: absolute;
+    top: calc(5vh - 10px);
+    left: 0;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    // background-color: $accent-color;
 
-.about {
-    background-color: red;
-}
+    &-color {
+        display: inline-block;
+        width: 40px;
+        height: 100%;
+        background-color: $accent-color;
+    }
 
-.works {
-    background-color: green;
-}
-
-.contact {
-    background-color: blue;
+    &-text {
+        font-family: 'steelfishextrabold';
+        line-height: .8;
+        font-weight: 700;
+        font-size: 34px;
+        text-transform: uppercase;
+        padding-left: 5px;
+        color: $text-color;
+    }
 }

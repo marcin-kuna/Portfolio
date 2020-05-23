@@ -46,11 +46,6 @@ nav ul li:hover::after {
     // left: 0; od środka
 }
 
-// For menu transformX
-.column-5 {
-    z-index: 20;
-}
-
 .nav-link {
     text-decoration: none;
     color: $primary-color;
@@ -58,7 +53,6 @@ nav ul li:hover::after {
     line-height: .8;
     font-size: 80px;
     text-transform: uppercase;
-    /* visibility: hidden; */
     opacity: 0;
     pointer-events: none;
     margin-left: -80px;
@@ -83,7 +77,6 @@ nav ul li:hover::after {
 }
 
 .nav-link.menu-open {
-    /* visibility: visible; */
     opacity: 1;
     pointer-events: all;
     margin-left: 0;
@@ -96,6 +89,14 @@ section.menu-overlay {
     display: flex;
     left: -10%;
     z-index: 5;
+}
+
+section.menu-overlay .column {
+    border-right: none;
+}
+
+section.menu-overlay .column-5 {     // For menu transformX
+    z-index: 20;
 }
 
 .bg-change {
