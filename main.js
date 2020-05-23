@@ -1,3 +1,12 @@
+const heroSpans = document.querySelectorAll('.hero-span')
+
+window.onload = () => {
+    heroSpans.forEach(element => {
+        element.classList.add('loaded')
+    })
+}
+
+
 // MENU & OVERLAY
 
 const bgChange = document.querySelectorAll('.bg-change')
