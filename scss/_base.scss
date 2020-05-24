@@ -96,15 +96,10 @@ section {
 }
 
 .bookmark {
-    // width: 15%;
     height: 30px;
     position: absolute;
-    top: calc(5vh - 10px);
+    top: calc(5vh - 10px); // menu spans height
     left: 0;
-    display: flex;
-    justify-content: center;
-    // align-items: center;
-    // background-color: $accent-color;
 
     &-color {
         display: inline-block;
@@ -119,7 +114,41 @@ section {
         font-weight: 700;
         font-size: 34px;
         text-transform: uppercase;
-        padding-left: 5px;
         color: $text-color;
     }
+}
+
+.index {
+    height: 20px;
+    position: absolute;
+    top: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-left {
+        left: -15vw;
+    }
+
+    &-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: $secondary-color;
+        position: relative;
+
+        &-left {
+            left: -3.5px;
+        } 
+    }
+
+    &-text {
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: 18px;
+        text-transform: none;
+    }
+
+    
 }
