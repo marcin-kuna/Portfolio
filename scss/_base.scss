@@ -121,7 +121,6 @@ section {
 .index {
     height: 20px;
     position: absolute;
-    top: 11%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,25 +129,49 @@ section {
         left: -15vw;
     }
 
+    &-right {
+        right: -15vw;
+    }
+
     &-dot {
-        width: 8px;
-        height: 8px;
+        width: 6px;
+        height: 6px;
         border-radius: 50%;
         display: inline-block;
         background-color: $secondary-color;
         position: relative;
 
         &-left {
-            left: -3.5px;
-        } 
+            left: -7.5px; // ???
+        }
+
+        &-right {
+            right: -7px; // ???
+        }
     }
 
     &-text {
         font-family: 'Playfair Display', serif;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
         text-transform: none;
-    }
+        position: relative;
 
-    
+        &-left {
+            left: -5px;
+        }
+
+        &-right {
+            right: -5px;
+        }
+    }
+}
+
+.inner-wrapper {
+    // background-color: blue;
+    height: 100%;
+    width: 60%;
+    position: absolute;
+    top: 0;
+    left: 30%;
 }

@@ -4,6 +4,10 @@
     font-size: 30px;
     font-weight: 500;
     white-space: nowrap;
+    height: 150vh;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
     
 
     span.italic {
@@ -22,13 +26,32 @@
 
     &-values {
         position: absolute;
-        top: 30%;
+        top: 25%;
+        right: 5px;
+        text-align: end;
+        // background-color: #fff;
+    }
 
-        &-para {
-            padding-top: 20px;
-        }
+    &-skillset {
+        position: absolute;
+        top: 40%;
+        left: 5px;
+        // background-color: #fff;
+        // text-align: end;
+    }
+
+    &-creed {
+        position: absolute;
+        top: 70%;
+        right: 5px;
     }
 }
 
-    
+.tech-logos {
 
+    padding-top: 20px;
+
+    img {
+        height: 80px;
+    }
+}

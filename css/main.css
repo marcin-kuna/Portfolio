@@ -149,7 +149,6 @@ section {
 .index {
   height: 20px;
   position: absolute;
-  top: 11%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,9 +164,13 @@ section {
   left: -15vw;
 }
 
+.index-right {
+  right: -15vw;
+}
+
 .index-dot {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   display: inline-block;
   background-color: #333533;
@@ -175,14 +178,35 @@ section {
 }
 
 .index-dot-left {
-  left: -3.5px;
+  left: -7.5px;
+}
+
+.index-dot-right {
+  right: -7px;
 }
 
 .index-text {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: none;
+  position: relative;
+}
+
+.index-text-left {
+  left: -5px;
+}
+
+.index-text-right {
+  right: -5px;
+}
+
+.inner-wrapper {
+  height: 100%;
+  width: 60%;
+  position: absolute;
+  top: 0;
+  left: 30%;
 }
 
 header {
@@ -570,6 +594,7 @@ h1.pseudo-header span.loaded:nth-of-type(4) {
   font-size: 30px;
   font-weight: 500;
   white-space: nowrap;
+  height: 150vh;
 }
 
 .about span.italic {
@@ -588,10 +613,28 @@ h1.pseudo-header span.loaded:nth-of-type(4) {
 
 .about-values {
   position: absolute;
-  top: 30%;
+  top: 25%;
+  right: 5px;
+  text-align: end;
 }
 
-.about-values-para {
+.about-skillset {
+  position: absolute;
+  top: 40%;
+  left: 5px;
+}
+
+.about-creed {
+  position: absolute;
+  top: 70%;
+  right: 5px;
+}
+
+.tech-logos {
   padding-top: 20px;
+}
+
+.tech-logos img {
+  height: 80px;
 }
 /*# sourceMappingURL=main.css.map */
