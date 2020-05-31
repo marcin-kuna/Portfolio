@@ -12,6 +12,7 @@ window.onload = () => {
 const bgChange = document.querySelectorAll('.bg-change')
 const menuBtn = document.querySelector('.menu-btn')
 const navLinks = document.querySelectorAll('.nav-link')
+const menuOverlay = document.querySelector('.menu-overlay')
 
 let menuOpen = false
 
@@ -26,6 +27,15 @@ function enableScrolling(){
 }
 
 const openMenu = () => {
+    
+    if(menuOverlay.matches('.menu-open')) {
+        setTimeout(() => {
+            menuOverlay.classList.remove('menu-open')
+        }, 1200)
+    } else {
+        menuOverlay.classList.add('menu-open')
+    }
+
     menuBtn.classList.toggle('menu-open')
     navLinks.forEach(element => {
         element.classList.toggle('menu-open')

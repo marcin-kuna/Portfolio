@@ -4,11 +4,7 @@
     font-size: 30px;
     font-weight: 500;
     white-space: nowrap;
-    height: 150vh;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
-    
+    height: 120vh;
 
     span.italic {
         font-style: italic;
@@ -16,34 +12,6 @@
 
     span.color {
         color: $accent-color;
-    }
-
-    &-intro {
-        position: absolute;
-        top: 15%;
-        left: 5px;
-    }
-
-    &-values {
-        position: absolute;
-        top: 25%;
-        right: 5px;
-        text-align: end;
-        // background-color: #fff;
-    }
-
-    &-skillset {
-        position: absolute;
-        top: 40%;
-        left: 5px;
-        // background-color: #fff;
-        // text-align: end;
-    }
-
-    &-creed {
-        position: absolute;
-        top: 70%;
-        right: 5px;
     }
 }
 

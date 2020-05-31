@@ -1,0 +1,115 @@
+.works {
+    height: 200vh;
+
+    .inner-wrapper {
+        // align-items: center;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    // .index-left {
+    //     left: -30vw;
+    // }
+
+    // .index-right {
+    //     right: -30vw;
+    // }
+
+    // .index-dot-left {
+    //     left: -2.5px;
+    // }
+
+    // .index-dot-right {
+    //     right: -2px;
+    // }
+}
+
+.project {
+    position: relative;
+    // left: -1px;
+    z-index: 1;
+    height: 30vw;
+    width: calc(100% - 1px);
+    // width: 30vw;
+    margin-bottom: 10px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    h2 {
+        font-family: 'steelfishextrabold';
+        line-height: .8;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $text-color;
+        font-size: 120px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    h4 {
+        position: absolute;
+        left: 50%;
+        bottom: 25%;
+        transform: translateX(-50%);
+        z-index: 1;
+        text-transform: uppercase;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+        font-size: 25px;
+        font-weight: 500;
+        white-space: nowrap;
+        color: $text-color;
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+
+    &-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        // z-index: 1;
+        background-color: $primary-color;
+        opacity: 0;
+        transform: translateY(-50px);
+        height: 100%;
+        width: 100%;
+        transition: all 1s ease;
+
+        img {
+            width: 100%;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover h4{
+        opacity: 1;
+    }
+
+    &:hover .project-image {
+        opacity: 1;
+        transform: translateY(0);
+
+        img {
+            opacity: .5;
+        }
+    }
+
+}
+
+.works-left {
+    width: 50%;
+}
+
+.works-right {
+    width: 50%;
+    position: relative;
+    top: 15vw;
+}
