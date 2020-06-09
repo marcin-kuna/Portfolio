@@ -100,3 +100,28 @@ function easeInOutQuad(t, b, c, d) {
     t--;
     return -c/2 * (t*(t-2) - 1) + b;
 };
+
+
+const projects = document.querySelectorAll('.project')
+
+
+
+projects.forEach((element) => {
+    let y = window.pageYOffset;
+
+    element.addEventListener('click', () => {
+
+        
+        
+        element.classList.toggle('project-open')
+        window.scrollTo(0, y)
+        // if(element.matches('.project-open')) {
+        //     element.requestFullscreen()
+        // } else {
+        //     document.exitFullscreen()
+        // }
+        // disableScrolling()
+        document.documentElement.style.overflow = 'hidden';  // firefox, chrome
+    document.body.scroll = "no"; // ie only
+    })
+})

@@ -47,12 +47,10 @@ nav ul li:hover::after {
 }
 
 .nav-link {
-    text-decoration: none;
+    @include font-header;
     color: $primary-color;
-    font-family: 'steelfishextrabold';
-    line-height: .8;
     font-size: 80px;
-    text-transform: uppercase;
+    text-decoration: none;
     opacity: 0;
     pointer-events: none;
     margin-left: -80px;

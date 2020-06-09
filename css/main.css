@@ -141,9 +141,9 @@ section {
   font-family: 'steelfishextrabold';
   line-height: .8;
   font-weight: 700;
-  font-size: 34px;
   text-transform: uppercase;
   color: #242423;
+  font-size: 34px;
 }
 
 .index {
@@ -193,8 +193,8 @@ section {
 .index-text {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
+  color: #242423;
   font-size: 16px;
-  text-transform: none;
   position: relative;
 }
 
@@ -370,12 +370,14 @@ nav ul li:hover::after {
 }
 
 .nav-link {
-  text-decoration: none;
-  color: #e8eddf;
   font-family: 'steelfishextrabold';
   line-height: .8;
-  font-size: 80px;
+  font-weight: 700;
   text-transform: uppercase;
+  color: #242423;
+  color: #e8eddf;
+  font-size: 80px;
+  text-decoration: none;
   opacity: 0;
   pointer-events: none;
   margin-left: -80px;
@@ -539,6 +541,7 @@ h1.pseudo-header {
   line-height: .8;
   font-weight: 700;
   text-transform: uppercase;
+  color: #242423;
   color: #bb0a21;
   font-size: 100px;
   white-space: nowrap;
@@ -617,12 +620,16 @@ h1.pseudo-header span.loaded:nth-of-type(4) {
 }
 
 .about {
+  height: 120vh;
+}
+
+.about p {
   font-family: 'Fira Sans Extra Condensed', sans-serif;
   text-transform: uppercase;
-  font-size: 30px;
   font-weight: 500;
+  color: #242423;
   white-space: nowrap;
-  height: 120vh;
+  font-size: 30px;
 }
 
 .about span.italic {
@@ -653,12 +660,15 @@ h1.pseudo-header span.loaded:nth-of-type(4) {
   padding: 0;
 }
 
+.works a {
+  color: inherit;
+}
+
 .project {
   position: relative;
   z-index: 1;
   height: 30vw;
   width: calc(100% - 1px);
-  margin-bottom: 10px;
 }
 
 .project h2 {
@@ -677,33 +687,33 @@ h1.pseudo-header span.loaded:nth-of-type(4) {
 }
 
 .project h4 {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #242423;
+  white-space: nowrap;
+  font-size: 25px;
   position: absolute;
   left: 50%;
   bottom: 25%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 1;
-  text-transform: uppercase;
-  font-family: 'Fira Sans Extra Condensed', sans-serif;
-  font-size: 25px;
-  font-weight: 500;
-  white-space: nowrap;
-  color: #242423;
   opacity: 0;
   -webkit-transition: opacity 1s ease;
   transition: opacity 1s ease;
 }
 
 .project-image {
+  height: 100%;
+  width: 100%;
+  background-color: #e8eddf;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #e8eddf;
-  opacity: 0;
   -webkit-transform: translateY(-50px);
           transform: translateY(-50px);
-  height: 100%;
-  width: 100%;
+  opacity: 0;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
@@ -741,5 +751,35 @@ h1.pseudo-header span.loaded:nth-of-type(4) {
   width: 50%;
   position: relative;
   top: 15vw;
+}
+
+.project-open {
+  background-color: #e8eddf;
+  position: fixed;
+  left: 0;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.project-open .project-image {
+  width: 20%;
+  height: 20%;
+  display: none;
+}
+
+.close-icon {
+  width: 50px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.project-details {
+  width: 100%;
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */

@@ -15,11 +15,7 @@
 }
 
 .hero-header h1 {
-    font-family: 'steelfishextrabold';
-    line-height: .8;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $text-color;
+    @include font-header;
     font-size: 100px;
 }
 
@@ -64,10 +60,7 @@
 }
 
 h1.pseudo-header {
-    font-family: 'steelfishextrabold';
-    line-height: .8;
-    font-weight: 700;
-    text-transform: uppercase;
+    @include font-header;
     color: $accent-color;
     font-size: 100px;
     white-space: nowrap;

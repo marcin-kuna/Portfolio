@@ -31,6 +31,28 @@ $text-color: #242423;
     font-style: normal;
 }
 
+@mixin font-header {
+    font-family: 'steelfishextrabold';
+    line-height: .8;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $text-color;
+}
+
+@mixin font-regular {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $text-color;
+    white-space: nowrap;
+}
+
+@mixin font-accent {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: $text-color;
+}
+
 @keyframes noise-animation {
     0% { background-position: 0% 0%; }
     10% { background-position: -5% -5%; }
@@ -42,6 +64,10 @@ $text-color: #242423;
     70% { background-position: 0% 10%; }
     80% { background-position: -5% -5%; }
     90% { background-position: 10% 5%; }
+}
+
+@mixin background-noise {
+    
 }
 
 * {
@@ -109,12 +135,8 @@ section {
     }
 
     &-text {
-        font-family: 'steelfishextrabold';
-        line-height: .8;
-        font-weight: 700;
+        @include font-header;
         font-size: 34px;
-        text-transform: uppercase;
-        color: $text-color;
     }
 }
 
@@ -155,10 +177,8 @@ section {
     }
 
     &-text {
-        font-family: 'Playfair Display', serif;
-        font-weight: 400;
+        @include font-accent;
         font-size: 16px;
-        text-transform: none;
         position: relative;
 
         &-left {
