@@ -106,19 +106,24 @@
 
     position: fixed;
     left: 0;
-    transform: translateY(-10%);
+    // transform: translateY(-10%);
     width: 100vw;
     height: 100vh;
     z-index: 1000;
 
     .project-image {
-        // width: 50%;
-        // height: 50%;
-        // top: 50%;
-        // left: 50%;
-        width: 20%;
-        height: 20%;
-        display: none;
-        // transition: none;
+
+        opacity: 1;
+        transform: translateY(0);
+        // pointer-events: none;
+
+        img {
+            width: 50%;
+            opacity: 1;
+        }
+
+        &:hover img {
+            opacity: 1;
+        }
     }
 }

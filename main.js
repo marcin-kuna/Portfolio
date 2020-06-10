@@ -107,21 +107,31 @@ const projects = document.querySelectorAll('.project')
 
 
 projects.forEach((element) => {
-    let y = window.pageYOffset;
+    
 
     element.addEventListener('click', () => {
-
         
         
-        element.classList.toggle('project-open')
-        window.scrollTo(0, y)
         // if(element.matches('.project-open')) {
-        //     element.requestFullscreen()
-        // } else {
-        //     document.exitFullscreen()
-        // }
-        // disableScrolling()
-        document.documentElement.style.overflow = 'hidden';  // firefox, chrome
-    document.body.scroll = "no"; // ie only
+            //     element.requestFullscreen()
+            // } else {
+                //     document.exitFullscreen()
+                // }
+                // disableScrolling()
+
+        element.classList.toggle('project-open')
+        let y = window.pageYOffset;
+        // window.scrollTo(0, y)
+        if(element.matches('.project-open')) {
+            element.style.top = `${y}px`
+            menuBtn.style.display = 'none'
+            document.documentElement.style.overflow = 'hidden';  // firefox, chrome
+            document.body.scroll = "no"; // ie only
+        } else {
+            element.style.top = '0'
+            menuBtn.style.display = 'block'
+            document.documentElement.style.overflow = 'initial';  // firefox, chrome
+            document.body.scroll = "yes"; // ie only
+        }
     })
 })

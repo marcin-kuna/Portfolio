@@ -757,17 +757,24 @@ h1.pseudo-header span.loaded:nth-of-type(4) {
   background-color: #e8eddf;
   position: fixed;
   left: 0;
-  -webkit-transform: translateY(-10%);
-          transform: translateY(-10%);
   width: 100vw;
   height: 100vh;
   z-index: 1000;
 }
 
 .project-open .project-image {
-  width: 20%;
-  height: 20%;
-  display: none;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.project-open .project-image img {
+  width: 50%;
+  opacity: 1;
+}
+
+.project-open .project-image:hover img {
+  opacity: 1;
 }
 
 .close-icon {
