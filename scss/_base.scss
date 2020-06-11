@@ -67,7 +67,9 @@ $text-color: #242423;
 }
 
 @mixin background-noise {
-    
+    background: url('../img/bg-noise.png'), $primary-color;
+    background-size: 300px 300px;
+    animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
 }
 
 * {
@@ -78,9 +80,7 @@ $text-color: #242423;
 
 body {
     overflow-x: hidden;
-    background: url('../img/bg-noise.png'), $primary-color;
-    background-size: 300px 300px;
-    animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
+    @include background-noise;
 }
 
 body::-webkit-scrollbar {

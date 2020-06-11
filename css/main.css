@@ -671,43 +671,65 @@ h1.pseudo-header span.loaded:nth-of-type(4) {
   width: calc(100% - 1px);
 }
 
-.project h2 {
+.project-info {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.project-info-headers {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  pointer-events: none;
+}
+
+.project-info-headers h2 {
   font-family: 'steelfishextrabold';
   line-height: .8;
   font-weight: 700;
   text-transform: uppercase;
   color: #242423;
   font-size: 120px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 1;
 }
 
-.project h4 {
+.project-info-headers h4 {
   font-family: 'Fira Sans Extra Condensed', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   color: #242423;
   white-space: nowrap;
   font-size: 25px;
-  position: absolute;
-  left: 50%;
-  bottom: 25%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 1;
+  padding-top: 15px;
   opacity: 0;
   -webkit-transition: opacity 1s ease;
   transition: opacity 1s ease;
 }
 
+.project-info-details {
+  display: none;
+}
+
 .project-image {
   height: 100%;
   width: 100%;
-  background-color: #e8eddf;
+  background: url("../img/bg-noise.png"), #e8eddf;
+  background-size: 300px 300px;
+  animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
   position: absolute;
   top: 0;
   left: 0;
@@ -754,12 +776,20 @@ h1.pseudo-header span.loaded:nth-of-type(4) {
 }
 
 .project-open {
-  background-color: #e8eddf;
   position: fixed;
   left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 1000;
+  cursor: default !important;
+}
+
+.project-open:hover .project-image img {
+  opacity: 1;
+}
+
+.project-open h2, .project-open h4 {
+  opacity: 1;
 }
 
 .project-open .project-image {
@@ -773,20 +803,120 @@ h1.pseudo-header span.loaded:nth-of-type(4) {
   opacity: 1;
 }
 
-.project-open .project-image:hover img {
-  opacity: 1;
+.project-open .project-info {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-.close-icon {
-  width: 50px;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1;
-}
-
-.project-details {
+.project-open .project-info-headers {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100vh;
+  height: 30%;
+  -webkit-animation: show 1s ease;
+          animation: show 1s ease;
+}
+
+.project-open .project-info-details {
+  display: block;
+  width: 100%;
+  height: 65%;
+  padding: 0 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  text-align: center;
+}
+
+.project-open .project-info-details h5 {
+  font-family: 'steelfishextrabold';
+  line-height: .8;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #242423;
+  font-size: 32px;
+  -webkit-animation: slide-up 1s ease;
+          animation: slide-up 1s ease;
+}
+
+.project-open .project-info-details h5 span {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-color: #bb0a21;
+  margin-left: 5px;
+}
+
+.project-open .project-info-details p {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #242423;
+  white-space: nowrap;
+  font-size: 20px;
+  white-space: normal;
+  padding: 20px 0;
+  -webkit-animation: show 2.5s ease;
+          animation: show 2.5s ease;
+}
+
+.project-open .project-info-details img {
+  height: 50px;
+  margin: 20px 0;
+  padding: 0 5px;
+  -webkit-animation: show 2.5s ease;
+          animation: show 2.5s ease;
+}
+
+.project-open .project-info-details a:hover img {
+  fill: red;
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 /*# sourceMappingURL=main.css.map */
