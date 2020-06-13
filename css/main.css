@@ -781,7 +781,7 @@ h1.pseudo-header span.loaded:nth-of-type(4) {
   width: 100vw;
   height: 100vh;
   z-index: 1000;
-  cursor: default !important;
+  cursor: url(../img/close20.svg), auto !important;
 }
 
 .project-open:hover .project-image img {
@@ -839,6 +839,7 @@ h1.pseudo-header span.loaded:nth-of-type(4) {
   text-transform: uppercase;
   color: #242423;
   font-size: 32px;
+  color: #bb0a21;
   -webkit-animation: slide-up 1s ease;
           animation: slide-up 1s ease;
 }
@@ -865,15 +866,20 @@ h1.pseudo-header span.loaded:nth-of-type(4) {
 }
 
 .project-open .project-info-details img {
-  height: 50px;
+  height: 40px;
   margin: 20px 0;
   padding: 0 5px;
   -webkit-animation: show 2.5s ease;
           animation: show 2.5s ease;
 }
 
-.project-open .project-info-details a:hover img {
-  fill: red;
+.project-open .project-info-btns a {
+  text-decoration: none;
+}
+
+.project-open .project-info-btns img:hover {
+  -webkit-filter: brightness(0) saturate(100%) invert(14%) sepia(99%) saturate(3113%) hue-rotate(341deg) brightness(90%) contrast(108%);
+          filter: brightness(0) saturate(100%) invert(14%) sepia(99%) saturate(3113%) hue-rotate(341deg) brightness(90%) contrast(108%);
 }
 
 @-webkit-keyframes show {

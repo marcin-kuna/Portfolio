@@ -116,7 +116,8 @@
     width: 100vw;
     height: 100vh;
     z-index: 1000;
-    cursor: default !important;
+    // cursor: default !important;
+    cursor: url(../img/close20.svg), auto !important;
 
     &:hover .project-image{
 
@@ -170,7 +171,7 @@
             h5 {
                 @include font-header;
                 font-size: 32px;
-                // color: $accent-color;
+                color: $accent-color;
                 // position: relative;
                 animation: slide-up 1s ease;
                 // transform: translateX(-16px);
@@ -196,14 +197,26 @@
             }
 
             img {
-                height: 50px;
+                height: 40px;
                 margin: 20px 0;
                 padding: 0 5px;
                 animation: show 2.5s ease;
             }
+        }
 
-            a:hover img{
-                fill: red;
+        &-btns {
+
+            a {
+                text-decoration: none;
+            }
+
+            img {
+                // filter: none;
+                // transition: filter 1s ease;
+            }
+                
+            img:hover{
+                filter: brightness(0) saturate(100%) invert(14%) sepia(99%) saturate(3113%) hue-rotate(341deg) brightness(90%) contrast(108%);
             }
         }
     }
