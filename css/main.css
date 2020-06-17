@@ -83,6 +83,7 @@ body {
   background: url("../img/bg-noise.png"), #e8eddf;
   background-size: 300px 300px;
   animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
+  position: relative;
 }
 
 body::-webkit-scrollbar {
@@ -927,13 +928,30 @@ h1.pseudo-header span.loaded:nth-of-type(4) {
 }
 
 .contact .inner-wrapper {
-  padding: 0;
+  padding: 5px 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact h2 {
+  font-family: 'steelfishextrabold';
+  line-height: .8;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #242423;
+  line-height: 1;
+  font-size: 70px;
+  text-align: center;
+  z-index: 1;
 }
 
 .form-wrapper {
   z-index: 1;
-  width: 50%;
+  width: 75%;
   background: transparent;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 form {
@@ -952,6 +970,26 @@ form div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.personal-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+.personal-info div {
+  width: 49%;
 }
 
 form div label {
@@ -974,8 +1012,6 @@ form div label {
 }
 
 form div input {
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
   padding: 0.5rem 1rem;
   background-color: #333533;
   border: none;
@@ -989,7 +1025,6 @@ form div input {
   white-space: nowrap;
   color: #e8eddf;
   font-size: 20px;
-  line-height: 2rem;
   position: relative;
   display: block;
   -webkit-box-ordinal-group: 3;
@@ -1007,15 +1042,12 @@ form div input:focus {
 }
 
 form div textarea {
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
   font-family: 'Fira Sans Extra Condensed', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   color: #242423;
   white-space: nowrap;
   font-size: 20px;
-  line-height: 2rem;
   color: #e8eddf;
   padding: 0.5rem 1rem;
   background-color: #333533;
@@ -1030,6 +1062,7 @@ form div textarea {
   resize: none;
   height: 120px;
   border: 2px solid transparent;
+  white-space: normal;
 }
 
 form div textarea:valid + label {
@@ -1041,31 +1074,123 @@ form div textarea:focus {
 }
 
 form div button {
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
   -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
-  font-family: "Karla", sans-serif;
-  font-size: 1rem;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 50px;
+  font-weight: 500;
+  color: #242423;
+  white-space: nowrap;
+  font-size: 20px;
   padding: 0.75rem 2rem;
-  background-color: #ff4a5d;
-  color: #ffffff;
+  background-color: #bb0a21;
+  color: #e8eddf;
   border: none;
-  max-width: 210px;
+  width: calc(15vw - 40px);
   cursor: pointer;
-}
-
-form div button:hover {
-  background-color: #5f6edc;
+  outline: none;
+  margin: 1rem 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-transition-delay: 99999s;
+  -webkit-box-shadow: 0 0 0 30px #333533 inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #e8eddf !important;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-left, .footer-right {
+  width: 50%;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-left {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.footer-right {
+  padding-left: 30px;
+}
+
+.footer span {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #242423;
+  white-space: nowrap;
+  line-height: 1;
+  font-size: 16px;
+}
+
+.footer .copy {
+  margin-top: 4px;
+}
+
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.footer ul li {
+  margin-right: 10px;
+  position: relative;
+}
+
+.footer ul li a {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #242423;
+  white-space: nowrap;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer ul li a::after {
+  content: "";
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  height: 2px;
+  position: absolute;
+  z-index: 1;
+  background: #bb0a21;
+  -webkit-transition: width .3s ease, left .3s ease;
+  transition: width .3s ease, left .3s ease;
+  width: 0;
+}
+
+.footer ul li a:hover::after {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

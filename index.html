@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/a578317cc7.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="menu-btn">
             <div class="menu-btn-burger"></div>
         </div>
@@ -41,6 +42,12 @@
                     <li><a class="nav-link nav-link-4" href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <!-- <div class="media">
+                <a href="mailto:marcin.m.kuna@gmail.com" target="_blank"><i class="fas fa-at"></i></a>
+                <a href="https://www.linkedin.com/in/marcin-kuna-346284171/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/marcin-kuna" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div> -->
         </div>
         <div class="column column-7">
             <div class="bg-change"></div>
@@ -322,9 +329,15 @@
 
         <section class="contact" id="contact">
             <div class="inner-wrapper">
+
+                <div class="contact-header">
+                    <h2>Let's make something</h2>
+                    <h2>Together!</h2>
+                </div>
+
                 <div class="form-wrapper">
                     <form name="contact" method="POST" data-netlify="true">
-                        <div class="personal-data">
+                        <!-- <div class="personal-info"> -->
                             <div>
                               <input type="text" required="" placeholder="Name" id="name" name="name">
                               <label for="name">Name</label>
@@ -333,7 +346,7 @@
                               <input type="text" required="" placeholder="Email" id="email" name="email">
                               <label for="email">Email</label>
                             </div>
-                        </div>
+                        <!-- </div> -->
                         <div>
                           <textarea name="message" id="message" required="" placeholder="Message"></textarea>
                           <label for="message">Message</label>
@@ -359,6 +372,28 @@
             <div class="column column-8"></div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer-left">
+            <span class="copy">&copy;</span>
+            <span>2020 - Marcin Kuna - All rights reserved</span>
+        </div>
+        <div class="footer-right">
+            <ul>
+                <li>
+                    <a href="mailto:marcin.m.kuna@gmail.com" target="_blank">Email</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/marcin-kuna-346284171/" target="_blank">Linkedin</a>
+                </li>
+                <li>
+                    <a href="https://github.com/marcin-kuna" target="_blank">Github</a>
+                </li>
+                <li>
+                    <a href="#">Facebook</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
     
     <script src="main.js"></script>
     <script src="lerp-scroll.js"></script>

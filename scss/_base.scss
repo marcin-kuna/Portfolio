@@ -81,6 +81,7 @@ $text-color: #242423;
 body {
     overflow-x: hidden;
     @include background-noise;
+    position: relative;
 }
 
 body::-webkit-scrollbar {
