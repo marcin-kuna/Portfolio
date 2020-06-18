@@ -13,6 +13,17 @@
     span.color {
         color: $accent-color;
     }
+
+    .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(80px);
+        transition: all 1s ease .5s;
+
+        &.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 }
 
 .tech-logos {

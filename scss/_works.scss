@@ -101,12 +101,36 @@
 
 .works-left {
     width: 50%;
+
+    .project.animate-on-scroll {
+        opacity: 0;
+        transform: translateX(-80px);
+        transition: transform 1s ease 1s,
+                    opacity 1s ease 1s;
+
+        &.is-visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
 }
 
 .works-right {
     width: 50%;
     position: relative;
     top: 15vw;
+
+    .project.animate-on-scroll {
+        opacity: 0;
+        transform: translateX(50px);
+        transition: transform 1s ease 1s,
+                    opacity 1s ease 1s;
+
+        &.is-visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
 }
 
 .project-open {

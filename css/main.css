@@ -641,6 +641,20 @@ h1.pseudo-header span.loaded:nth-of-type(4) {
   color: #bb0a21;
 }
 
+.about .animate-on-scroll {
+  opacity: 0;
+  -webkit-transform: translateY(80px);
+          transform: translateY(80px);
+  -webkit-transition: all 1s ease .5s;
+  transition: all 1s ease .5s;
+}
+
+.about .animate-on-scroll.is-visible {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .tech-logos {
   padding-top: 20px;
 }
@@ -770,10 +784,42 @@ h1.pseudo-header span.loaded:nth-of-type(4) {
   width: 50%;
 }
 
+.works-left .project.animate-on-scroll {
+  opacity: 0;
+  -webkit-transform: translateX(-80px);
+          transform: translateX(-80px);
+  -webkit-transition: opacity 1s ease 1s, -webkit-transform 1s ease 1s;
+  transition: opacity 1s ease 1s, -webkit-transform 1s ease 1s;
+  transition: transform 1s ease 1s, opacity 1s ease 1s;
+  transition: transform 1s ease 1s, opacity 1s ease 1s, -webkit-transform 1s ease 1s;
+}
+
+.works-left .project.animate-on-scroll.is-visible {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 .works-right {
   width: 50%;
   position: relative;
   top: 15vw;
+}
+
+.works-right .project.animate-on-scroll {
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: opacity 1s ease 1s, -webkit-transform 1s ease 1s;
+  transition: opacity 1s ease 1s, -webkit-transform 1s ease 1s;
+  transition: transform 1s ease 1s, opacity 1s ease 1s;
+  transition: transform 1s ease 1s, opacity 1s ease 1s, -webkit-transform 1s ease 1s;
+}
+
+.works-right .project.animate-on-scroll.is-visible {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .project-open {
@@ -943,6 +989,20 @@ h1.pseudo-header span.loaded:nth-of-type(4) {
   font-size: 70px;
   text-align: center;
   z-index: 1;
+}
+
+.contact .animate-on-scroll {
+  opacity: 0;
+  -webkit-transform: translateY(80px);
+          transform: translateY(80px);
+  -webkit-transition: all 1s ease .5s;
+  transition: all 1s ease .5s;
+}
+
+.contact .animate-on-scroll.is-visible {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .form-wrapper {
