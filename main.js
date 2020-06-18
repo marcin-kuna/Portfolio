@@ -102,7 +102,7 @@ function easeInOutQuad(t, b, c, d) {
 };
 
 
-const projects = document.querySelectorAll('.project')
+const projects = document.querySelectorAll('.project-wrapper')
 
 
 
