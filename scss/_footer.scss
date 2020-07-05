@@ -73,3 +73,39 @@
         }
     }
 }
+
+.button-up-wrapper {
+    position: absolute;
+    right: calc(5vw - 20px);
+    bottom: 50px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    @include background-noise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-up {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    text-decoration: none;
+    color: $text-color;
+    border: solid 1px $text-color;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 22px;
+        height: 22px;
+        transition: margin-bottom .3s ease;
+    }
+
+    &:hover img {
+        margin-bottom: 8px;
+    }
+}

@@ -182,12 +182,12 @@ section {
 }
 
 .index-dot-left {
-  left: -7.5px;
+  left: -2.5px;
   margin-right: 5px;
 }
 
 .index-dot-right {
-  right: -7px;
+  right: -3px;
   margin-left: 5px;
 }
 
@@ -237,7 +237,8 @@ section {
 
 header {
   width: 100%;
-  position: fixed;
+  height: 80px;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 100;
@@ -256,12 +257,29 @@ header {
       -ms-flex-align: center;
           align-items: center;
   /* border: 1px solid #FFF; */
-  position: absolute;
+  position: fixed;
   top: 5vh;
   right: calc(5% - 29px);
   cursor: pointer;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+}
+
+.menu-btn-hidden {
+  -webkit-transition: none;
+  transition: none;
+  visibility: hidden;
+}
+
+.menu-btn-hidden .menu-btn-burger {
+  -webkit-transition: none;
+  transition: none;
+}
+
+.menu-btn-hidden .menu-btn-burger::before,
+.menu-btn-hidden .menu-btn-burger::after {
+  -webkit-transition: none;
+  transition: none;
 }
 
 .menu-btn-burger {
@@ -831,9 +849,13 @@ h1.pseudo-header span.loaded:nth-of-type(4) {
 .project-open {
   position: fixed;
   left: 0;
+  top: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 1000;
+  z-index: 5;
+}
+
+.project-open .project {
   cursor: url(../img/close20.svg), auto !important;
 }
 
@@ -1258,5 +1280,56 @@ input:-webkit-autofill {
 
 .footer ul li a:hover::after {
   width: 100%;
+}
+
+.button-up-wrapper {
+  position: absolute;
+  right: calc(5vw - 20px);
+  bottom: 50px;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  background: url("../img/bg-noise.png"), #e8eddf;
+  background-size: 300px 300px;
+  animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-up {
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  text-decoration: none;
+  color: #242423;
+  border: solid 1px #242423;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-up img {
+  width: 22px;
+  height: 22px;
+  -webkit-transition: margin-bottom .3s ease;
+  transition: margin-bottom .3s ease;
+}
+
+.button-up:hover img {
+  margin-bottom: 8px;
 }
 /*# sourceMappingURL=main.css.map */

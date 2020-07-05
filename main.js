@@ -124,12 +124,15 @@ projects.forEach((element) => {
         // window.scrollTo(0, y)
         if(element.matches('.project-open')) {
             element.style.top = `${y}px`
-            menuBtn.style.display = 'none'
+            // menuBtn.style.transition = 'none'
+            // menuBtn.style.visibility = 'hidden'
+            menuBtn.classList.add('menu-btn-hidden')
             document.documentElement.style.overflow = 'hidden';  // firefox, chrome
             document.body.scroll = "no"; // ie only
         } else {
             element.style.top = '0'
-            menuBtn.style.display = 'block'
+            menuBtn.classList.remove('menu-btn-hidden')
+            // menuBtn.style.visibility = 'visible'
             document.documentElement.style.overflow = 'initial';  // firefox, chrome
             document.body.scroll = "yes"; // ie only
         }

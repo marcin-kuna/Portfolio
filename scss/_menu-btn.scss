@@ -5,11 +5,25 @@
     justify-content: center;
     align-items: center;
     /* border: 1px solid #FFF; */
-    position: absolute;
+    position: fixed;
     top: 5vh;
     right: calc(5% - 29px);
     cursor: pointer;
     transition: all .5s ease-in-out;
+}
+
+.menu-btn-hidden {
+    transition: none;
+    visibility: hidden;
+
+    .menu-btn-burger {
+        transition: none;
+    }
+
+    .menu-btn-burger::before,
+    .menu-btn-burger::after {
+        transition: none;
+    }
 }
 
 .menu-btn-burger {
