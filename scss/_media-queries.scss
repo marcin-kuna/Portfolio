@@ -1,3 +1,13 @@
+@media (max-width: 480px) {
+
+    .menu-btn {
+        right: calc(5% - 59px);
+    }
+}
+
+
+
+
 @mixin for-phone {
     @media (max-width: 599px) { @content; }
   }
