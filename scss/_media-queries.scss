@@ -1,12 +1,16 @@
 @media (max-width: 480px) {
 
-    ::-webkit-scrollbar {
-        width: 0px !important;
-        display: none !important;
-    }
+    // ::-webkit-scrollbar {
+    //     width: 0px !important;
+    //     display: none !important;
+    // }
 
     .menu-btn {
         right: calc(12.5% - 29px);
+    }
+
+    .hero-header {
+        font-size: 50px;
     }
 }
 
