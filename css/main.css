@@ -569,10 +569,6 @@ h1.pseudo-header span {
   opacity: 0;
 }
 
-.about {
-  height: 120vh;
-}
-
 .about p {
   font-family: 'Fira Sans Extra Condensed', sans-serif;
   text-transform: uppercase;
