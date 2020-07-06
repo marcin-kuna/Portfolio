@@ -78,12 +78,7 @@
           box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
-
 body {
-  height: 100%;
   overflow-x: hidden;
   background: url("../img/bg-noise.png"), #e8eddf;
   background-size: 300px 300px;
@@ -1261,6 +1256,9 @@ input:-webkit-autofill {
 }
 
 @media (max-width: 480px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
   .menu-btn {
     right: calc(12.5% - 29px);
   }

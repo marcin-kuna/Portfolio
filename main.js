@@ -7,10 +7,6 @@
 // }
 
 
-// const hero = document.querySelector('.hero')
-
-// hero.style.height = window.innerHeight
-
 // MENU & OVERLAY
 
 const bgChange = document.querySelectorAll('.bg-change')

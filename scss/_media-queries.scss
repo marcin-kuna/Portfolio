@@ -1,7 +1,7 @@
 @media (max-width: 480px) {
 
-    section {
-        // height: 110vh;
+    body::-webkit-scrollbar {
+        display: none;
     }
 
     .menu-btn {
