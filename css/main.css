@@ -1259,6 +1259,12 @@ input:-webkit-autofill {
   margin-bottom: 8px;
 }
 
+@media (max-width: 480px) {
+  .menu-btn {
+    right: calc(12.5% - 29px);
+  }
+}
+
 @media (max-width: 1200px) {
   .works {
     height: 170vh;
