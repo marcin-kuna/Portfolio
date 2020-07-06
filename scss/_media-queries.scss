@@ -1,3 +1,19 @@
+@media (max-width: 768px) {
+
+    .hero-header h1{
+        font-size: 80px;
+    }
+
+    .hero-header h1:nth-of-type(2), .hero-header h1:nth-of-type(3) {
+        display: block;
+        // margin-top: 40px;
+    }
+
+    .hero-header h1:nth-of-type(3) {
+        margin: 15px 0 15px 0;
+    }
+}
+
 @media (max-width: 480px) {
 
     // ::-webkit-scrollbar {
@@ -9,14 +25,12 @@
         right: calc(12.5% - 29px);
     }
 
-    .hero-header {
-        white-space: normal;
-    }
-
     .hero-header h1{
         font-size: 70px;
     }
 }
+
+
 
 
 
