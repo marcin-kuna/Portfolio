@@ -7,9 +7,9 @@
 // }
 
 
-const hero = document.querySelector('.hero')
+// const hero = document.querySelector('.hero')
 
-hero.style.height = window.innerHeight
+// hero.style.height = window.innerHeight
 
 // MENU & OVERLAY
 
