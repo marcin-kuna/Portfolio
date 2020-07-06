@@ -1274,8 +1274,7 @@ input:-webkit-autofill {
     right: calc(12.5% - 29px);
   }
   .hero-header {
-    -webkit-transform: translateX(-15vw);
-            transform: translateX(-15vw);
+    left: calc(-15vw + 5px);
   }
   .hero-header h1 {
     font-size: 70px;
