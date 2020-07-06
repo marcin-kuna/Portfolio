@@ -1260,8 +1260,8 @@ input:-webkit-autofill {
 }
 
 @media (max-width: 480px) {
-  .section {
-    height: 150vh;
+  section {
+    min-height: -webkit-stretch;
   }
   .menu-btn {
     right: calc(12.5% - 29px);

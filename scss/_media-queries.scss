@@ -1,7 +1,7 @@
 @media (max-width: 480px) {
 
-    .section {
-        height: 150vh;
+    section {
+        min-height: -webkit-stretch;
     }
 
     .menu-btn {
