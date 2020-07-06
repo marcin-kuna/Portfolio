@@ -1,5 +1,9 @@
 @media (max-width: 480px) {
 
+    .section {
+        min-height: 100vh;
+    }
+
     .menu-btn {
         right: calc(12.5% - 29px);
     }
