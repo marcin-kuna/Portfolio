@@ -1,5 +1,5 @@
 .works {
-    height: 200vh;
+    height: 190vh;
 
     .inner-wrapper {
         // align-items: center;
@@ -20,19 +20,9 @@
 
 .project {
     position: relative;
-    // left: -1px;
-
     width: 100%;
     height: 100%;
     z-index: 1;
-    // height: 30vw;
-    // width: calc(100% - 1px);
-
-    // width: 30vw;
-    // margin-bottom: 20px;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
 
     &-info {
         width: 100%;

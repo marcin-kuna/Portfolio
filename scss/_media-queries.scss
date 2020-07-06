@@ -1,0 +1,89 @@
+@mixin for-phone {
+    @media (max-width: 599px) { @content; }
+  }
+@mixin for-tablet-portrait {
+    @media (max-width: 768px) { @content; }
+}
+@mixin for-tablet-landscape {
+    @media (max-width: 1000px) { @content; }
+}
+@mixin for-desktop {
+    @media (max-width: 1200px) { @content; }
+}
+@mixin for-big-desktop{
+    @media (max-width: 1800px) { @content; }
+}
+
+
+.works {
+
+    @include for-desktop {
+        // background-color: green;
+        height: 170vh;
+    }
+
+    @include for-tablet-landscape {
+        // background-color: blue;
+        height: 130vh;
+    }
+
+    @include for-tablet-portrait {
+        // background-color: yellow;
+        height: 100vh;
+    }
+
+    @include for-phone {
+        height: 250vh;
+    }
+}
+
+.works .inner-wrapper {
+    @include for-phone {
+        display: block;
+    }
+}
+
+.works .works-right {
+    @include for-phone {
+        top: 0;
+        width: 100%;
+        height: 50%;
+    }
+}
+
+.works .works-left {
+    @include for-phone {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+.project-wrapper {
+    @include for-phone {
+        // width: 100%;
+        height: 50%;
+    }
+}
+
+// powtórzenie z works.scss konieczne do poprawnego wyświetlania tekstu
+.project-open {
+    @include for-phone {
+        width: 100vw;
+    height: 100vh;
+    }
+}
+
+.project-image {
+    @include for-phone {
+        transform: translateY(0);
+        opacity: 1;
+        transition: none;
+    }
+}
+
+.project-image img {
+    @include for-phone {
+        opacity: 1;
+        transition: none;
+    }
+}
