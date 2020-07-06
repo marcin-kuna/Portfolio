@@ -1257,7 +1257,7 @@ input:-webkit-autofill {
 
 @media (max-width: 480px) {
   ::-webkit-scrollbar {
-    display: none;
+    -webkit-appearance: none;
   }
   .menu-btn {
     right: calc(12.5% - 29px);

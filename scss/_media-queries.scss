@@ -1,7 +1,7 @@
 @media (max-width: 480px) {
 
     ::-webkit-scrollbar {
-        display: none;
+        -webkit-appearance: none;
     }
 
     .menu-btn {
