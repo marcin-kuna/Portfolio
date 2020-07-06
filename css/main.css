@@ -1273,6 +1273,10 @@ input:-webkit-autofill {
   .menu-btn {
     right: calc(12.5% - 29px);
   }
+  .hero-header {
+    -webkit-transform: translateX(-15vw);
+            transform: translateX(-15vw);
+  }
   .hero-header h1 {
     font-size: 70px;
   }

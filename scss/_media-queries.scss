@@ -25,6 +25,10 @@
         right: calc(12.5% - 29px);
     }
 
+    .hero-header {
+        transform: translateX(-15vw);
+    }
+
     .hero-header h1{
         font-size: 70px;
     }
