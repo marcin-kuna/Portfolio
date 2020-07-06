@@ -1,7 +1,8 @@
 @media (max-width: 480px) {
 
-    body::-webkit-scrollbar {
-        width: 0 !important;
+    ::-webkit-scrollbar {
+        width: 0px !important;
+        display: none !important;
     }
 
     .menu-btn {
