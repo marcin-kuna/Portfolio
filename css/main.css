@@ -395,7 +395,7 @@ nav ul li::after {
   width: 0;
 }
 
-nav ul li:hover::after, nav ul li:focus::after {
+nav ul li:hover::after {
   width: 100%;
 }
 
@@ -1288,6 +1288,12 @@ input:-webkit-autofill {
   }
   .nav-link {
     font-size: 70px;
+  }
+  nav ul li:hover::after {
+    width: 0;
+  }
+  nav ul li:focus::after {
+    width: 100%;
   }
   .hero-header {
     left: calc(-15vw + 5px);

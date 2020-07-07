@@ -43,9 +43,20 @@
         font-size: 70px;
     }
 
+    nav ul li:hover::after {
+        width: 0;
+    }
+
+    nav ul li:focus::after {
+        width: 100%;
+        // left: 0; od środka
+    }
+
     // .logo {
     //     left: calc(12.5% - 29px);
     // }
+
+    // HERO
 
     .hero-header {
         left: calc(-15vw + 5px);
