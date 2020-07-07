@@ -48,6 +48,10 @@ nav ul li:hover::after {
     // left: 0; od środka
 }
 
+.nav-link:active {
+    color: $accent-color;
+}
+
 .nav-link {
     @include font-header;
     color: $primary-color;

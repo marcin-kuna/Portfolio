@@ -395,6 +395,10 @@ nav ul li::after {
   width: 0;
 }
 
+.nav-link:active {
+  color: #bb0a21;
+}
+
 .nav-link {
   font-family: 'steelfishextrabold';
   line-height: .8;
