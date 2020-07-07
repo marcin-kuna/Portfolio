@@ -46,6 +46,7 @@
     // Fix constant 'hover' effect on touchscreen (constant width 100%)
 
     nav ul li::after {
+        left: 50%;
         transition: width .2s ease;
     }
 
@@ -54,6 +55,7 @@
     }
 
     nav ul li:active::after {
+        left: 0;
         width: 100%;
         // left: 0; od środka
     }

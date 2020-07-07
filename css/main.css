@@ -1290,6 +1290,7 @@ input:-webkit-autofill {
     font-size: 70px;
   }
   nav ul li::after {
+    left: 50%;
     -webkit-transition: width .2s ease;
     transition: width .2s ease;
   }
@@ -1297,6 +1298,7 @@ input:-webkit-autofill {
     width: 0;
   }
   nav ul li:active::after {
+    left: 0;
     width: 100%;
   }
   .hero-header {
