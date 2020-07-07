@@ -233,6 +233,6 @@ section {
 
 // Mobile - no 'blue' tap
 
-button, a{
+button, a, .menu-btn{
     -webkit-tap-highlight-color: transparent;
 }
