@@ -43,6 +43,12 @@
         font-size: 70px;
     }
 
+    // Fix constant 'hover' effect on touchscreen (constant width 100%)
+
+    nav ul li::after {
+        transition: width .6s ease;
+    }
+
     nav ul li:hover::after {
         width: 0;
     }
