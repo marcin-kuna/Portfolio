@@ -13,12 +13,6 @@ const menuBtn = document.querySelector('.menu-btn')
 const navLinks = document.querySelectorAll('.nav-link')
 const menuOverlay = document.querySelector('.menu-overlay')
 
-navLinks.forEach(el => {
-    if (el.matches(':active')) {
-        el.style.color = "red";
-    }
-})
-
 let menuOpen = false
 
 function disableScrolling(){
