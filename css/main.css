@@ -1289,6 +1289,9 @@ input:-webkit-autofill {
   .nav-link {
     font-size: 70px;
   }
+  .nav-link:active {
+    color: #bb0a21;
+  }
   nav ul li::after {
     left: 50%;
     -webkit-transition: width .2s ease, left .3s ease;
