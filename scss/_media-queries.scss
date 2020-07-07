@@ -1,10 +1,17 @@
-@media (hover: none) {
-    .nav-link:active {
-        color: $accent-color;
-    }
+// @media (hover: none) {
+//     .nav-link:active {
+//         color: $accent-color;
+//     }
 
-    nav ul li::after {
-        display: none;
+//     nav ul li::after {
+//         display: none;
+//     }
+// }
+
+@media(hover: hover) and (pointer: fine) {
+    nav ul li:hover::after {
+        width: 100%;
+        // left: 0; od środka
     }
 }
 

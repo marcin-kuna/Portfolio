@@ -395,10 +395,6 @@ nav ul li::after {
   width: 0;
 }
 
-nav ul li:hover::after {
-  width: 100%;
-}
-
 .nav-link {
   font-family: 'steelfishextrabold';
   line-height: .8;
@@ -1261,12 +1257,9 @@ input:-webkit-autofill {
   margin-bottom: 8px;
 }
 
-@media (hover: none) {
-  .nav-link:active {
-    color: #bb0a21;
-  }
-  nav ul li::after {
-    display: none;
+@media (hover: hover) and (pointer: fine) {
+  nav ul li:hover::after {
+    width: 100%;
   }
 }
 
