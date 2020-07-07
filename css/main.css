@@ -1261,7 +1261,7 @@ input:-webkit-autofill {
   margin-bottom: 8px;
 }
 
-@media (pointer: fine) {
+@media (hover: none) {
   .nav-link:active {
     color: #bb0a21;
   }
