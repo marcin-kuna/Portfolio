@@ -251,6 +251,28 @@ header {
   z-index: 100;
 }
 
+.logo {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 5vh;
+  left: calc(5% - 29px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+}
+
 .menu-btn {
   width: 60px;
   height: 60px;
@@ -1272,6 +1294,9 @@ input:-webkit-autofill {
 @media (max-width: 480px) {
   .menu-btn {
     right: calc(12.5% - 29px);
+  }
+  .logo {
+    left: calc(12.5% - 29px);
   }
   .hero-header {
     left: calc(-15vw + 5px);
