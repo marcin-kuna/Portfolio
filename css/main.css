@@ -1290,8 +1290,8 @@ input:-webkit-autofill {
     font-size: 70px;
   }
   nav ul li::after {
-    -webkit-transition: width .1s ease;
-    transition: width .1s ease;
+    -webkit-transition: width .2s ease;
+    transition: width .2s ease;
   }
   nav ul li:hover::after {
     width: 0;
