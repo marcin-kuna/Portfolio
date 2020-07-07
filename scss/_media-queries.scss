@@ -21,13 +21,19 @@
     //     display: none !important;
     // }
 
+    // HEADER & NAV
+
     .menu-btn {
         right: calc(12.5% - 29px);
     }
 
-    .logo {
-        left: calc(12.5% - 29px);
+    .nav-link {
+        font-size: 70px;
     }
+
+    // .logo {
+    //     left: calc(12.5% - 29px);
+    // }
 
     .hero-header {
         left: calc(-15vw + 5px);

@@ -1273,8 +1273,8 @@ input:-webkit-autofill {
   .menu-btn {
     right: calc(12.5% - 29px);
   }
-  .logo {
-    left: calc(12.5% - 29px);
+  .nav-link {
+    font-size: 70px;
   }
   .hero-header {
     left: calc(-15vw + 5px);
