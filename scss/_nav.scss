@@ -97,7 +97,7 @@ section.menu-overlay .column {
     border-right: none;
 }
 
-section.menu-overlay .column-5 {     // For menu transformX
+section.menu-overlay .column-5, section.menu-overlay .column-4 {     // For menu transformX
     z-index: 20;
 }
 

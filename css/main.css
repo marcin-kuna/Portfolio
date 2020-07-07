@@ -251,28 +251,6 @@ header {
   z-index: 100;
 }
 
-.logo {
-  width: 60px;
-  height: 60px;
-  position: fixed;
-  top: 5vh;
-  left: calc(5% - 29px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.logo img {
-  width: 45px;
-  height: 45px;
-}
-
 .menu-btn {
   width: 60px;
   height: 60px;
@@ -479,7 +457,7 @@ section.menu-overlay .column {
   border-right: none;
 }
 
-section.menu-overlay .column-5 {
+section.menu-overlay .column-5, section.menu-overlay .column-4 {
   z-index: 20;
 }
 
