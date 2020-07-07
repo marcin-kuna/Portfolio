@@ -382,7 +382,7 @@ nav ul li {
 nav ul li::after {
   content: "";
   top: 50%;
-  left: 0;
+  left: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   display: block;
@@ -390,13 +390,14 @@ nav ul li::after {
   position: absolute;
   z-index: 1;
   background: #bb0a21;
-  -webkit-transition: width .3s ease, left .3s ease;
-  transition: width .3s ease, left .3s ease;
+  -webkit-transition: width .3s ease , left .3s ease;
+  transition: width .3s ease , left .3s ease;
   width: 0;
 }
 
 nav ul li:hover::after {
   width: 100%;
+  left: 0;
 }
 
 .nav-link {
