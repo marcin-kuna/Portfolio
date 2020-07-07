@@ -1261,6 +1261,15 @@ input:-webkit-autofill {
   margin-bottom: 8px;
 }
 
+@media (pointer: fine) {
+  .nav-link:active {
+    color: #bb0a21;
+  }
+  nav ul li::after {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-header h1 {
     font-size: 80px;
@@ -1288,12 +1297,6 @@ input:-webkit-autofill {
   }
   .nav-link {
     font-size: 70px;
-  }
-  .nav-link:active {
-    color: #bb0a21;
-  }
-  nav ul li::after {
-    display: none;
   }
   .hero-header {
     left: calc(-15vw + 5px);
