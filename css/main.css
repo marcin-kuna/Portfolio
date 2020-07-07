@@ -1257,6 +1257,15 @@ input:-webkit-autofill {
   margin-bottom: 8px;
 }
 
+@media (any-hover: none) {
+  .nav-link:active {
+    color: #bb0a21;
+  }
+  nav ul li::after {
+    display: none;
+  }
+}
+
 @media (hover: hover) and (pointer: fine) {
   nav ul li:hover::after {
     width: 100%;

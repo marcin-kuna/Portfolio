@@ -1,12 +1,12 @@
-// @media (hover: none) {
-//     .nav-link:active {
-//         color: $accent-color;
-//     }
+@media (any-hover: none) {
+    .nav-link:active {
+        color: $accent-color;
+    }
 
-//     nav ul li::after {
-//         display: none;
-//     }
-// }
+    nav ul li::after {
+        display: none;
+    }
+}
 
 @media(hover: hover) and (pointer: fine) {
     nav ul li:hover::after {
