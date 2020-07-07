@@ -395,8 +395,8 @@ nav ul li::after {
   width: 0;
 }
 
-.nav-link:active {
-  color: #bb0a21;
+nav ul li:hover::after {
+  width: 100%;
 }
 
 .nav-link {
@@ -1261,22 +1261,13 @@ input:-webkit-autofill {
   margin-bottom: 8px;
 }
 
-@media (hover: none) and (pointer: coarse) {
+@media (max-width: 768px) {
   .nav-link:active {
     color: #bb0a21;
   }
   nav ul li::after {
     display: none;
   }
-}
-
-@media (hover: hover) and (pointer: fine) {
-  nav ul li:hover::after {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
   .hero-header h1 {
     font-size: 80px;
   }

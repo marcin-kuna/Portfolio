@@ -1,4 +1,9 @@
-@media (hover: none) and (pointer: coarse) {
+@media (max-width: 768px) {
+
+    // HEADER & NAV
+
+    // Temporary fix for 'sticky hover' on touchscreens
+
     .nav-link:active {
         color: $accent-color;
     }
@@ -6,16 +11,8 @@
     nav ul li::after {
         display: none;
     }
-}
 
-@media (hover: hover) and (pointer: fine) {
-    nav ul li:hover::after {
-        width: 100%;
-        // left: 0; od środka
-    }
-}
-
-@media (max-width: 768px) {
+    // HERO
 
     .hero-header h1{
         font-size: 80px;
@@ -59,30 +56,6 @@
     .nav-link {
         font-size: 70px;
     }
-
-    // Fix constant 'hover' effect on touchscreen (constant width 100%)
-
-    // .nav-link:active {
-    //     color: $accent-color;
-    // }
-
-    // nav ul li::after {
-    //     display: none;
-    // }
-
-    // nav ul li::after {
-    //     left: 50%;
-    //     transition: width .2s ease, left .3s ease;
-    // }
-
-    // nav ul li:hover::after {
-    //     width: 0;
-    // }
-
-    // nav ul li:active::after {
-    //     left: 0;
-    //     width: 100%;
-    // }
 
     // .logo {
     //     left: calc(12.5% - 29px);
