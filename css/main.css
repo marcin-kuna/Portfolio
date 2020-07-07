@@ -1292,7 +1292,7 @@ input:-webkit-autofill {
   nav ul li:hover::after {
     width: 0;
   }
-  nav ul li:focus::after {
+  nav ul li:active::after {
     width: 100%;
   }
   .hero-header {
