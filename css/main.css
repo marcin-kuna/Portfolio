@@ -1273,6 +1273,15 @@ input:-webkit-autofill {
   .menu-btn {
     right: calc(12.5% - 29px);
   }
+  section.menu-overlay .column-5 {
+    z-index: 0;
+  }
+  section.menu-overlay .column-4, section.menu-overlay .column-3 {
+    z-index: 20;
+  }
+  nav {
+    left: calc(15vw + 5px);
+  }
   .nav-link {
     font-size: 70px;
   }
