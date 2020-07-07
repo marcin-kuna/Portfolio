@@ -1,4 +1,4 @@
-@media (hover:none) {
+@media (hover:none) and (pointer: coarse) {
     .nav-link:active {
         color: $accent-color;
     }
