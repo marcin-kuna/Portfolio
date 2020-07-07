@@ -50,19 +50,22 @@
     }
 
     nav ul li::after {
-        left: 50%;
-        transition: width .2s ease, left .3s ease;
+        display: none;
     }
 
-    nav ul li:hover::after {
-        width: 0;
-    }
+    // nav ul li::after {
+    //     left: 50%;
+    //     transition: width .2s ease, left .3s ease;
+    // }
 
-    nav ul li:active::after {
-        left: 0;
-        width: 100%;
-        // left: 0; od środka
-    }
+    // nav ul li:hover::after {
+    //     width: 0;
+    // }
+
+    // nav ul li:active::after {
+    //     left: 0;
+    //     width: 100%;
+    // }
 
     // .logo {
     //     left: calc(12.5% - 29px);

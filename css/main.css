@@ -1293,16 +1293,7 @@ input:-webkit-autofill {
     color: #bb0a21;
   }
   nav ul li::after {
-    left: 50%;
-    -webkit-transition: width .2s ease, left .3s ease;
-    transition: width .2s ease, left .3s ease;
-  }
-  nav ul li:hover::after {
-    width: 0;
-  }
-  nav ul li:active::after {
-    left: 0;
-    width: 100%;
+    display: none;
   }
   .hero-header {
     left: calc(-15vw + 5px);
