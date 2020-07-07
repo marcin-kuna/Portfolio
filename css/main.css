@@ -1291,8 +1291,8 @@ input:-webkit-autofill {
   }
   nav ul li::after {
     left: 50%;
-    -webkit-transition: width .2s ease;
-    transition: width .2s ease;
+    -webkit-transition: width .2s ease, left .3s ease;
+    transition: width .2s ease, left .3s ease;
   }
   nav ul li:hover::after {
     width: 0;

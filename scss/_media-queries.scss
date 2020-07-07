@@ -47,7 +47,7 @@
 
     nav ul li::after {
         left: 50%;
-        transition: width .2s ease;
+        transition: width .2s ease, left .3s ease;
     }
 
     nav ul li:hover::after {
