@@ -230,3 +230,9 @@ section {
         padding-right: 5px;
     }
 }
+
+// Mobile - no 'blue' tap
+
+button, a{
+    -webkit-tap-highlight-color: transparent;
+}
