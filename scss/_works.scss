@@ -1,14 +1,51 @@
 .works {
-    height: 185vh;
+    height: calc(75vw + 100px);
 
     .inner-wrapper {
         // align-items: center;
         // display: flex;
         flex-direction: row;
+
+
+        // background-color: yellow;
     }
 
     a {
         color: inherit;
+    }
+}
+
+.works-left {
+    width: 50%;
+
+    .project.animate-on-scroll {
+        opacity: 0;
+        transform: translateX(-60px);
+        transition: transform 1s ease .5s,
+                    opacity 1s ease .5s;
+
+        &.is-visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+
+.works-right {
+    width: 50%;
+    position: relative;
+    top: 15vw;
+
+    .project.animate-on-scroll {
+        opacity: 0;
+        transform: translateX(60px);
+        transition: transform 1s ease .5s,
+                    opacity 1s ease .5s;
+
+        &.is-visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 }
 
@@ -17,6 +54,8 @@
     height: 30vw;
     width: calc(100% - 1px);
     position: relative;
+
+    // background-color: #000;
 }
 
 .project {
@@ -71,7 +110,7 @@
         left: 0;
         transform: translateY(-50px);
         opacity: 0;
-        transition: all 1s ease;
+        transition: transform 1s ease, opacity .5s ease;
 
         img {
             width: 100%;
@@ -97,40 +136,6 @@
         }
     }
 
-}
-
-.works-left {
-    width: 50%;
-
-    .project.animate-on-scroll {
-        opacity: 0;
-        transform: translateX(-60px);
-        transition: transform 1s ease .5s,
-                    opacity 1s ease .5s;
-
-        &.is-visible {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-}
-
-.works-right {
-    width: 50%;
-    position: relative;
-    top: 15vw;
-
-    .project.animate-on-scroll {
-        opacity: 0;
-        transform: translateX(60px);
-        transition: transform 1s ease .5s,
-                    opacity 1s ease .5s;
-
-        &.is-visible {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
 }
 
 .project-open {

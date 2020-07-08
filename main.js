@@ -103,7 +103,7 @@ function easeInOutQuad(t, b, c, d) {
 
 const projects = document.querySelectorAll('.project-wrapper')
 
-
+// WORKS
 
 projects.forEach((element) => {
     
@@ -129,7 +129,7 @@ projects.forEach((element) => {
             document.documentElement.style.overflow = 'hidden';  // firefox, chrome
             document.body.scroll = "no"; // ie only
         } else {
-            element.style.top = '0'
+            element.style.top = 'auto'
             menuBtn.classList.remove('menu-btn-hidden')
             // menuBtn.style.visibility = 'visible'
             document.documentElement.style.overflow = 'initial';  // firefox, chrome

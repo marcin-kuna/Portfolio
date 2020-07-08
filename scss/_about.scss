@@ -10,9 +10,21 @@
         // background-color: green;
     }
 
-    .inner-left, .inner-right {
-        // height: 25%;
-        // width: 100%;
+    &-left {
+        position: relative;
+    
+        &-text {
+            padding-left: 5px;
+        }
+    }
+    
+    &-right {
+        position: relative;
+        text-align: end;
+    
+        &-text {
+            padding-right: 5px;
+        }
     }
 
     p {

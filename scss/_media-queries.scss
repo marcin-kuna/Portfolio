@@ -11,23 +11,10 @@
     section {
         height: 180vh;
     }
-
-    .works {
-        height: 250vh;
-    }
+    
 }
 
-@media (max-width: 1279px) {
-
-    // HEADER & NAV
-    // Temporary fix for 'sticky hover' on touchscreens
-    .nav-link:active {
-        color: $accent-color;
-    }
-
-    nav ul li::after {
-        display: none;
-    }
+@media (max-width: 1280px) {
 
     // ABOUT
     .about {
@@ -41,16 +28,40 @@
             height: 65px;
         }
     }
+}
+
+@media (max-width: 1199px) {
+
+    // HEADER & NAV
+    // Temporary fix for 'sticky hover' on touchscreens
+    .nav-link:active {
+        color: $accent-color;
+    }
+
+    nav ul li::after {
+        display: none;
+    }
 
     // WORKS
     .works {
-        background-color: blue;
-        height: 160vh;
+        // background-color: blue;
+        // height: 160vh;
     }
 
-    .works .inner-wrapper {
-        height: 90%;
-        top: 5%;
+    .project h4 {
+        opacity: 1;
+    }
+
+    .project-image {
+        transform: translateY(0);
+        opacity: 1;
+        transition: none;
+        
+    }
+    
+    .project-image img {
+        opacity: .7;
+        transition: none;
     }
 
 }
@@ -67,8 +78,8 @@
 
     // WORKS
     .works {
-        background-color: green;
-        height: 140vh;
+        // background-color: green;
+        // height: 140vh;
     }
 
 
@@ -77,13 +88,11 @@
 @media (max-width: 768px) {
 
     // BASE
-
     .index-text {
         font-size: 14px;
     }
 
     // HERO
-
     .hero-header h1{
         font-size: 80px;
     }
@@ -98,7 +107,6 @@
     }
 
     // ABOUT
-
     .about {    
         p {
             font-size: 22px;
@@ -112,7 +120,6 @@
     }
 
     // WORKS
-
     .works {
         background-color: #fff;
     }
@@ -123,6 +130,47 @@
 
     .project-info-headers h4 {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 599px) {
+    .works {
+        height: calc(240vw + 100px);
+    }
+
+    .works .inner-wrapper {
+        display: block;
+    }
+    
+    .works .works-right {
+        top: 0;
+        width: 100%;
+        height: 50%;
+    }
+    
+    .works .works-left {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .project-wrapper {
+        // width: 100%;
+        height: 50%;
+        // margin-bottom: 20px;
+    }
+
+    .project-2 {
+        top: -60vw;
+    }
+
+    .project-3 {
+        top: 60vw;
+    }
+    
+    // powtórzenie z works.scss konieczne do poprawnego wyświetlania tekstu ???
+    .project-open {
+        width: 100vw;
+        height: 100vh; 
     }
 }
 
@@ -194,95 +242,3 @@
     }
 }
 
-
-
-
-
-
-@mixin for-phone {
-    @media (max-width: 599px) { @content; }
-  }
-@mixin for-tablet-portrait {
-    @media (max-width: 768px) { @content; }
-}
-@mixin for-tablet-landscape {
-    @media (max-width: 1000px) { @content; }
-}
-@mixin for-desktop {
-    @media (max-width: 1200px) { @content; }
-}
-@mixin for-big-desktop{
-    @media (max-width: 1800px) { @content; }
-}
-
-
-.works {
-
-    // @include for-desktop {
-    //     height: 170vh;
-    // }
-
-    // @include for-tablet-landscape {
-    //     height: 130vh;
-    // }
-
-    // @include for-tablet-portrait {
-    //     height: 100vh;
-    // }
-
-    // @include for-phone {
-    //     height: 250vh;
-    // }
-}
-
-.works .inner-wrapper {
-    @include for-phone {
-        display: block;
-        // background-color: #fff;
-    }
-}
-
-.works .works-right {
-    @include for-phone {
-        top: 0;
-        width: 100%;
-        height: 50%;
-    }
-}
-
-.works .works-left {
-    @include for-phone {
-        width: 100%;
-        height: 50%;
-    }
-}
-
-.project-wrapper {
-    @include for-phone {
-        // width: 100%;
-        height: 50%;
-    }
-}
-
-// powtórzenie z works.scss konieczne do poprawnego wyświetlania tekstu
-.project-open {
-    @include for-phone {
-        width: 100vw;
-    height: 100vh;
-    }
-}
-
-.project-image {
-    @include for-phone {
-        transform: translateY(0);
-        opacity: 1;
-        transition: none;
-    }
-}
-
-.project-image img {
-    @include for-phone {
-        opacity: 1;
-        transition: none;
-    }
-}
