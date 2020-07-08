@@ -127,8 +127,9 @@ section {
 .bookmark {
   height: 30px;
   position: absolute;
-  top: calc(5vh - 10px);
+  top: 0;
   left: 0;
+  white-space: nowrap;
 }
 
 .bookmark-color {
@@ -570,10 +571,6 @@ h1.pseudo-header span {
   opacity: 0;
 }
 
-.about {
-  height: 120vh;
-}
-
 .about p {
   font-family: 'Fira Sans Extra Condensed', sans-serif;
   text-transform: uppercase;
@@ -603,10 +600,6 @@ h1.pseudo-header span {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
-}
-
-.tech-logos {
-  padding-top: 20px;
 }
 
 .tech-logos img {
@@ -1265,9 +1258,19 @@ input:-webkit-autofill {
   margin-bottom: 8px;
 }
 
+@media (max-width: 1199px) {
+  .about p {
+    font-size: 26px;
+  }
+  .tech-logos img {
+    height: 65px;
+  }
+}
+
 @media (max-width: 998px) {
   .about p {
     font-size: 24px;
+    white-space: normal;
   }
 }
 

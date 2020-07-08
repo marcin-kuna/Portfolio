@@ -6,14 +6,31 @@
     //     }
     // }
 
+@media (max-width: 1199px) {
+    // ABOUT
+
+    .about {
+        p {
+            font-size: 26px;
+        }
+    }
+
+    .tech-logos {
+        img {
+            height: 65px;
+        }
+    }
+
+}
+
 @media (max-width: 998px) {
     
     // ABOUT
 
     .about {
-    
         p {
             font-size: 24px;
+            white-space: normal;
         }
     }
 
@@ -21,8 +38,8 @@
 }
 
 @media (max-width: 768px) and (max-height: 575px) and (orientation: landscape) {
+
     .about {
-    
         height: 160vh;
     }
 }
@@ -58,15 +75,13 @@
 
     // ABOUT
 
-    .about {
-    
+    .about {    
         p {
             font-size: 22px;
         }
     }
 
     .tech-logos {
-    
         img {
             height: 60px;
         }

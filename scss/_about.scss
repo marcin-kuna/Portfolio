@@ -1,5 +1,19 @@
 .about {
-    height: 120vh;
+    // height: 120vh;
+
+    // background-color: #fff;
+
+    .inner-wrapper {
+        // top: 0;
+        // height: 100%;
+        // padding: 20px 0;
+        // background-color: green;
+    }
+
+    .inner-left, .inner-right {
+        // height: 25%;
+        // width: 100%;
+    }
 
     p {
         @include font-regular;
@@ -28,7 +42,7 @@
 
 .tech-logos {
 
-    padding-top: 20px;
+    // padding-top: 10px;
 
     img {
         height: 70px;
