@@ -6,6 +6,13 @@
     //     }
     // }
 
+@media (orientation: landscape) {
+
+    section {
+        height: 150vh;
+    }
+}
+
 @media (max-width: 1199px) {
     // ABOUT
 
@@ -37,12 +44,12 @@
 
 }
 
-@media (max-width: 768px) and (max-height: 575px) and (orientation: landscape) {
+// @media (max-width: 768px) and (max-height: 575px) and (orientation: landscape) {
 
-    .about {
-        height: 160vh;
-    }
-}
+//     .about {
+//         height: 160vh;
+//     }
+// }
 
 @media (max-width: 768px) {
 
@@ -96,24 +103,12 @@
 
 @media (max-width: 480px) {
 
-    // ::-webkit-scrollbar {
-    //     width: 0px !important;
-    //     display: none !important;
-    // }
-
     // HEADER & NAV
 
     .menu-btn {
         right: calc(12.5% - 29px);
         top: 15px;
     }
-
-    // .menu-btn-burger, 
-    // .menu-btn-burger::before,
-    // .menu-btn-burger::after {
-    //     width: 3px;
-    //     height: 30px;
-    // }
 
     section.menu-overlay .column-5 {     // For menu transformX
         z-index: 0;
