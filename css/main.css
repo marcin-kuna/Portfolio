@@ -1296,6 +1296,9 @@ input:-webkit-autofill {
   .about p {
     font-size: 22px;
   }
+  .tech-logos img {
+    height: 60px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1322,6 +1325,9 @@ input:-webkit-autofill {
   }
   .about p {
     font-size: 20px;
+  }
+  .tech-logos img {
+    height: 50px;
   }
 }
 
