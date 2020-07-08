@@ -105,10 +105,12 @@
 
     .menu-btn {
         right: calc(12.5% - 29px);
-        top: 30px;
+        top: 15px;
     }
 
-    .menu-btn-burger {
+    .menu-btn-burger, 
+    .menu-btn-burger::before,
+    .menu-btn-burger::after {
         width: 3px;
         height: 30px;
     }
