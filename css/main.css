@@ -1347,30 +1347,6 @@ input:-webkit-autofill {
   }
 }
 
-@media (max-width: 1200px) {
-  .works {
-    height: 170vh;
-  }
-}
-
-@media (max-width: 1000px) {
-  .works {
-    height: 130vh;
-  }
-}
-
-@media (max-width: 768px) {
-  .works {
-    height: 100vh;
-  }
-}
-
-@media (max-width: 599px) {
-  .works {
-    height: 250vh;
-  }
-}
-
 @media (max-width: 599px) {
   .works .inner-wrapper {
     display: block;

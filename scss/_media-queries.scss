@@ -197,24 +197,21 @@
 
 .works {
 
-    @include for-desktop {
-        // background-color: green;
-        height: 170vh;
-    }
+    // @include for-desktop {
+    //     height: 170vh;
+    // }
 
-    @include for-tablet-landscape {
-        // background-color: blue;
-        height: 130vh;
-    }
+    // @include for-tablet-landscape {
+    //     height: 130vh;
+    // }
 
-    @include for-tablet-portrait {
-        // background-color: yellow;
-        height: 100vh;
-    }
+    // @include for-tablet-portrait {
+    //     height: 100vh;
+    // }
 
-    @include for-phone {
-        height: 250vh;
-    }
+    // @include for-phone {
+    //     height: 250vh;
+    // }
 }
 
 .works .inner-wrapper {
