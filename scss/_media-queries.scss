@@ -55,6 +55,15 @@
     .hero-header h1:nth-of-type(3) {
         margin: 15px 0 15px 0;
     }
+
+    // ABOUT
+
+    .about {
+    
+        p {
+            font-size: 22px;
+        }
+    }
 }
 
 @media (max-width: 480px) {
@@ -98,6 +107,15 @@
 
     .hero-header h1{
         font-size: 70px;
+    }
+
+    // ABOUT
+
+    .about {
+    
+        p {
+            font-size: 20px;
+        }
     }
 }
 

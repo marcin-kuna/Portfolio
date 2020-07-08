@@ -1293,6 +1293,9 @@ input:-webkit-autofill {
   .hero-header h1:nth-of-type(3) {
     margin: 15px 0 15px 0;
   }
+  .about p {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1316,6 +1319,9 @@ input:-webkit-autofill {
   }
   .hero-header h1 {
     font-size: 70px;
+  }
+  .about p {
+    font-size: 20px;
   }
 }
 
