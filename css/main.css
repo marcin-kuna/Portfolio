@@ -570,6 +570,10 @@ h1.pseudo-header span {
   opacity: 0;
 }
 
+.about {
+  height: 120vh;
+}
+
 .about p {
   font-family: 'Fira Sans Extra Condensed', sans-serif;
   text-transform: uppercase;
@@ -1259,6 +1263,12 @@ input:-webkit-autofill {
 
 .button-up:hover img {
   margin-bottom: 8px;
+}
+
+@media (max-width: 998px) {
+  .about p {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 768px) {
