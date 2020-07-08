@@ -20,6 +20,13 @@
 
 }
 
+@media (max-width: 768px) and (max-height: 575px) and (orientation: landscape) {
+    .about {
+    
+        height: 160vh;
+    }
+}
+
 @media (max-width: 768px) {
 
     // HEADER & NAV
