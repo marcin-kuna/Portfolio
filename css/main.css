@@ -1331,6 +1331,12 @@ input:-webkit-autofill {
   }
 }
 
+@media (max-width: 375px) {
+  .tech-logos img {
+    height: 45px;
+  }
+}
+
 @media (max-width: 1200px) {
   .works {
     height: 170vh;
