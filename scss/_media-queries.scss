@@ -6,7 +6,7 @@
     //     }
     // }
 
-@media (orientation: landscape) {
+@media (max-width: 480px) and (orientation: landscape) {
 
     section {
         height: 180vh;
@@ -17,9 +17,19 @@
     }
 }
 
-@media (max-width: 1199px) {
-    // ABOUT
+@media (max-width: 1279px) {
 
+    // HEADER & NAV
+    // Temporary fix for 'sticky hover' on touchscreens
+    .nav-link:active {
+        color: $accent-color;
+    }
+
+    nav ul li::after {
+        display: none;
+    }
+
+    // ABOUT
     .about {
         p {
             font-size: 26px;
@@ -32,12 +42,22 @@
         }
     }
 
+    // WORKS
+    .works {
+        background-color: blue;
+        height: 160vh;
+    }
+
+    .works .inner-wrapper {
+        height: 90%;
+        top: 5%;
+    }
+
 }
 
-@media (max-width: 998px) {
+@media (max-width: 1024px) {
     
     // ABOUT
-
     .about {
         p {
             font-size: 24px;
@@ -45,15 +65,14 @@
         }
     }
 
+    // WORKS
+    .works {
+        background-color: green;
+        height: 140vh;
+    }
+
 
 }
-
-// @media (max-width: 768px) and (max-height: 575px) and (orientation: landscape) {
-
-//     .about {
-//         height: 160vh;
-//     }
-// }
 
 @media (max-width: 768px) {
 
@@ -61,18 +80,6 @@
 
     .index-text {
         font-size: 14px;
-    }
-
-    // HEADER & NAV
-
-    // Temporary fix for 'sticky hover' on touchscreens
-
-    .nav-link:active {
-        color: $accent-color;
-    }
-
-    nav ul li::after {
-        display: none;
     }
 
     // HERO
@@ -102,6 +109,20 @@
         img {
             height: 60px;
         }
+    }
+
+    // WORKS
+
+    .works {
+        background-color: #fff;
+    }
+
+    .project-info-headers h2 {
+        font-size: 100px;
+    }
+
+    .project-info-headers h4 {
+        font-size: 20px;
     }
 }
 
@@ -217,6 +238,7 @@
 .works .inner-wrapper {
     @include for-phone {
         display: block;
+        // background-color: #fff;
     }
 }
 

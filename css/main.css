@@ -608,7 +608,7 @@ h1.pseudo-header span {
 }
 
 .works {
-  height: 190vh;
+  height: 185vh;
 }
 
 .works .inner-wrapper {
@@ -1105,6 +1105,15 @@ form div button {
   margin: 1rem 0;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 input:-webkit-autofill,
@@ -1258,7 +1267,7 @@ input:-webkit-autofill {
   margin-bottom: 8px;
 }
 
-@media (orientation: landscape) {
+@media (max-width: 480px) and (orientation: landscape) {
   section {
     height: 180vh;
   }
@@ -1267,31 +1276,43 @@ input:-webkit-autofill {
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1279px) {
+  .nav-link:active {
+    color: #bb0a21;
+  }
+  nav ul li::after {
+    display: none;
+  }
   .about p {
     font-size: 26px;
   }
   .tech-logos img {
     height: 65px;
   }
+  .works {
+    background-color: blue;
+    height: 160vh;
+  }
+  .works .inner-wrapper {
+    height: 90%;
+    top: 5%;
+  }
 }
 
-@media (max-width: 998px) {
+@media (max-width: 1024px) {
   .about p {
     font-size: 24px;
     white-space: normal;
+  }
+  .works {
+    background-color: green;
+    height: 140vh;
   }
 }
 
 @media (max-width: 768px) {
   .index-text {
     font-size: 14px;
-  }
-  .nav-link:active {
-    color: #bb0a21;
-  }
-  nav ul li::after {
-    display: none;
   }
   .hero-header h1 {
     font-size: 80px;
@@ -1307,6 +1328,15 @@ input:-webkit-autofill {
   }
   .tech-logos img {
     height: 60px;
+  }
+  .works {
+    background-color: #fff;
+  }
+  .project-info-headers h2 {
+    font-size: 100px;
+  }
+  .project-info-headers h4 {
+    font-size: 20px;
   }
 }
 
