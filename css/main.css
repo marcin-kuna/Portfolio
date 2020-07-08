@@ -1310,6 +1310,11 @@ input:-webkit-autofill {
 @media (max-width: 480px) {
   .menu-btn {
     right: calc(12.5% - 29px);
+    top: 30px;
+  }
+  .menu-btn-burger {
+    width: 3px;
+    height: 30px;
   }
   section.menu-overlay .column-5 {
     z-index: 0;
