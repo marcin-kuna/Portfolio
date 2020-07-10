@@ -1,5 +1,5 @@
 .works {
-    height: calc(75vw + 100px);
+    height: calc(75vw + 100px); //
 
     a {
         color: inherit;
@@ -8,14 +8,18 @@
 
 .works-top {
     width: 100%;
-    height: 50%;
+    height: 45vw;
     display: flex;
+    // background-color: yellow;
 }
 
 .works-bottom {
     width: 100%;
-    height: 50%;
+    height: 45vw;
     display: flex;
+    position: absolute;
+    bottom: 50px; //inner-wrapper padding
+    // background-color: blue;
 }
 
 .project-wrapper {
@@ -23,6 +27,7 @@
     height: 30vw;
     width: calc(50% - 1px);
     position: relative;
+    // background-color: #000;
 }
 
 .project-wrapper-right {

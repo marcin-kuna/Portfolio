@@ -618,7 +618,7 @@ h1.pseudo-header span {
 
 .works-top {
   width: 100%;
-  height: 50%;
+  height: 45vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -626,10 +626,12 @@ h1.pseudo-header span {
 
 .works-bottom {
   width: 100%;
-  height: 50%;
+  height: 45vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  bottom: 50px;
 }
 
 .project-wrapper {
@@ -1369,6 +1371,7 @@ input:-webkit-autofill {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: static;
   }
   .works .works-bottom, .project-wrapper-right {
     margin-top: 25px;
@@ -1385,6 +1388,9 @@ input:-webkit-autofill {
 }
 
 @media (max-width: 480px) {
+  .index-text {
+    font-size: 12px;
+  }
   .menu-btn {
     right: calc(12.5% - 29px);
     top: 15px;

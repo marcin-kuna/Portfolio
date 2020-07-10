@@ -152,6 +152,7 @@
         width: 100%;
         height: 50%;
         flex-direction: column;
+        position: static;
     }
 
     .works .works-bottom, .project-wrapper-right {
@@ -181,6 +182,11 @@
 }
 
 @media (max-width: 480px) {
+
+    // BASE
+    .index-text {
+        font-size: 12px;
+    }
 
     // HEADER & NAV
 
