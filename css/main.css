@@ -1434,6 +1434,7 @@ input:-webkit-autofill {
   }
   .project-open .project-info .project-info-details {
     height: calc(100% - (25vw + 20px));
+    background-color: yellow;
   }
   .works .index-text {
     font-size: 18px;
