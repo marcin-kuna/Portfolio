@@ -1388,9 +1388,6 @@ input:-webkit-autofill {
 }
 
 @media (max-width: 480px) {
-  .index-text {
-    font-size: 12px;
-  }
   .menu-btn {
     right: calc(12.5% - 29px);
     top: 15px;
@@ -1418,6 +1415,13 @@ input:-webkit-autofill {
   }
   .tech-logos img {
     height: 50px;
+  }
+  .index-text {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .index-text span {
+    display: none;
   }
 }
 
