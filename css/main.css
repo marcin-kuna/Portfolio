@@ -612,64 +612,38 @@ h1.pseudo-header span {
   height: calc(75vw + 100px);
 }
 
-.works .inner-wrapper {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .works a {
   color: inherit;
 }
 
-.works-left {
-  width: 50%;
+.works-top {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.works-left .project.animate-on-scroll {
-  opacity: 0;
-  -webkit-transform: translateX(-60px);
-          transform: translateX(-60px);
-  -webkit-transition: opacity 1s ease .5s, -webkit-transform 1s ease .5s;
-  transition: opacity 1s ease .5s, -webkit-transform 1s ease .5s;
-  transition: transform 1s ease .5s, opacity 1s ease .5s;
-  transition: transform 1s ease .5s, opacity 1s ease .5s, -webkit-transform 1s ease .5s;
-}
-
-.works-left .project.animate-on-scroll.is-visible {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
-.works-right {
-  width: 50%;
-  position: relative;
-  top: 15vw;
-}
-
-.works-right .project.animate-on-scroll {
-  opacity: 0;
-  -webkit-transform: translateX(60px);
-          transform: translateX(60px);
-  -webkit-transition: opacity 1s ease .5s, -webkit-transform 1s ease .5s;
-  transition: opacity 1s ease .5s, -webkit-transform 1s ease .5s;
-  transition: transform 1s ease .5s, opacity 1s ease .5s;
-  transition: transform 1s ease .5s, opacity 1s ease .5s, -webkit-transform 1s ease .5s;
-}
-
-.works-right .project.animate-on-scroll.is-visible {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+.works-bottom {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .project-wrapper {
   z-index: 1;
   height: 30vw;
-  width: calc(100% - 1px);
+  width: calc(50% - 1px);
   position: relative;
+}
+
+.project-wrapper-right {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 .project {
@@ -772,6 +746,38 @@ h1.pseudo-header span {
 
 .project:hover .project-image img {
   opacity: .5;
+}
+
+.project.animate-on-scroll {
+  opacity: 0;
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+  -webkit-transition: opacity 1s ease .5s, -webkit-transform 1s ease .5s;
+  transition: opacity 1s ease .5s, -webkit-transform 1s ease .5s;
+  transition: transform 1s ease .5s, opacity 1s ease .5s;
+  transition: transform 1s ease .5s, opacity 1s ease .5s, -webkit-transform 1s ease .5s;
+}
+
+.project.animate-on-scroll.is-visible {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.project-right.animate-on-scroll {
+  opacity: 0;
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
+  -webkit-transition: opacity 1s ease .5s, -webkit-transform 1s ease .5s;
+  transition: opacity 1s ease .5s, -webkit-transform 1s ease .5s;
+  transition: transform 1s ease .5s, opacity 1s ease .5s;
+  transition: transform 1s ease .5s, opacity 1s ease .5s, -webkit-transform 1s ease .5s;
+}
+
+.project-right.animate-on-scroll.is-visible {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .project-open {
@@ -1335,9 +1341,6 @@ input:-webkit-autofill {
   .tech-logos img {
     height: 60px;
   }
-  .works {
-    background-color: #fff;
-  }
   .project-info-headers h2 {
     font-size: 100px;
   }
@@ -1348,32 +1351,36 @@ input:-webkit-autofill {
 
 @media (max-width: 599px) {
   .works {
-    height: calc(240vw + 100px);
+    height: calc(240vw + 175px);
   }
-  .works .inner-wrapper {
-    display: block;
-  }
-  .works .works-right {
+  .works .works-top {
     top: 0;
     width: 100%;
     height: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .works .works-left {
+  .works .works-bottom {
     width: 100%;
     height: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .works .works-bottom, .project-wrapper-right {
+    margin-top: 25px;
   }
   .project-wrapper {
+    width: 100%;
     height: 50%;
-  }
-  .project-2 {
-    top: -60vw;
-  }
-  .project-3 {
-    top: 60vw;
   }
   .project-open {
     width: 100vw;
     height: 100vh;
+    margin-top: 0;
   }
 }
 

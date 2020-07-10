@@ -110,13 +110,13 @@ projects.forEach((element) => {
 
     element.addEventListener('click', () => {
         
-        
+        // element.classList.toggle('project-open')
         // if(element.matches('.project-open')) {
-            //     element.requestFullscreen()
-            // } else {
-                //     document.exitFullscreen()
-                // }
-                // disableScrolling()
+        //         element.requestFullscreen()
+        //     } else {
+        //             document.exitFullscreen()
+        //         }
+        //         disableScrolling()
 
         element.classList.toggle('project-open')
         let y = window.pageYOffset;
@@ -129,7 +129,7 @@ projects.forEach((element) => {
             document.documentElement.style.overflow = 'hidden';  // firefox, chrome
             document.body.scroll = "no"; // ie only
         } else {
-            element.style.top = 'auto'
+            element.style.top = 'initial'
             menuBtn.classList.remove('menu-btn-hidden')
             // menuBtn.style.visibility = 'visible'
             document.documentElement.style.overflow = 'initial';  // firefox, chrome
