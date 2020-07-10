@@ -1294,11 +1294,14 @@ input:-webkit-autofill {
   .project-open .project-info .project-info-headers {
     height: 25%;
   }
-  .project-open .project-info .project-info-headers h4 {
-    padding-top: 5px;
-  }
   .project-open .project-info .project-info-details {
     height: 75%;
+  }
+  .project-open .project-info .project-info-details p {
+    padding: 5px;
+  }
+  .project-open .project-info .project-info-details img {
+    margin: 5px;
   }
 }
 

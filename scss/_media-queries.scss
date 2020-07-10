@@ -32,14 +32,18 @@
     // WORKS
     .project-open .project-info .project-info-headers {
         height: 25%;
-
-        h4 {
-            padding-top: 5px;
-        }
     }
 
     .project-open .project-info .project-info-details {
         height: 75%;
+
+        p {
+            padding: 5px;
+        }
+
+        img {
+            margin: 5px;
+        }
     }
 
 }
