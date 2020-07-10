@@ -1418,6 +1418,7 @@ input:-webkit-autofill {
   }
   .tech-logos img {
     height: 50px;
+    padding: 3px;
   }
   .works .index-text {
     font-size: 18px;
