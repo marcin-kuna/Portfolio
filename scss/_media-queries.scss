@@ -121,67 +121,8 @@
     }
 }
 
-@media (max-width: 599px) { //MOBILE
-
-    // WORKS
-    .works {
-        height: calc(240vw + 175px); // 4 x 60vw project + inner-wrapper padding top&bottom + 3 x project margin
-    }
-    
-    .works .works-top {
-        top: 0;
-        width: 100%;
-        height: 50%;
-        flex-direction: column;
-        // background-color: yellow;
-    }
-    
-    .works .works-bottom {
-        width: 100%;
-        height: 50%;
-        flex-direction: column;
-        position: static;
-    }
-
-    .works .works-bottom, .project-wrapper-right {
-        margin-top: 25px;
-    }
-    
-    .project-wrapper {
-        width: 100%;
-        height: 50%;
-        // margin-bottom: 20px;
-    }
-    
-    // powtórzenie z works.scss konieczne do poprawnego wyświetlania tekstu ???
-    .project-open {
-        width: 100vw;
-        height: 100vh;
-        margin-top: 0; // .project-wrapper-right overwrite
-    }
-
-    .project-open .project-image img{
-        position: absolute;
-        left: 25%;
-        top: 20px;
-        // opacity: .7;
-    }
-
-    .project-open .project-info {
-        left: 0;
-        width: 100%;
-    }
-
-    .project-open .project-info .project-info-headers {
-        position: absolute;
-        top: calc(25vw + 20px);
-        transform: translateY(-50%);
-
-        h2, h4 {
-            // color: $primary-color;
-        }
-    }
-}
+// @media (max-width: 599px) {
+// }
 
 @media (max-width: 480px) {
 
@@ -238,6 +179,64 @@
     }
 
     // WORKS
+    .works {
+        height: calc(240vw + 175px); // 4 x 60vw project + inner-wrapper padding top&bottom + 3 x project margin
+    }
+    
+    .works .works-top {
+        top: 0;
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+        // background-color: yellow;
+    }
+    
+    .works .works-bottom {
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+        position: static;
+    }
+
+    .works .works-bottom, .project-wrapper-right {
+        margin-top: 25px;
+    }
+    
+    .project-wrapper {
+        width: 100%;
+        height: 50%;
+        // margin-bottom: 20px;
+    }
+    
+    // powtórzenie z works.scss konieczne do poprawnego wyświetlania tekstu ???
+    .project-open {
+        width: 100vw;
+        height: 100vh;
+        margin-top: 0; // .project-wrapper-right overwrite
+    }
+
+    .project-open .project-image img{
+        position: absolute;
+        left: 25%;
+        top: 20px;
+        // opacity: .7;
+    }
+
+    .project-open .project-info {
+        left: 0;
+        width: 100%;
+    }
+
+    .project-open .project-info .project-info-headers {
+        position: absolute;
+        top: calc(25vw + 20px);
+        transform: translateY(-50%);
+
+        h2, h4 {
+            color: $primary-color;
+        }
+    }
+
     .works {
         .index-text {
             font-size: 18px;

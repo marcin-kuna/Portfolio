@@ -1357,7 +1357,36 @@ input:-webkit-autofill {
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 480px) {
+  .menu-btn {
+    right: calc(12.5% - 29px);
+    top: 15px;
+  }
+  section.menu-overlay .column-5 {
+    z-index: 0;
+  }
+  section.menu-overlay .column-4, section.menu-overlay .column-3 {
+    z-index: 20;
+  }
+  nav {
+    left: calc(-15vw + 5px);
+  }
+  .nav-link {
+    font-size: 70px;
+  }
+  .hero-header {
+    left: calc(-15vw + 5px);
+  }
+  .hero-header h1 {
+    font-size: 70px;
+  }
+  .about p {
+    font-size: 20px;
+  }
+  .tech-logos img {
+    height: 50px;
+    padding: 3px;
+  }
   .works {
     height: calc(240vw + 175px);
   }
@@ -1406,37 +1435,8 @@ input:-webkit-autofill {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
-}
-
-@media (max-width: 480px) {
-  .menu-btn {
-    right: calc(12.5% - 29px);
-    top: 15px;
-  }
-  section.menu-overlay .column-5 {
-    z-index: 0;
-  }
-  section.menu-overlay .column-4, section.menu-overlay .column-3 {
-    z-index: 20;
-  }
-  nav {
-    left: calc(-15vw + 5px);
-  }
-  .nav-link {
-    font-size: 70px;
-  }
-  .hero-header {
-    left: calc(-15vw + 5px);
-  }
-  .hero-header h1 {
-    font-size: 70px;
-  }
-  .about p {
-    font-size: 20px;
-  }
-  .tech-logos img {
-    height: 50px;
-    padding: 3px;
+  .project-open .project-info .project-info-headers h2, .project-open .project-info .project-info-headers h4 {
+    color: #e8eddf;
   }
   .works .index-text {
     font-size: 18px;
