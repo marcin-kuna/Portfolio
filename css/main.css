@@ -1291,17 +1291,11 @@ input:-webkit-autofill {
   .tech-logos img {
     height: 65px;
   }
-  .project-open .project-info .project-info-headers {
-    height: 25%;
-  }
-  .project-open .project-info .project-info-details {
-    height: 75%;
-  }
   .project-open .project-info .project-info-details p {
-    padding: 5px;
+    padding: 10px;
   }
   .project-open .project-info .project-info-details img {
-    margin: 5px;
+    margin: 10px;
   }
 }
 
