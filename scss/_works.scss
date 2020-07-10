@@ -1,5 +1,5 @@
 .works {
-    height: calc(75vw + 100px); //
+    height: calc(75vw + 100px); // 2.5 x 30vw project + inner-wrapper padding
 
     a {
         color: inherit;
@@ -25,7 +25,8 @@
 .project-wrapper {
     z-index: 1;
     height: 30vw;
-    width: calc(50% - 1px);
+    // width: calc(50% - 1px);
+    width: 50%;
     position: relative;
     // background-color: #000;
 }

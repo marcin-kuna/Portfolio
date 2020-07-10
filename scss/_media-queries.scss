@@ -30,7 +30,7 @@
     }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1199px) {    //TABLET
 
     // HEADER & NAV
     // Temporary fix for 'sticky hover' on touchscreens
@@ -42,12 +42,6 @@
         display: none;
     }
 
-    // WORKS
-    .works {
-        // background-color: blue;
-        // height: 160vh;
-    }
-
     .project h4 {
         opacity: 1;
     }
@@ -56,7 +50,6 @@
         transform: translateY(0);
         opacity: 1;
         transition: none;
-        
     }
     
     .project-image img {
@@ -64,6 +57,9 @@
         transition: none;
     }
 
+    .project:hover .project-image img {
+        opacity: .7;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -75,14 +71,6 @@
             white-space: normal;
         }
     }
-
-    // WORKS
-    .works {
-        // background-color: green;
-        // height: 140vh;
-    }
-
-
 }
 
 @media (max-width: 768px) {
@@ -120,10 +108,6 @@
     }
 
     // WORKS
-    .works {
-        // background-color: #fff;
-    }
-
     .project-info-headers h2 {
         font-size: 100px;
     }
@@ -133,13 +117,11 @@
     }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 599px) { //MOBILE
 
     // WORKS
     .works {
         height: calc(240vw + 175px); // 4 x 60vw project + inner-wrapper padding top&bottom + 3 x project margin
-
-        // background-color: pink;
     }
     
     .works .works-top {
@@ -233,6 +215,7 @@
     // WORKS
     .works {
         .index-text {
+            font-size: 18px;
             margin-bottom: 4px;
         }
     
