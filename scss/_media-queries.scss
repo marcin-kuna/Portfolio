@@ -216,9 +216,12 @@
     }
 
     .project-open .project-image img{
-        position: absolute;
-        left: 25%;
-        top: 20px;
+        display: none;
+
+        // position: absolute;
+        // left: 25%;
+        // top: 20px;
+
         // opacity: .7;
     }
 
@@ -229,7 +232,11 @@
 
     .project-open .project-info .project-info-headers {
 
-        display: none;
+        // display: none;
+
+
+
+
         // position: absolute;
         // top: calc(25vw + 20px);
         // transform: translateY(-50%);
@@ -240,8 +247,8 @@
     }
 
     .project-open .project-info .project-info-details {
-        height: calc(100% - (50vw + 20px));
-        background-color: yellow;
+        // height: calc(100% - (50vw + 20px));
+        // background-color: yellow;
     }
 
     .works {

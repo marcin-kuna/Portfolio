@@ -1421,20 +1421,11 @@ input:-webkit-autofill {
     margin-top: 0;
   }
   .project-open .project-image img {
-    position: absolute;
-    left: 25%;
-    top: 20px;
+    display: none;
   }
   .project-open .project-info {
     left: 0;
     width: 100%;
-  }
-  .project-open .project-info .project-info-headers {
-    display: none;
-  }
-  .project-open .project-info .project-info-details {
-    height: calc(100% - (50vw + 20px));
-    background-color: yellow;
   }
   .works .index-text {
     font-size: 18px;
