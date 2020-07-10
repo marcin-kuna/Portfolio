@@ -140,7 +140,6 @@
 }
 
 .project-open {
-
     position: fixed;
     left: 0;
     top: 0;
@@ -150,16 +149,13 @@
     // cursor: default !important;
 
     .project {
-        
         cursor: url(../img/close20.svg), auto !important;
     }
 
     &:hover .project-image{
-
         img {
             opacity: 1;
         }
-
     }
 
     h2, h4 {
@@ -195,7 +191,7 @@
         &-details {
             display: block;
             width: 100%;
-            height: 65%;
+            height: 70%;
             padding: 0 20px;
             position: absolute;
             left: 0;
@@ -240,15 +236,14 @@
         }
 
         &-btns {
-
             a {
                 text-decoration: none;
             }
 
-            img {
-                // filter: none;
-                // transition: filter 1s ease;
-            }
+            // img {
+            //     filter: none;
+            //     transition: filter 1s ease;
+            // }
                 
             img:hover{
                 filter: brightness(0) saturate(100%) invert(14%) sepia(99%) saturate(3113%) hue-rotate(341deg) brightness(90%) contrast(108%);

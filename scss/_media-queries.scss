@@ -60,6 +60,10 @@
     .project:hover .project-image img {
         opacity: .7;
     }
+
+    .project-open:hover .project-image img {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -154,6 +158,28 @@
         width: 100vw;
         height: 100vh;
         margin-top: 0; // .project-wrapper-right overwrite
+    }
+
+    .project-open .project-image img{
+        position: absolute;
+        left: 25%;
+        top: 20px;
+        // opacity: .7;
+    }
+
+    .project-open .project-info {
+        left: 0;
+        width: 100%;
+    }
+
+    .project-open .project-info .project-info-headers {
+        position: absolute;
+        top: calc(25vw + 20px);
+        transform: translateY(-50%);
+
+        h2, h4 {
+            // color: $primary-color;
+        }
     }
 }
 
