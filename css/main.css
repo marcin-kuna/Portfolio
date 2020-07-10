@@ -1416,11 +1416,11 @@ input:-webkit-autofill {
   .tech-logos img {
     height: 50px;
   }
-  .index-text {
+  .works .index-text {
     font-size: 18px;
     margin-bottom: 4px;
   }
-  .index-text span {
+  .works .index-text span {
     display: none;
   }
 }
