@@ -28,24 +28,6 @@
             height: 65px;
         }
     }
-
-    // WORKS
-    .project-open .project-info .project-info-headers {
-        // height: 25%;
-    }
-
-    .project-open .project-info .project-info-details {
-        // height: 75%;
-
-        p {
-            padding: 10px;
-        }
-
-        img {
-            margin: 10px;
-        }
-    }
-
 }
 
 @media (max-width: 1199px) {    //TABLET
@@ -235,17 +217,27 @@
 
     .project-open .project-image img{
         display: none;
-
-        // position: absolute;
-        // left: 25%;
-        // top: 20px;
-
-        // opacity: .7;
     }
 
     .project-open .project-info {
         left: 0;
         width: 100%;
+    }
+
+    .project-open .project-info .project-info-headers {
+        height: 20%;
+    }
+
+    .project-open .project-info .project-info-details {
+        height: 75%;
+
+        p {
+            padding: 10px;
+        }
+
+        img {
+            margin: 10px;
+        }
     }
 
     .works {
