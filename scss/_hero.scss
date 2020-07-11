@@ -1,8 +1,4 @@
 .hero-header {
-    // height: 50vh;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -10,14 +6,11 @@
     white-space: nowrap;
     pointer-events: none;
     z-index: 5;
-
-    // background-color: #fff;
 }
 
 .hero-header h1 {
     @include font-header;
     font-size: 100px;
-
     color: $text-color;
 }
 
