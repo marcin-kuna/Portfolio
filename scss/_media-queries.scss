@@ -34,6 +34,7 @@
         display: none;
     }
 
+    // WORKS
     .project h4 {
         opacity: 1;
     }
@@ -156,7 +157,6 @@
     }
 
     // ABOUT
-
     .about {
         p {
             font-size: 20px;
@@ -224,6 +224,14 @@
         height: 75%;
     }
 
+    .project-info-headers h2 {
+        font-size: 90px;
+    }
+
+    .project-info-headers h4 {
+        font-size: 18px;
+    }
+
     .works {
         .index-text {
             font-size: 18px;
@@ -271,21 +279,14 @@
     }
 
     .project-open .project-info .project-info-headers {
-        // width: 50%;
-        // height: 100%;
+        width: 50%;
+        height: 100%;
     }
 
     .project-open .project-info .project-info-details {
         width: 50%;
-        // height: 100%;
-        // left: 50%;
-    }
-
-    .project-open .project-info .project-info-details h5:nth-of-type(3) {
-        position: absolute;
-        top: 0;
-        left: 75vw;
-        transform: translateX(-50%);
+        height: 100%;
+        left: 50%;
     }
 }
 
