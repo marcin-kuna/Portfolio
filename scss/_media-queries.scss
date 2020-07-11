@@ -263,8 +263,7 @@
 
 @media (max-height: 480px) and (max-width: 768px) and (orientation: landscape) {
 
-    // BASE
-    section {
+    .about, .contact {
         height: 180vh;
     }
 
