@@ -1452,11 +1452,6 @@ input:-webkit-autofill {
   .about, .contact {
     height: 180vh;
   }
-  .hero-header {
-    top: 50px;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
   .hero-header h1 {
     font-size: 70px;
   }
