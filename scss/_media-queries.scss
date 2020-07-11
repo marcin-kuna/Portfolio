@@ -259,7 +259,9 @@
     }
 }
 
-@media (max-width: 480px) and (orientation: landscape) {
+// MOBILE LANDSCAPE
+
+@media (max-height: 480px) and (max-width: 768px) and (orientation: landscape) {
 
     // BASE
     section {
@@ -267,10 +269,6 @@
     }
 
     // HERO
-    .hero-header {
-        left: calc(-15vw + 5px);
-    }
-
     .hero-header h1{
         font-size: 70px;
     }
