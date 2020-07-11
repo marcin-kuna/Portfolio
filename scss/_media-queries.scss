@@ -287,10 +287,24 @@
         width: 70%;
         height: 100%;
         left: 30%;
+
+        img {
+            height: 36px;
+        }
+
+        a img {
+            width: 36px;
+            height: 36px;
+        }
     }
 
     .project-open .project-info .project-info-details h5 {
         font-size: 28px;
+
+        span {
+            width: 23px;
+            height: 23px;
+        }
     }
 
     .project-open .project-info .project-info-details p {

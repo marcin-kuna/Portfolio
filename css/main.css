@@ -1477,8 +1477,19 @@ input:-webkit-autofill {
     height: 100%;
     left: 30%;
   }
+  .project-open .project-info .project-info-details img {
+    height: 36px;
+  }
+  .project-open .project-info .project-info-details a img {
+    width: 36px;
+    height: 36px;
+  }
   .project-open .project-info .project-info-details h5 {
     font-size: 28px;
+  }
+  .project-open .project-info .project-info-details h5 span {
+    width: 23px;
+    height: 23px;
   }
   .project-open .project-info .project-info-details p {
     font-size: 18px;
