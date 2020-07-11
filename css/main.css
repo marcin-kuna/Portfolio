@@ -1449,16 +1449,15 @@ input:-webkit-autofill {
 }
 
 @media (max-height: 480px) and (max-width: 768px) and (orientation: landscape) {
-  .hero {
-    height: 150vh;
-  }
   .about, .contact {
     height: 180vh;
   }
-  .hero-header h1 {
-    top: 0;
+  .hero-header {
+    top: 50px;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+  .hero-header h1 {
     font-size: 70px;
   }
 }

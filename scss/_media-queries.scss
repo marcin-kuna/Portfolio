@@ -265,7 +265,7 @@
 
     // SECTIONS
     .hero {
-        height: 150vh;
+        // height: 150vh;
     }
 
     .about, .contact {
@@ -274,9 +274,12 @@
 
 
     // HERO
-    .hero-header h1{
-        top: 0;
+    .hero-header {
+        top: 50px;
         transform: translateY(0);
+    }
+
+    .hero-header h1{
         font-size: 70px;
     }
 }
