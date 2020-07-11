@@ -1449,6 +1449,9 @@ input:-webkit-autofill {
 }
 
 @media (max-height: 480px) and (max-width: 768px) and (orientation: landscape) {
+  .hero {
+    height: 150vh;
+  }
   .about, .contact {
     height: 180vh;
   }
