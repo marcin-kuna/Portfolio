@@ -1456,7 +1456,7 @@ input:-webkit-autofill {
     height: 180vh;
   }
   .hero-header h1 {
-    top: 50px;
+    top: 0;
     -webkit-transform: translateY(0);
             transform: translateY(0);
     font-size: 70px;
