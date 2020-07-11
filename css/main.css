@@ -1284,12 +1284,6 @@ input:-webkit-autofill {
   margin-bottom: 8px;
 }
 
-@media (max-width: 480px) and (orientation: landscape) {
-  section {
-    height: 180vh;
-  }
-}
-
 @media (max-width: 1280px) {
   .about p {
     font-size: 26px;
@@ -1451,6 +1445,15 @@ input:-webkit-autofill {
 @media (max-width: 375px) {
   .tech-logos img {
     height: 45px;
+  }
+}
+
+@media (max-height: 480px) and (max-width: 768px) and (orientation: landscape) {
+  section {
+    height: 180vh;
+  }
+  .hero-header h1 {
+    font-size: 70px;
   }
 }
 /*# sourceMappingURL=main.css.map */
