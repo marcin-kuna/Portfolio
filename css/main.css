@@ -1469,13 +1469,13 @@ input:-webkit-autofill {
     width: 100%;
   }
   .project-open .project-info .project-info-headers {
-    width: 50%;
+    width: 30%;
     height: 100%;
   }
   .project-open .project-info .project-info-details {
-    width: 50%;
+    width: 70%;
     height: 100%;
-    left: 50%;
+    left: 30%;
   }
   .project-open .project-info .project-info-details h5 {
     font-size: 28px;
