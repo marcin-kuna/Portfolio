@@ -1455,6 +1455,21 @@ input:-webkit-autofill {
   .hero-header h1 {
     font-size: 70px;
   }
+  .project-open .project-image img {
+    display: none;
+  }
+  .project-open .project-info {
+    left: 0;
+    width: 100%;
+  }
+  .project-open .project-info .project-info-headers {
+    width: 50%;
+    height: 100%;
+  }
+  .project-open .project-info .project-info-details {
+    width: 50%;
+    height: 100%;
+  }
 }
 
 @media (max-height: 375px) and (max-width: 768px) and (orientation: landscape) {
