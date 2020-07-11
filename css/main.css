@@ -1456,4 +1456,10 @@ input:-webkit-autofill {
     font-size: 70px;
   }
 }
+
+@media (max-height: 375px) and (max-width: 768px) and (orientation: landscape) {
+  .hero-header h1 {
+    font-size: 65px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

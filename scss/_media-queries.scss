@@ -274,3 +274,11 @@
     }
 }
 
+@media (max-height: 375px) and (max-width: 768px) and (orientation: landscape) {
+
+    // HERO
+    .hero-header h1{
+        font-size: 65px;
+    }
+}
+
