@@ -1469,6 +1469,7 @@ input:-webkit-autofill {
   .project-open .project-info .project-info-details {
     width: 50%;
     height: 100%;
+    right: 0;
   }
 }
 
