@@ -1456,6 +1456,9 @@ input:-webkit-autofill {
     height: 180vh;
   }
   .hero-header h1 {
+    top: 50px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     font-size: 70px;
   }
 }

@@ -267,7 +267,7 @@
     .hero {
         height: 150vh;
     }
-    
+
     .about, .contact {
         height: 180vh;
     }
@@ -275,6 +275,8 @@
 
     // HERO
     .hero-header h1{
+        top: 50px;
+        transform: translateY(0);
         font-size: 70px;
     }
 }
