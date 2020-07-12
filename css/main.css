@@ -1457,8 +1457,8 @@ input:-webkit-autofill {
     display: none;
   }
   .contact .inner-wrapper {
-    width: 90%;
-    left: 15%;
+    width: 80%;
+    left: 5%;
   }
   .contact .inner-wrapper .index {
     display: none;
@@ -1468,9 +1468,6 @@ input:-webkit-autofill {
   }
   .contact-header h2 {
     font-size: 50px;
-  }
-  form div button {
-    width: calc(75% - 20px);
   }
 }
 
