@@ -68,6 +68,19 @@
             white-space: normal;
         }
     }
+
+    // CONTACT
+    .contact-header h2{
+        font-size: 65px;
+    }
+    
+    .form-wrapper {
+        width: 90%;
+    }
+
+    form div button {
+        width: calc(50% - 20px);
+    }
 }
 
 @media (max-width: 768px) {
@@ -111,6 +124,34 @@
 
     .project-info-headers h4 {
         font-size: 20px;
+    }
+
+    // CONTACT
+    .contact-header {
+        height: 120px;
+    }
+
+    .contact-header h2{
+        font-size: 60px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contact-header h2:nth-of-type(1) {
+        top: 0;
+    }
+
+    .contact-header h2:nth-of-type(2) {
+        bottom: 0;
+    }
+
+    .form-wrapper {
+        width: 100%;
+    }
+
+    .contact {
+        background-color: #fff;
     }
 }
 
@@ -241,6 +282,15 @@
         .index-text span {
             display: none;
         }
+    }
+
+    // CONTACT
+    .contact-header h2{
+        font-size: 55px;
+    }
+
+    form div button {
+        width: calc(75% - 20px);
     }
 }
 
