@@ -1348,7 +1348,6 @@ input:-webkit-autofill {
   }
   .contact-header {
     height: 120px;
-    top: 30px;
   }
   .contact-header h2 {
     font-size: 60px;
@@ -1457,7 +1456,7 @@ input:-webkit-autofill {
   .works .index-text span {
     display: none;
   }
-  .contact .inneer-wrapper .index {
+  .contact .inner-wrapper .index {
     display: none;
   }
   form {
