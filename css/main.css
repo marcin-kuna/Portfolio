@@ -1365,9 +1365,6 @@ input:-webkit-autofill {
   .form-wrapper {
     width: 100%;
   }
-  .contact {
-    background-color: #fff;
-  }
 }
 
 @media (max-width: 480px) {
@@ -1458,6 +1455,9 @@ input:-webkit-autofill {
   }
   .works .index-text span {
     display: none;
+  }
+  form {
+    margin: 0 5px;
   }
   .contact-header h2 {
     font-size: 55px;

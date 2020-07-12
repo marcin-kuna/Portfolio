@@ -149,10 +149,6 @@
     .form-wrapper {
         width: 100%;
     }
-
-    .contact {
-        background-color: #fff;
-    }
 }
 
 // @media (max-width: 599px) {
@@ -285,6 +281,10 @@
     }
 
     // CONTACT
+    form {
+        margin: 0 5px;
+    }
+
     .contact-header h2{
         font-size: 55px;
     }
