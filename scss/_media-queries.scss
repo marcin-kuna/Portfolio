@@ -129,6 +129,7 @@
     // CONTACT
     .contact-header {
         height: 120px;
+        top: 30px;
     }
 
     .contact-header h2{
@@ -281,6 +282,10 @@
     }
 
     // CONTACT
+    .contact .inneer-wrapper .index {
+        display: none;
+    }
+
     form {
         margin: 0 5px;
     }
