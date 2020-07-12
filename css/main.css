@@ -1458,6 +1458,7 @@ input:-webkit-autofill {
   }
   .contact .inner-wrapper {
     width: 90%;
+    left: 15%;
   }
   .contact .inner-wrapper .index {
     display: none;
