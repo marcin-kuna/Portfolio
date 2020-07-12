@@ -1463,9 +1463,6 @@ input:-webkit-autofill {
   .contact .inner-wrapper .index {
     display: none;
   }
-  form {
-    margin: 0 5px;
-  }
   .contact-header {
     height: 100px;
   }
