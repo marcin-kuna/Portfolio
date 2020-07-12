@@ -321,14 +321,15 @@
 
 @media (max-height: 480px) and (max-width: 768px) and (orientation: landscape) {
 
-    // SECTIONS
-    .about, .contact {
-        height: 180vh;
-    }
-
+    
     // HERO
     .hero-header h1{
         font-size: 70px;
+    }
+    
+    // ABOUT
+    .about {
+        height: 180vh;
     }
 
     // WORKS
