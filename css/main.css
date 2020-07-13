@@ -1465,10 +1465,16 @@ input:-webkit-autofill {
   }
   .contact-header {
     height: 100px;
-    top: 20px;
+    top: 18px;
   }
   .contact-header h2 {
     font-size: 50px;
+  }
+  form div label {
+    font-size: 12px;
+  }
+  form div input, form div textarea, form div button {
+    font-size: 18px;
   }
   form div button {
     width: calc(75% - 20px);
@@ -1480,7 +1486,7 @@ input:-webkit-autofill {
     height: 45px;
   }
   .contact-header {
-    top: 10px;
+    top: 8px;
   }
   .button-up-wrapper {
     display: none;
