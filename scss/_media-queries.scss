@@ -326,12 +326,18 @@
         }
 
         &-left {
-            justify-content: center;
+            // justify-content: center;
             padding-right: 0;
         }
 
         &-right {
+            justify-content: flex-start;
+            align-items: center;
             padding-left: 0;
+        }
+
+        &-span-mobile {
+            display: none;
         }
     }
 }

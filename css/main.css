@@ -1489,13 +1489,19 @@ input:-webkit-autofill {
     height: 12.5px;
   }
   .footer-left {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     padding-right: 0;
   }
   .footer-right {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 0;
+  }
+  .footer-span-mobile {
+    display: none;
   }
 }
 
