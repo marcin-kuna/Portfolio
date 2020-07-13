@@ -1479,6 +1479,9 @@ input:-webkit-autofill {
   .tech-logos img {
     height: 45px;
   }
+  .contact-header {
+    top: 10px;
+  }
   .button-up-wrapper {
     display: none;
   }
