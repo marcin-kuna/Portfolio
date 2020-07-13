@@ -1496,18 +1496,16 @@ input:-webkit-autofill {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     padding-right: 0;
   }
   .footer-right {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     padding-left: 0;
   }
   .footer-span-mobile {
