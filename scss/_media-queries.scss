@@ -149,6 +149,11 @@
     .form-wrapper {
         width: 100%;
     }
+
+    // FOOTER
+    .footer-span-mobile {
+        display: none;
+    }
 }
 
 // @media (max-width: 599px) {
@@ -319,7 +324,7 @@
     .footer {
         bottom: 10px;
         flex-direction: column-reverse;
-        height: 36px;
+        height: 40px;
         justify-content: space-between;
 
         &-left, &-right {
@@ -338,10 +343,10 @@
             align-items: center;
             padding-left: 0;
         }
+    }
 
-        &-span-mobile {
-            display: none;
-        }
+    .button-up-wrapper {
+        display: none;
     }
 }
 
@@ -357,11 +362,6 @@
     // CONTACT
     .contact-header {
         top: 8px;
-    }
-
-    // FOOTER
-    .button-up-wrapper {
-        display: none;
     }
 }
 

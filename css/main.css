@@ -78,6 +78,10 @@
           box-sizing: border-box;
 }
 
+html, body {
+  max-height: 100%;
+}
+
 body {
   overflow-x: hidden;
   background: url("../img/bg-noise.png"), #e8eddf;
@@ -1363,6 +1367,9 @@ input:-webkit-autofill {
   .form-wrapper {
     width: 100%;
   }
+  .footer-span-mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1483,7 +1490,7 @@ input:-webkit-autofill {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    height: 36px;
+    height: 40px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1509,7 +1516,7 @@ input:-webkit-autofill {
             align-items: center;
     padding-left: 0;
   }
-  .footer-span-mobile {
+  .button-up-wrapper {
     display: none;
   }
 }
@@ -1520,9 +1527,6 @@ input:-webkit-autofill {
   }
   .contact-header {
     top: 8px;
-  }
-  .button-up-wrapper {
-    display: none;
   }
 }
 
