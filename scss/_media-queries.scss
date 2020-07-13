@@ -318,7 +318,7 @@
     // FOOTER
     .footer {
         bottom: 10px;
-        flex-direction: column;
+        flex-direction: column-reverse;
         height: 36px;
         justify-content: space-between;
 
@@ -328,13 +328,13 @@
         }
 
         &-left {
-            justify-self: flex-end;
+            justify-content: center;
             align-items: center;
             padding-right: 0;
         }
 
         &-right {
-            justify-self: flex-start;
+            justify-content: center;
             align-items: center;
             padding-left: 0;
         }
