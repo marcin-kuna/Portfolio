@@ -1482,7 +1482,7 @@ input:-webkit-autofill {
 
 @media (max-height: 480px) and (max-width: 768px) and (orientation: landscape) {
   .nav-link {
-    font-size: 70px;
+    font-size: 60px;
   }
   .about, .contact {
     height: 180vh;
