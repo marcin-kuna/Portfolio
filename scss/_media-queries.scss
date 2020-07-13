@@ -149,20 +149,20 @@
     .form-wrapper {
         width: 100%;
     }
-
-    // FOOTER
-    .footer-span-mobile {
-        display: none;
-    }
 }
 
 // @media (max-width: 599px) {
 // }
 
 @media (max-width: 480px) {
+    
+    // BODY
+    body {
+        background: none;
+        background-color: $primary-color;
+    }
 
     // HEADER & NAV
-
     .menu-btn {
         right: calc(12.5% - 29px);
         top: 15px;
@@ -342,6 +342,10 @@
             justify-content: center;
             align-items: center;
             padding-left: 0;
+        }
+
+        &-span-mobile {
+            display: none;
         }
     }
 

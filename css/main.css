@@ -78,10 +78,6 @@
           box-sizing: border-box;
 }
 
-html, body {
-  max-height: 100%;
-}
-
 body {
   overflow-x: hidden;
   background: url("../img/bg-noise.png"), #e8eddf;
@@ -1367,12 +1363,13 @@ input:-webkit-autofill {
   .form-wrapper {
     width: 100%;
   }
-  .footer-span-mobile {
-    display: none;
-  }
 }
 
 @media (max-width: 480px) {
+  body {
+    background: none;
+    background-color: #e8eddf;
+  }
   .menu-btn {
     right: calc(12.5% - 29px);
     top: 15px;
@@ -1515,6 +1512,9 @@ input:-webkit-autofill {
         -ms-flex-align: center;
             align-items: center;
     padding-left: 0;
+  }
+  .footer-span-mobile {
+    display: none;
   }
   .button-up-wrapper {
     display: none;
