@@ -321,6 +321,11 @@
 
 @media (max-height: 480px) and (max-width: 768px) and (orientation: landscape) {
 
+    // NAV
+    .nav-link {
+        font-size: 70px;
+    }
+
     // SECTIONS
     .about, .contact {
         height: 180vh;

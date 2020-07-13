@@ -1219,12 +1219,9 @@ input:-webkit-autofill {
   position: absolute;
   right: calc(5vw - 20px);
   bottom: 50px;
-  z-index: 1;
   width: 40px;
   height: 40px;
-  background: url("../img/bg-noise.png"), #e8eddf;
-  background-size: 300px 300px;
-  animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
+  background: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1237,6 +1234,9 @@ input:-webkit-autofill {
 }
 
 .button-up {
+  background: url("../img/bg-noise.png"), #e8eddf;
+  background-size: 300px 300px;
+  animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
   width: 35px;
   height: 35px;
   padding: 10px;
@@ -1481,6 +1481,9 @@ input:-webkit-autofill {
 }
 
 @media (max-height: 480px) and (max-width: 768px) and (orientation: landscape) {
+  .nav-link {
+    font-size: 70px;
+  }
   .about, .contact {
     height: 180vh;
   }
