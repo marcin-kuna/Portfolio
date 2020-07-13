@@ -1465,6 +1465,7 @@ input:-webkit-autofill {
   }
   .contact-header {
     height: 100px;
+    top: 20px;
   }
   .contact-header h2 {
     font-size: 50px;
@@ -1477,6 +1478,9 @@ input:-webkit-autofill {
 @media (max-width: 375px) {
   .tech-logos img {
     height: 45px;
+  }
+  .button-up-wrapper {
+    display: none;
   }
 }
 

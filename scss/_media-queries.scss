@@ -296,6 +296,7 @@
 
     .contact-header {
         height: 100px;
+        top: 20px;
     }
 
     .contact-header h2{
@@ -314,6 +315,11 @@
         img {
             height: 45px;
         }
+    }
+
+    // FOOTER
+    .button-up-wrapper {
+        display: none;
     }
 }
 
