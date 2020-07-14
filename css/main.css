@@ -1363,7 +1363,7 @@ input:-webkit-autofill {
     padding: 3px;
   }
   .works {
-    height: calc(240vw + 175px);
+    height: calc(240vw + 200px);
   }
   .works-top {
     width: 100%;
@@ -1373,6 +1373,7 @@ input:-webkit-autofill {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 25px;
   }
   .works-bottom {
     width: 100%;
