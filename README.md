@@ -1,3 +1,1 @@
-TODO
-
-0) Sass refactor
+Welcome to my portfolio!
