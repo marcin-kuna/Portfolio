@@ -58,6 +58,18 @@
         opacity: 1;
     }
 
+    // CONTACT
+    // Temporary fix for 'sticky hover' on touchscreens
+    form div button {
+        transition: none;
+
+        &:hover {
+            border: 2px solid transparent;
+            background-color: $accent-color;
+            color: $primary-color;
+        }
+    }
+
     // FOOTER
     // Temporary fix for 'sticky hover' on touchscreens
     .footer ul li a:active {
