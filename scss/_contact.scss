@@ -1,9 +1,5 @@
 .contact {
-
-  // display: none;
-
     .inner-wrapper {
-        // padding: 5px 0;
         justify-content: space-around;
     }
 
@@ -36,12 +32,9 @@
     align-self: center;
 }
 
-
 form {
-    // z-index: 1;
     @include background-noise;
     margin: 0 20px;
-    // border: 1px solid black;
 }
 
 form div {
@@ -49,7 +42,6 @@ form div {
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
-  // padding: 0 10px 10px 10px;
 }
 
 form div label {
@@ -65,7 +57,6 @@ form div label {
 }
 
 form div input {
-  // transition: border 0.4s ease-in-out;
   padding: 0.5rem 1rem;
   background-color: $secondary-color;
   border: none;
@@ -90,7 +81,6 @@ form div input:focus {
 }
 
 form div textarea {
-  // transition: border 0.4s ease-in-out;
   @include font-regular;
   font-size: 20px;
   color: $primary-color;
@@ -117,7 +107,6 @@ form div textarea:focus {
 }
 
 form div button {
-  // transition: all 0.4s ease-in-out;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
   @include font-regular;
   font-size: 20px;
@@ -125,26 +114,21 @@ form div button {
   background-color: $accent-color;
   color: $primary-color;
   border: none;
-  // max-width: 210px;
   width: calc(15vw - 20px);
   cursor: pointer;
-
   outline: none;
   margin: 1rem 0;
   align-self: flex-end;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-form div button:hover {
+// form div button:hover {
   
-}
-
+// }
 
 // Chrome autofill 'hack'
-
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
@@ -155,10 +139,3 @@ input:-webkit-autofill:active  {
 input:-webkit-autofill {
   -webkit-text-fill-color: $primary-color !important;
 }
-
-// input:-webkit-autofill,
-// input:-webkit-autofill:hover,
-// input:-webkit-autofill:focus,
-// input:-webkit-autofill:active {
-//     -webkit-transition-delay: 99999s;
-// }
