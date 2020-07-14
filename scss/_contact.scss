@@ -1,11 +1,11 @@
 .contact {
     .inner-wrapper {
-        // justify-content: space-around;
+        justify-content: space-around;
         // background-color: #fff;
     }
 
     &-header {
-        height: 22%;
+        height: 20%;
         opacity: 0;
         transform: translateY(80px);
         transition: all 1s ease .5s;
@@ -45,7 +45,7 @@ form {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 
     div {
         height: 15%;
@@ -149,7 +149,7 @@ form {
     }
 
     .div-textarea {
-        height: 50%;
+        height: 45%;
         // background-color: green;
     }
 }

@@ -895,8 +895,13 @@ section.menu-overlay .column-5, section.menu-overlay .column-4 {
           filter: brightness(0) saturate(100%) invert(14%) sepia(99%) saturate(3113%) hue-rotate(341deg) brightness(90%) contrast(108%);
 }
 
+.contact .inner-wrapper {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .contact-header {
-  height: 22%;
+  height: 20%;
   opacity: 0;
   -webkit-transform: translateY(80px);
           transform: translateY(80px);
@@ -944,9 +949,8 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 form div {
@@ -1081,7 +1085,7 @@ form div button:hover {
 }
 
 form .div-textarea {
-  height: 50%;
+  height: 45%;
 }
 
 input:-webkit-autofill,
