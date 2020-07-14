@@ -895,12 +895,8 @@ section.menu-overlay .column-5, section.menu-overlay .column-4 {
           filter: brightness(0) saturate(100%) invert(14%) sepia(99%) saturate(3113%) hue-rotate(341deg) brightness(90%) contrast(108%);
 }
 
-.contact .inner-wrapper {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 .contact-header {
+  height: 22%;
   opacity: 0;
   -webkit-transform: translateY(80px);
           transform: translateY(80px);
@@ -929,6 +925,7 @@ section.menu-overlay .column-5, section.menu-overlay .column-4 {
 }
 
 .form-wrapper {
+  height: 75%;
   z-index: 1;
   width: 75%;
   background: transparent;
@@ -938,13 +935,22 @@ section.menu-overlay .column-5, section.menu-overlay .column-4 {
 }
 
 form {
-  background: url("../img/bg-noise.png"), #e8eddf;
-  background-size: 300px 300px;
-  animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
+  height: 100%;
   margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 form div {
+  height: 15%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -953,12 +959,11 @@ form div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 10px;
 }
 
 form div label {
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
   font-family: 'Fira Sans Extra Condensed', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -976,6 +981,8 @@ form div label {
 }
 
 form div input {
+  display: block;
+  height: 100%;
   padding: 0.5rem 1rem;
   background-color: #333533;
   border: none;
@@ -990,7 +997,6 @@ form div input {
   color: #e8eddf;
   font-size: 20px;
   position: relative;
-  display: block;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
@@ -1006,6 +1012,7 @@ form div input:focus {
 }
 
 form div textarea {
+  height: 100%;
   font-family: 'Fira Sans Extra Condensed', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -1024,7 +1031,6 @@ form div textarea {
       -ms-flex-order: 2;
           order: 2;
   resize: none;
-  height: 120px;
   border: 2px solid transparent;
   white-space: normal;
 }
@@ -1038,22 +1044,23 @@ form div textarea:focus {
 }
 
 form div button {
+  height: calc(100% - 18px);
   font-family: 'Fira Sans Extra Condensed', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   color: #242423;
   white-space: nowrap;
   font-size: 20px;
-  padding: 9px 2rem;
   background-color: #bb0a21;
   color: #e8eddf;
   border: 2px solid transparent;
   width: calc(15vw - 20px);
   cursor: pointer;
   outline: none;
-  margin: 1rem 0;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  position: relative;
+  top: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1071,6 +1078,10 @@ form div button:hover {
   border: 2px solid #bb0a21;
   background-color: transparent;
   color: #bb0a21;
+}
+
+form .div-textarea {
+  height: 50%;
 }
 
 input:-webkit-autofill,
@@ -1406,6 +1417,8 @@ input:-webkit-autofill {
     margin-top: 25px;
   }
   .project-open {
+    width: 100vw;
+    height: 100vh;
     margin-top: 0;
   }
   .project-open .project-image img {
