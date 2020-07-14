@@ -3,25 +3,25 @@
         justify-content: space-around;
     }
 
-    .contact-header {
-      opacity: 0;
-      transform: translateY(80px);
-      transition: all 1s ease .5s;
-      position: relative;
+    &-header {
+        opacity: 0;
+        transform: translateY(80px);
+        transition: all 1s ease .5s;
+        position: relative;
 
-      &.is-visible {
-          opacity: 1;
-          transform: translateY(0);
-      }
+        &.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     h2 {
-      @include font-header;
-      line-height: 1;
-      font-size: 70px;
-      text-align: center;
-      z-index: 1;
-      white-space: nowrap;
+        @include font-header;
+        line-height: 1;
+        font-size: 70px;
+        text-align: center;
+        z-index: 1;
+        white-space: nowrap;
     }
 }
 
@@ -35,98 +35,94 @@
 form {
     @include background-noise;
     margin: 0 20px;
-}
 
-form div {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 10px;
-}
+    div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
 
-form div label {
-  transition: all 0.4s ease-in-out;
-  @include font-regular;
-  font-size: 14px;
-  color: $accent-color;
-  letter-spacing: 1px;
-  margin-bottom: 0;
-  padding: 0 1rem;
-  opacity: 0;
-  order: 1;
-}
+      label {
+          transition: all 0.4s ease-in-out;
+          @include font-regular;
+          font-size: 14px;
+          color: $accent-color;
+          letter-spacing: 1px;
+          margin-bottom: 0;
+          padding: 0 1rem;
+          opacity: 0;
+          order: 1;
+      }
 
-form div input {
-  padding: 0.5rem 1rem;
-  background-color: $secondary-color;
-  border: none;
-  border-bottom: 1px solid $text-color;
-  outline: none;
-  width: 100%;
-  @include font-regular;
-  color: $primary-color;
-  font-size: 20px;
-  position: relative;
-  display: block;
-  order: 2;
-  border: 2px solid transparent;
-}
+      input {
+          padding: 0.5rem 1rem;
+          background-color: $secondary-color;
+          border: none;
+          border-bottom: 1px solid $text-color;
+          outline: none;
+          width: 100%;
+          @include font-regular;
+          color: $primary-color;
+          font-size: 20px;
+          position: relative;
+          display: block;
+          order: 2;
+          border: 2px solid transparent;
 
-form div input:valid + label {
-  opacity: 1;
-}
+          &:valid + label {
+              opacity: 1;
+          }
 
-form div input:focus {
-  border: 2px solid $accent-color;
-}
+          &:focus {
+              border: 2px solid $accent-color;
+          }
+      }
 
-form div textarea {
-  @include font-regular;
-  font-size: 20px;
-  color: $primary-color;
-  padding: 0.5rem 1rem;
-  background-color: $secondary-color;
-  border: none;
-  outline: none;
-  width: 100%;
-  position: relative;
-  display: block;
-  order: 2;
-  resize: none;
-  height: 120px;
-  border: 2px solid transparent;
-  white-space: normal;
-}
+      textarea {
+        @include font-regular;
+        font-size: 20px;
+        color: $primary-color;
+        padding: 0.5rem 1rem;
+        background-color: $secondary-color;
+        border: none;
+        outline: none;
+        width: 100%;
+        position: relative;
+        display: block;
+        order: 2;
+        resize: none;
+        height: 120px;
+        border: 2px solid transparent;
+        white-space: normal;
 
-form div textarea:valid + label {
-  opacity: 1;
-}
+        &:valid + label {
+            opacity: 1;
+        }
 
-form div textarea:focus {
-    border: 2px solid $accent-color;
-}
+        &:focus {
+            border: 2px solid $accent-color;
+        }
+      }
 
-form div button {
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
-  @include font-regular;
-  font-size: 20px;
-  padding: 0.75rem 2rem;
-  background-color: $accent-color;
-  color: $primary-color;
-  border: none;
-  width: calc(15vw - 20px);
-  cursor: pointer;
-  outline: none;
-  margin: 1rem 0;
-  align-self: flex-end;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+      button {
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+        @include font-regular;
+        font-size: 20px;
+        padding: 0.75rem 2rem;
+        background-color: $accent-color;
+        color: $primary-color;
+        border: none;
+        width: calc(15vw - 20px);
+        cursor: pointer;
+        outline: none;
+        margin: 1rem 0;
+        align-self: flex-end;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
 }
-
-// form div button:hover {
-  
-// }
 
 // Chrome autofill 'hack'
 input:-webkit-autofill,

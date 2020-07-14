@@ -43,11 +43,11 @@
         transform: translateY(0);
         opacity: 1;
         transition: none;
-    }
-    
-    .project-image img {
-        opacity: .7;
-        transition: none;
+
+        img {
+            opacity: .7;
+            transition: none;
+        }
     }
 
     .project:hover .project-image img {
@@ -103,15 +103,14 @@
     // HERO
     .hero-header h1{
         font-size: 80px;
-    }
 
-    .hero-header h1:nth-of-type(2), .hero-header h1:nth-of-type(3) {
-        display: block;
-        // margin-top: 40px;
-    }
+        &:nth-of-type(2), &:nth-of-type(3) {
+            display: block;
+        }
 
-    .hero-header h1:nth-of-type(3) {
-        margin: 15px 0 15px 0;
+        &:nth-of-type(3) {
+            margin: 15px 0;
+        }
     }
 
     // ABOUT
@@ -128,41 +127,40 @@
     }
 
     // WORKS
-    .project-info-headers h2 {
-        font-size: 100px;
-    }
+    .project-info-headers {
+        h2 {
+            font-size: 100px;
+        }
 
-    .project-info-headers h4 {
-        font-size: 20px;
+        h4 {
+            font-size: 20px;
+        }
     }
 
     // CONTACT
     .contact-header {
         height: 120px;
-    }
 
-    .contact-header h2{
-        font-size: 60px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+        h2{
+            font-size: 60px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
 
-    .contact-header h2:nth-of-type(1) {
-        top: 0;
-    }
+            &:nth-of-type(1) {
+                top: 0;
+            }
 
-    .contact-header h2:nth-of-type(2) {
-        bottom: 0;
+            &:nth-of-type(2) {
+                bottom: 0;
+            }
+        }
     }
 
     .form-wrapper {
         width: 100%;
     }
 }
-
-// @media (max-width: 599px) {
-// }
 
 @media (max-width: 480px) {
     
@@ -199,7 +197,6 @@
     // }
 
     // HERO
-
     .hero-header {
         left: calc(-15vw + 5px);
     }

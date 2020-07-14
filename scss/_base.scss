@@ -102,8 +102,7 @@ main {
 }
 
 section {
-    /* width 100% = 100vw - scrollbar */
-    width: 100%;
+    width: 100%;    /* width 100% = 100vw - scrollbar */
     height: 100vh;
     display: flex;
     position: relative;

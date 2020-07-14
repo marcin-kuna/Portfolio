@@ -105,8 +105,8 @@ main {
 }
 
 section {
-  /* width 100% = 100vw - scrollbar */
   width: 100%;
+  /* width 100% = 100vw - scrollbar */
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -471,9 +471,9 @@ section.menu-overlay .column-5, section.menu-overlay .column-4 {
 .hero-header {
   position: absolute;
   top: 50%;
+  left: 5px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: 5px;
   white-space: nowrap;
   pointer-events: none;
   z-index: 5;
@@ -909,7 +909,7 @@ section.menu-overlay .column-5, section.menu-overlay .column-4 {
       justify-content: space-around;
 }
 
-.contact .contact-header {
+.contact-header {
   opacity: 0;
   -webkit-transform: translateY(80px);
           transform: translateY(80px);
@@ -918,7 +918,7 @@ section.menu-overlay .column-5, section.menu-overlay .column-4 {
   position: relative;
 }
 
-.contact .contact-header.is-visible {
+.contact-header.is-visible {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -1297,7 +1297,7 @@ input:-webkit-autofill {
     display: block;
   }
   .hero-header h1:nth-of-type(3) {
-    margin: 15px 0 15px 0;
+    margin: 15px 0;
   }
   .about p {
     font-size: 22px;
