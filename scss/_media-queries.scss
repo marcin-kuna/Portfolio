@@ -57,6 +57,16 @@
     .project-open:hover .project-image img {
         opacity: 1;
     }
+
+    // FOOTER
+    // Temporary fix for 'sticky hover' on touchscreens
+    .footer ul li a:active {
+        color: $accent-color;
+    }
+
+    .footer ul li a::after {
+        display: none;
+    }
 }
 
 @media (max-width: 1024px) {
