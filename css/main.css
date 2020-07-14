@@ -1299,6 +1299,12 @@ input:-webkit-autofill {
   .project-open:hover .project-image img {
     opacity: 1;
   }
+  .footer ul li a:active {
+    color: #bb0a21;
+  }
+  .footer ul li a::after {
+    display: none;
+  }
 }
 
 @media (max-width: 1024px) {
