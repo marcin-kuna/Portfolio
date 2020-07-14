@@ -389,8 +389,10 @@
 @media (max-height: 480px) and (max-width: 768px) and (orientation: landscape) {
 
     // NAV
-    .nav-link {
-        font-size: 60px;
+    .nav {
+        &-link {
+            font-size: 60px;
+        }
     }
 
     // SECTIONS
