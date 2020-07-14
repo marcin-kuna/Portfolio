@@ -105,7 +105,6 @@ form {
       }
 
       button {
-        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
         @include font-regular;
         font-size: 20px;
         padding: 9px 2rem;
@@ -124,7 +123,7 @@ form {
 
         &:hover {
             border: 2px solid $accent-color;
-            background-color: $primary-color;
+            background-color: transparent;
             color: $accent-color;
         }
       }
