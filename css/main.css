@@ -1447,35 +1447,29 @@ input:-webkit-autofill {
     width: calc(75% - 20px);
   }
   .footer {
+    height: 40px;
     bottom: 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    height: 40px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
   .footer-left, .footer-right {
     width: 100%;
-  }
-  .footer-left {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .footer-left {
     padding-right: 0;
   }
   .footer-right {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding-left: 0;
   }
   .footer-span-mobile {
@@ -1512,30 +1506,30 @@ input:-webkit-autofill {
     left: 0;
     width: 100%;
   }
-  .project-open .project-info .project-info-headers {
+  .project-open .project-info-headers {
     width: 30%;
     height: 100%;
   }
-  .project-open .project-info .project-info-details {
+  .project-open .project-info-details {
     width: 70%;
     height: 100%;
     left: 30%;
   }
-  .project-open .project-info .project-info-details img {
+  .project-open .project-info-details img {
     height: 36px;
   }
-  .project-open .project-info .project-info-details a img {
+  .project-open .project-info-details a img {
     width: 50px;
     height: 50px;
   }
-  .project-open .project-info .project-info-details h5 {
+  .project-open .project-info-details h5 {
     font-size: 28px;
   }
-  .project-open .project-info .project-info-details h5 span {
+  .project-open .project-info-details h5 span {
     width: 23px;
     height: 23px;
   }
-  .project-open .project-info .project-info-details p {
+  .project-open .project-info-details p {
     font-size: 18px;
   }
 }
