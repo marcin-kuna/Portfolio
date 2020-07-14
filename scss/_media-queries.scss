@@ -176,12 +176,14 @@
         top: 15px;
     }
 
-    section.menu-overlay .column-5 {     // For menu transformX
-        z-index: 0;
-    }
+    section.menu-overlay {
+        .column-5 {     // For menu transformX
+            z-index: 0;
+        }
 
-    section.menu-overlay .column-4, section.menu-overlay .column-3 {
-        z-index: 20;
+        .column-4, section.menu-overlay .column-3 {
+            z-index: 20;
+        }
     }
 
     nav {
@@ -199,10 +201,10 @@
     // HERO
     .hero-header {
         left: calc(-15vw + 5px);
-    }
 
-    .hero-header h1{
-        font-size: 70px;
+        h1{
+            font-size: 70px;
+        }
     }
 
     // ABOUT
@@ -222,31 +224,30 @@
     // WORKS
     .works {
         height: calc(240vw + 175px); // 4 x 60vw project + inner-wrapper padding top&bottom + 3 x project margin
-    }
-    
-    .works .works-top {
-        top: 0;
-        width: 100%;
-        height: 50%;
-        flex-direction: column;
-        // background-color: yellow;
-    }
-    
-    .works .works-bottom {
-        width: 100%;
-        height: 50%;
-        flex-direction: column;
-        position: static;
-    }
 
-    .works .works-bottom, .project-wrapper-right {
-        margin-top: 25px;
+        &-top {
+            width: 100%;
+            height: 50%;
+            top: 0;
+            flex-direction: column;
+        }
+
+        &-bottom {
+            width: 100%;
+            height: 50%;
+            flex-direction: column;
+            position: static;
+            margin-top: 25px;
+        }
     }
     
     .project-wrapper {
         width: 100%;
         height: 50%;
-        // margin-bottom: 20px;
+
+        &-right {
+            margin-top: 25px;
+        }
     }
     
     // powtórzenie z works.scss konieczne do poprawnego wyświetlania tekstu ???
