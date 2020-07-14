@@ -1237,7 +1237,7 @@ input:-webkit-autofill {
   .nav-link:active {
     color: #bb0a21;
   }
-  nav ul li::after {
+  .nav ul li::after {
     display: none;
   }
   .project h4 {
@@ -1351,7 +1351,7 @@ input:-webkit-autofill {
   section.menu-overlay .column-4, section.menu-overlay .column-3 {
     z-index: 20;
   }
-  nav {
+  .nav {
     left: calc(-15vw + 5px);
   }
   .nav-link {

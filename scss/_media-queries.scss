@@ -30,7 +30,7 @@
         color: $accent-color;
     }
 
-    nav ul li::after {
+    .nav ul li::after {
         display: none;
     }
 
@@ -198,12 +198,12 @@
         }
     }
 
-    nav {
+    .nav {
         left: calc(-15vw + 5px);
-    }
 
-    .nav-link {
-        font-size: 70px;
+        &-link {
+            font-size: 70px;
+        }
     }
 
     // .logo {
