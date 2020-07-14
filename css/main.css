@@ -250,30 +250,12 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* border: 1px solid #FFF; */
   position: fixed;
   top: 5vh;
   right: calc(5% - 29px);
   cursor: pointer;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-}
-
-.menu-btn-hidden {
-  -webkit-transition: none;
-  transition: none;
-  visibility: hidden;
-}
-
-.menu-btn-hidden .menu-btn-burger {
-  -webkit-transition: none;
-  transition: none;
-}
-
-.menu-btn-hidden .menu-btn-burger::before,
-.menu-btn-hidden .menu-btn-burger::after {
-  -webkit-transition: none;
-  transition: none;
 }
 
 .menu-btn-burger {
@@ -284,8 +266,7 @@ header {
   transition: all .5s ease-in-out;
 }
 
-.menu-btn-burger::before,
-.menu-btn-burger::after {
+.menu-btn-burger::before, .menu-btn-burger::after {
   content: '';
   position: absolute;
   width: 4px;
@@ -295,9 +276,6 @@ header {
   transition: all .5s ease-in-out;
 }
 
-/* .menu-btn:hover .menu-btn-burger, .menu-btn:hover .menu-btn-burger::before, .menu-btn:hover .menu-btn-burger::after {
-    background-color: rgb(212, 0, 0);
-} */
 .menu-btn-burger::before {
   -webkit-transform: translateX(-16px);
           transform: translateX(-16px);
@@ -324,6 +302,22 @@ header {
   -webkit-transform: rotate(-45deg) translate(35px, -35px);
           transform: rotate(-45deg) translate(35px, -35px);
   background-color: #e8eddf;
+}
+
+.menu-btn-hidden {
+  -webkit-transition: none;
+  transition: none;
+  visibility: hidden;
+}
+
+.menu-btn-hidden .menu-btn-burger {
+  -webkit-transition: none;
+  transition: none;
+}
+
+.menu-btn-hidden .menu-btn-burger::before, .menu-btn-hidden .menu-btn-burger::after {
+  -webkit-transition: none;
+  transition: none;
 }
 
 nav {

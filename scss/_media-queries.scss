@@ -1,4 +1,4 @@
-// Opcja fixu dla touchscreens - nav hover
+// Fix option for touchscreens nav 'sticky hover'
 
     // @media ((hover: hover) and (pointer: fine)) {
     //     nav ul li:hover::after {
@@ -442,10 +442,9 @@
     // HERO
     .hero {
         height: 120vh;
-    }
 
-    .hero-header h1{
-        font-size: 65px;
+        &-header h1{
+            font-size: 65px;
+        }
     }
 }
-
