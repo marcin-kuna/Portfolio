@@ -1257,9 +1257,11 @@ input:-webkit-autofill {
     right: calc(5% - 39px);
   }
   .menu-btn-burger {
+    width: 5px;
     height: 60px;
   }
   .menu-btn-burger::before, .menu-btn-burger::after {
+    width: 5px;
     height: 60px;
   }
   .menu-btn-burger::before {
@@ -1278,6 +1280,9 @@ input:-webkit-autofill {
   }
   .about p {
     font-size: 40px;
+  }
+  .tech-logos img {
+    height: 85px;
   }
   .project-info-headers h2 {
     font-size: 150px;

@@ -29,9 +29,11 @@
         right: calc(5% - 39px);
 
         &-burger {
+            width: 5px;
             height: 60px;
 
             &::before, &::after {
+                width: 5px;
                 height: 60px;
             }
 
@@ -55,6 +57,12 @@
 
     .about p {
         font-size: 40px;
+    }
+
+    .tech-logos {
+        img {
+            height: 85px;
+        }
     }
 
     .project-info-headers {
