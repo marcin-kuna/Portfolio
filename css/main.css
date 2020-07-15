@@ -1657,4 +1657,50 @@ input:-webkit-autofill {
     font-size: 65px;
   }
 }
+
+@media (min-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .index-text {
+    font-size: 20px;
+  }
+  .hero-header h1 {
+    font-size: 100px;
+  }
+  .about p {
+    font-size: 30px;
+  }
+  .tech-logos img {
+    height: 70px;
+  }
+  .project-info-headers h2 {
+    font-size: 100px;
+  }
+  .project-info-headers h4 {
+    font-size: 28px;
+  }
+  .project-open .project-info-details h5 {
+    font-size: 42px;
+  }
+  .project-open .project-info-details h5 span {
+    width: 36px;
+    height: 36px;
+  }
+  .project-open .project-info-details p {
+    font-size: 28px;
+  }
+  .project-open .project-info-details img {
+    height: 40px;
+  }
+  .contact h2 {
+    font-size: 90px;
+  }
+  form div label {
+    font-size: 16px;
+  }
+  form div input, form div textarea, form div button {
+    font-size: 26px;
+  }
+  .footer span, .footer ul li a {
+    font-size: 18px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
