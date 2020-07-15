@@ -19,7 +19,7 @@
         }
 
         &-text {
-            font-size: 50px;
+            font-size: 52px;
         }
     }
 
@@ -76,6 +76,24 @@
         input, textarea, button {
             font-size: 30px;
         }
+    }
+
+    .footer {
+        span, ul li a {
+            font-size: 22px;
+        }
+    }
+
+    .button-up-wrapper {
+        right: calc(5vw - 30px);
+        bottom: 70px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .button-up {
+        width: 50px;
+        height: 50px;
     }
 }
 

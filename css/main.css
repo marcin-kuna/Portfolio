@@ -1249,7 +1249,7 @@ input:-webkit-autofill {
     width: 60px;
   }
   .bookmark-text {
-    font-size: 50px;
+    font-size: 52px;
   }
   .nav-link {
     font-size: 100px;
@@ -1287,6 +1287,19 @@ input:-webkit-autofill {
   }
   form div input, form div textarea, form div button {
     font-size: 30px;
+  }
+  .footer span, .footer ul li a {
+    font-size: 22px;
+  }
+  .button-up-wrapper {
+    right: calc(5vw - 30px);
+    bottom: 70px;
+    width: 60px;
+    height: 60px;
+  }
+  .button-up {
+    width: 50px;
+    height: 50px;
   }
 }
 
