@@ -11,6 +11,22 @@
         font-size: 22px;
     }
 
+    .bookmark {
+        height: 45px;
+
+        &-color {
+            width: 60px;
+        }
+
+        &-text {
+            font-size: 50px;
+        }
+    }
+
+    .nav-link {
+        font-size: 100px;
+    }
+
     .hero-header h1 {
         font-size: 140px;
     }
@@ -34,8 +50,8 @@
             font-size: 42px;
 
             span {
-                width: 37px;
-                height: 37px;
+                width: 36px;
+                height: 36px;
             }
         }
 

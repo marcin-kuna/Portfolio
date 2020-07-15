@@ -1242,6 +1242,18 @@ input:-webkit-autofill {
   .index-text {
     font-size: 22px;
   }
+  .bookmark {
+    height: 45px;
+  }
+  .bookmark-color {
+    width: 60px;
+  }
+  .bookmark-text {
+    font-size: 50px;
+  }
+  .nav-link {
+    font-size: 100px;
+  }
   .hero-header h1 {
     font-size: 140px;
   }
@@ -1258,8 +1270,8 @@ input:-webkit-autofill {
     font-size: 42px;
   }
   .project-open .project-info-details h5 span {
-    width: 37px;
-    height: 37px;
+    width: 36px;
+    height: 36px;
   }
   .project-open .project-info-details p {
     font-size: 30px;
