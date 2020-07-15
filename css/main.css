@@ -1517,7 +1517,7 @@ input:-webkit-autofill {
   }
   .project-wrapper {
     width: 100%;
-    height: 40%;
+    height: 60vw;
   }
   .project-open {
     width: 100vw;
