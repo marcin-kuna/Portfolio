@@ -1254,7 +1254,7 @@ input:-webkit-autofill {
   .menu-btn {
     width: 80px;
     height: 80px;
-    right: calc(5% - 39px);
+    right: calc(5% - 38px);
   }
   .menu-btn-burger {
     width: 5px;
