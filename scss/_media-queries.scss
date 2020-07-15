@@ -391,7 +391,6 @@
         .inner-wrapper {
             display: block;
             padding-top: 80px;
-            background: transparent;
         }
 
         &-top {
@@ -554,6 +553,11 @@
     }
 
     // WORKS
+    .works .inner-wrapper {
+        display: flex;
+        padding-top: 50px;
+    }
+
     .project-open {
         .project-image img{
             display: none;
@@ -611,7 +615,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-height: 1024px) and (orientation: portrait) {    // LARGE SCREENS
+@media (min-width: 768px) and (max-height: 1024px) and (orientation: portrait) {    // IPAD PORTRAIT
 
     // BASE
     .index-text {

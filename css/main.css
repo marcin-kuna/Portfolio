@@ -1497,7 +1497,6 @@ input:-webkit-autofill {
   .works .inner-wrapper {
     display: block;
     padding-top: 80px;
-    background: transparent;
   }
   .works-top {
     width: 100%;
@@ -1619,6 +1618,12 @@ input:-webkit-autofill {
   }
   .hero-header h1 {
     font-size: 70px;
+  }
+  .works .inner-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 50px;
   }
   .project-open .project-image img {
     display: none;
