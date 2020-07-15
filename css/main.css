@@ -1499,14 +1499,14 @@ input:-webkit-autofill {
     height: 50%;
     top: 0;
     display: block;
-    margin-top: 25px;
+    padding-top: 25px;
   }
   .works-bottom {
     width: 100%;
     height: 50%;
     display: block;
     position: static;
-    margin-top: 25px;
+    padding-top: 25px;
   }
   .works .index-text {
     font-size: 18px;
