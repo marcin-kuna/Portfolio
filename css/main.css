@@ -1662,6 +1662,9 @@ input:-webkit-autofill {
   .index-text {
     font-size: 20px;
   }
+  .nav-link {
+    font-size: 80px;
+  }
   .hero-header h1 {
     font-size: 100px;
   }
@@ -1675,7 +1678,7 @@ input:-webkit-autofill {
     font-size: 100px;
   }
   .project-info-headers h4 {
-    font-size: 28px;
+    font-size: 24px;
   }
   .project-open .project-info-details h5 {
     font-size: 42px;
@@ -1691,7 +1694,7 @@ input:-webkit-autofill {
     height: 40px;
   }
   .contact h2 {
-    font-size: 90px;
+    font-size: 70px;
   }
   form div label {
     font-size: 16px;
