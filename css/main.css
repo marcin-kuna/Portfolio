@@ -1617,9 +1617,6 @@ input:-webkit-autofill {
   .hero-header h1 {
     font-size: 70px;
   }
-  .works-bottom {
-    position: absolute;
-  }
   .project-open .project-image img {
     display: none;
   }
