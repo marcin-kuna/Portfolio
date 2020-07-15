@@ -1693,6 +1693,9 @@ input:-webkit-autofill {
   .project-open .project-info-details img {
     height: 40px;
   }
+  .contact-header {
+    height: 25%;
+  }
   .contact h2 {
     font-size: 70px;
   }
