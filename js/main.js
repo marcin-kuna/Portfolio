@@ -1,13 +1,4 @@
-// const heroSpans = document.querySelectorAll('.hero-span')
-
-// window.onload = () => {
-//     heroSpans.forEach(element => {
-//         element.classList.add('loaded')
-//     })
-// }
-
 // MENU & OVERLAY
-
 const bgChange = document.querySelectorAll('.bg-change')
 const menuBtn = document.querySelector('.menu-btn')
 const navLinks = document.querySelectorAll('.nav-link')
@@ -16,8 +7,7 @@ const menuOverlay = document.querySelector('.menu-overlay')
 let menuOpen = false
 
 function disableScrolling(){
-    // var x=window.scrollX;
-    var y=window.pageYOffset;
+    let y = window.pageYOffset;
     window.onscroll=function(){window.scrollTo(0, y);};
 }
 
@@ -63,7 +53,6 @@ const openMenu = () => {
 menuBtn.addEventListener('click', openMenu)
 
 // SMOOTH SCROLL
-
 navLinks.forEach(elem => elem.addEventListener('click', navLinkClick));
 
 function navLinkClick(event) {
@@ -92,7 +81,6 @@ function smoothScroll(event) {
 }
 
 // EASING FOR SMOOTH SCROLL
-
 function easeInOutQuad(t, b, c, d) {
     t /= d/2;
     if (t < 1) return c/2*t*t + b;
@@ -100,38 +88,23 @@ function easeInOutQuad(t, b, c, d) {
     return -c/2 * (t*(t-2) - 1) + b;
 };
 
-
 const projects = document.querySelectorAll('.project-wrapper')
 
 // WORKS
-
 projects.forEach((element) => {
     
 
     element.addEventListener('click', () => {
-        
-        // element.classList.toggle('project-open')
-        // if(element.matches('.project-open')) {
-        //         element.requestFullscreen()
-        //     } else {
-        //             document.exitFullscreen()
-        //         }
-        //         disableScrolling()
-
         element.classList.toggle('project-open')
         let y = window.pageYOffset;
-        // window.scrollTo(0, y)
         if(element.matches('.project-open')) {
             element.style.top = `${y}px`
-            // menuBtn.style.transition = 'none'
-            // menuBtn.style.visibility = 'hidden'
             menuBtn.classList.add('menu-btn-hidden')
             document.documentElement.style.overflow = 'hidden';  // firefox, chrome
             document.body.scroll = "no"; // ie only
         } else {
             element.style.top = 'initial'
             menuBtn.classList.remove('menu-btn-hidden')
-            // menuBtn.style.visibility = 'visible'
             document.documentElement.style.overflow = 'initial';  // firefox, chrome
             document.body.scroll = "yes"; // ie only
         }
