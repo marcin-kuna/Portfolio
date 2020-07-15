@@ -1492,10 +1492,11 @@ input:-webkit-autofill {
     padding: 3px;
   }
   .works {
-    height: calc(240vw + 175px);
+    height: calc(240vw + 205px);
   }
   .works .inner-wrapper {
     display: block;
+    padding-top: 80px;
   }
   .works-top {
     width: 100%;
