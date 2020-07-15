@@ -112,7 +112,7 @@ form {
       }
 
       button {
-        height: calc(100% - 18px);  //Equal to input + label - 4px border
+        height: calc(100% - 14px);  //14px = input + label
         @include font-regular;
         font-size: 20px;
         padding: 0.5rem 2rem;
