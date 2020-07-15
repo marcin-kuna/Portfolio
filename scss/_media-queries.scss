@@ -394,7 +394,7 @@
 
         &-top {
             width: 100%;
-            height: 50%;
+            height: calc(50% - 12.5px); //12.5px = 1/2 of 25px 'margin' between projects
             // display: block;
             flex-direction: column;
             justify-content: space-between;
@@ -402,7 +402,7 @@
 
         &-bottom {
             width: 100%;
-            height: 50%;
+            height: calc(50% - 12.5px); //12.5px = 1/2 of 25px 'margin' between projects
             // display: block;
             position: static;
             flex-direction: column;

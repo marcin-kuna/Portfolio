@@ -1496,7 +1496,7 @@ input:-webkit-autofill {
   }
   .works-top {
     width: 100%;
-    height: 50%;
+    height: calc(50% - 12.5px);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1507,7 +1507,7 @@ input:-webkit-autofill {
   }
   .works-bottom {
     width: 100%;
-    height: 50%;
+    height: calc(50% - 12.5px);
     position: static;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
