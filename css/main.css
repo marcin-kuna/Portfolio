@@ -1492,7 +1492,7 @@ input:-webkit-autofill {
     padding: 3px;
   }
   .works {
-    height: calc(240vw + 200px);
+    height: calc(240vw + 225px);
   }
   .works-top {
     width: 100%;
