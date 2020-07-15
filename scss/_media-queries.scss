@@ -34,6 +34,14 @@
             &::before, &::after {
                 height: 60px;
             }
+
+            &::before {
+                transform: translateX(-26px);
+            }
+    
+            &::after {
+                transform: translateX(26px);
+            }
         }
     }
 

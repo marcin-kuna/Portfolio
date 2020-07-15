@@ -1262,6 +1262,14 @@ input:-webkit-autofill {
   .menu-btn-burger::before, .menu-btn-burger::after {
     height: 60px;
   }
+  .menu-btn-burger::before {
+    -webkit-transform: translateX(-26px);
+            transform: translateX(-26px);
+  }
+  .menu-btn-burger::after {
+    -webkit-transform: translateX(26px);
+            transform: translateX(26px);
+  }
   .nav-link {
     font-size: 100px;
   }
