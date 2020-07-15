@@ -1454,19 +1454,17 @@ input:-webkit-autofill {
   }
   .menu-btn-burger {
     width: 3px;
-    height: 29px;
   }
   .menu-btn-burger::before, .menu-btn-burger::after {
     width: 3px;
-    height: 29px;
   }
   .menu-btn-burger::before {
-    -webkit-transform: translateX(-13px);
-            transform: translateX(-13px);
+    -webkit-transform: translateX(-14px);
+            transform: translateX(-14px);
   }
   .menu-btn-burger::after {
-    -webkit-transform: translateX(13px);
-            transform: translateX(13px);
+    -webkit-transform: translateX(14px);
+            transform: translateX(14px);
   }
   section.menu-overlay .column-5 {
     z-index: 0;
