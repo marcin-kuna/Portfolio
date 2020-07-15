@@ -1251,6 +1251,17 @@ input:-webkit-autofill {
   .bookmark-text {
     font-size: 52px;
   }
+  .menu-btn {
+    width: 80px;
+    height: 80px;
+    right: calc(5% - 39px);
+  }
+  .menu-btn-burger {
+    height: 60px;
+  }
+  .menu-btn-burger::before, .menu-btn-burger::after {
+    height: 60px;
+  }
   .nav-link {
     font-size: 100px;
   }

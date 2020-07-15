@@ -23,6 +23,20 @@
         }
     }
 
+    .menu-btn {
+        width: 80px;
+        height: 80px;
+        right: calc(5% - 39px);
+
+        &-burger {
+            height: 60px;
+
+            &::before, &::after {
+                height: 60px;
+            }
+        }
+    }
+
     .nav-link {
         font-size: 100px;
     }
