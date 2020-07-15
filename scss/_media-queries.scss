@@ -326,19 +326,19 @@
 
         &-burger {
             width: 3px;
-            // height: 26px;
+            height: 26px;
 
             &::before, &::after {
                 width: 3px;
-                // height: 26px;
+                height: 26px;
             }
 
             &::before {
-                transform: translateX(-12px);
+                transform: translateX(-13px);
             }
     
             &::after {
-                transform: translateX(12px);
+                transform: translateX(13px);
             }
         }
     }

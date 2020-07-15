@@ -1456,17 +1456,19 @@ input:-webkit-autofill {
   }
   .menu-btn-burger {
     width: 3px;
+    height: 26px;
   }
   .menu-btn-burger::before, .menu-btn-burger::after {
     width: 3px;
+    height: 26px;
   }
   .menu-btn-burger::before {
-    -webkit-transform: translateX(-12px);
-            transform: translateX(-12px);
+    -webkit-transform: translateX(-13px);
+            transform: translateX(-13px);
   }
   .menu-btn-burger::after {
-    -webkit-transform: translateX(12px);
-            transform: translateX(12px);
+    -webkit-transform: translateX(13px);
+            transform: translateX(13px);
   }
   section.menu-overlay .column-5 {
     z-index: 0;
