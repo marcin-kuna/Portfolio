@@ -319,9 +319,34 @@
 
     // HEADER & NAV
     .menu-btn {
-        right: calc(12.5% - 29px);
+        width: 50px;
+        height: 50px;
+        right: calc(5% - 24px);
         top: 15px;
+
+        &-burger {
+            width: 3px;
+            height: 26px;
+
+            &::before, &::after {
+                width: 3px;
+                height: 26px;
+            }
+
+            &::before {
+                transform: translateX(-13px);
+            }
+    
+            &::after {
+                transform: translateX(13px);
+            }
+        }
     }
+
+    // .menu-btn {
+    //     right: calc(12.5% - 29px);
+    //     top: 15px;
+    // }
 
     section.menu-overlay {
         .column-5 {     // For menu transformX
