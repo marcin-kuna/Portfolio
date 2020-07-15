@@ -1456,11 +1456,11 @@ input:-webkit-autofill {
   }
   .menu-btn-burger {
     width: 3px;
-    height: 26px;
+    height: 28px;
   }
   .menu-btn-burger::before, .menu-btn-burger::after {
     width: 3px;
-    height: 26px;
+    height: 28px;
   }
   .menu-btn-burger::before {
     -webkit-transform: translateX(-13px);
