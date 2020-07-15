@@ -1496,20 +1496,18 @@ input:-webkit-autofill {
   }
   .works .inner-wrapper {
     display: block;
-    background-color: yellowgreen;
+    background-color: yellow;
   }
   .works-top {
     width: 100%;
     height: 50%;
     display: block;
-    padding-top: 25px;
   }
   .works-bottom {
     width: 100%;
     height: 50%;
     display: block;
     position: static;
-    padding-top: 25px;
   }
   .works .index-text {
     font-size: 18px;
@@ -1521,9 +1519,6 @@ input:-webkit-autofill {
   .project-wrapper {
     width: 100%;
     height: 50%;
-  }
-  .project-wrapper-right {
-    margin-top: 25px;
   }
   .project-open {
     width: 100vw;
