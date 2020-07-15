@@ -1494,19 +1494,28 @@ input:-webkit-autofill {
   .works {
     height: calc(240vw + 175px);
   }
-  .works .inner-wrapper {
-    display: block;
-  }
   .works-top {
     width: 100%;
     height: 50%;
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .works-bottom {
     width: 100%;
     height: 50%;
-    display: block;
     position: static;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .works .index-text {
     font-size: 18px;
