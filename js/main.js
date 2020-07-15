@@ -92,8 +92,6 @@ const projects = document.querySelectorAll('.project-wrapper')
 
 // WORKS
 projects.forEach((element) => {
-    
-
     element.addEventListener('click', () => {
         element.classList.toggle('project-open')
         let y = window.pageYOffset;
