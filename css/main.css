@@ -1451,24 +1451,22 @@ input:-webkit-autofill {
   .menu-btn {
     width: 50px;
     height: 50px;
-    right: calc(5% - 24px);
+    right: calc(5% - 29px);
     top: 15px;
   }
   .menu-btn-burger {
     width: 3px;
-    height: 26px;
   }
   .menu-btn-burger::before, .menu-btn-burger::after {
     width: 3px;
-    height: 26px;
   }
   .menu-btn-burger::before {
-    -webkit-transform: translateX(-13px);
-            transform: translateX(-13px);
+    -webkit-transform: translateX(-12px);
+            transform: translateX(-12px);
   }
   .menu-btn-burger::after {
-    -webkit-transform: translateX(13px);
-            transform: translateX(13px);
+    -webkit-transform: translateX(12px);
+            transform: translateX(12px);
   }
   section.menu-overlay .column-5 {
     z-index: 0;
