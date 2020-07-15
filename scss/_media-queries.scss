@@ -388,14 +388,9 @@
     .works {
         height: calc(240vw + 175px); // 4 x 60vw project + inner-wrapper padding top&bottom + 3 x project 'margin'
 
-        .inner-wrapper {
-            // display: block;
-        }
-
         &-top {
             width: 100%;
             height: calc(50% - 12.5px); //12.5px = 1/2 of 25px 'margin' between projects
-            // display: block;
             flex-direction: column;
             justify-content: space-between;
         }
@@ -403,7 +398,6 @@
         &-bottom {
             width: 100%;
             height: calc(50% - 12.5px); //12.5px = 1/2 of 25px 'margin' between projects
-            // display: block;
             position: static;
             flex-direction: column;
             justify-content: space-between;
