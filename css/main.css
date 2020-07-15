@@ -930,7 +930,7 @@ section.menu-overlay .column-5, section.menu-overlay .column-4 {
 }
 
 .form-wrapper {
-  height: 75%;
+  height: 70%;
   z-index: 1;
   width: 75%;
   background: transparent;
@@ -1086,7 +1086,7 @@ form div button:hover {
 }
 
 form .div-textarea {
-  height: 40%;
+  height: 45%;
 }
 
 input:-webkit-autofill,
@@ -1236,6 +1236,46 @@ input:-webkit-autofill {
 
 .button-up:hover img {
   margin-bottom: 8px;
+}
+
+@media (min-width: 1680px) {
+  .index-text {
+    font-size: 22px;
+  }
+  .hero-header h1 {
+    font-size: 140px;
+  }
+  .about p {
+    font-size: 40px;
+  }
+  .project-info-headers h2 {
+    font-size: 150px;
+  }
+  .project-info-headers h4 {
+    font-size: 32px;
+  }
+  .project-open .project-info-details h5 {
+    font-size: 42px;
+  }
+  .project-open .project-info-details h5 span {
+    width: 37px;
+    height: 37px;
+  }
+  .project-open .project-info-details p {
+    font-size: 30px;
+  }
+  .project-open .project-info-details img {
+    height: 50px;
+  }
+  .contact h2 {
+    font-size: 100px;
+  }
+  form div label {
+    font-size: 20px;
+  }
+  form div input, form div textarea, form div button {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 1280px) {

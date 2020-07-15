@@ -6,6 +6,63 @@
     //     }
     // }
 
+@media (min-width: 1680px) {
+    .index-text {
+        font-size: 22px;
+    }
+
+    .hero-header h1 {
+        font-size: 140px;
+    }
+
+    .about p {
+        font-size: 40px;
+    }
+
+    .project-info-headers {
+        h2 {
+            font-size: 150px;
+        }
+
+        h4 {
+            font-size: 32px;
+        }
+    }
+
+    .project-open .project-info-details {
+        h5{
+            font-size: 42px;
+
+            span {
+                width: 37px;
+                height: 37px;
+            }
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        img {
+            height: 50px;
+        }
+    }
+
+    .contact h2 {
+        font-size: 100px;
+    }
+
+    form div {
+        label {
+            font-size: 20px;
+        }
+
+        input, textarea, button {
+            font-size: 30px;
+        }
+    }
+}
+
 @media (max-width: 1280px) {
 
     // ABOUT

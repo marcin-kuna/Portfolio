@@ -1,7 +1,6 @@
 .contact {
     .inner-wrapper {
         justify-content: space-around;
-        // background-color: #fff;
     }
 
     &-header {
@@ -10,8 +9,6 @@
         transform: translateY(80px);
         transition: all 1s ease .5s;
         position: relative;
-
-        // background-color: blue;
 
         &.is-visible {
             opacity: 1;
@@ -30,7 +27,7 @@
 }
 
 .form-wrapper {
-    height: 75%;
+    height: 70%;
     z-index: 1;
     width: 75%;
     background: transparent;
@@ -41,8 +38,6 @@ form {
     height: 100%;
     // @include background-noise;
     margin: 0 20px;
-    // background-color: #fff;
-
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -52,8 +47,6 @@ form {
         position: relative;
         display: flex;
         flex-direction: column;
-        // padding-bottom: 10px;
-        // background-color: yellow;
 
       label {
           transition: all .4s ease-in-out;
@@ -72,7 +65,6 @@ form {
           height: 100%;
           padding: 0.5rem 1rem;
           background-color: $secondary-color;
-        //   background-color: violet;
           border: none;
           border-bottom: 1px solid $text-color;
           outline: none;
@@ -107,7 +99,6 @@ form {
         display: block;
         order: 2;
         resize: none;
-        // height: 120px;
         border: 2px solid transparent;
         white-space: normal;
 
@@ -131,7 +122,6 @@ form {
         width: calc(15vw - 20px);
         cursor: pointer;
         outline: none;
-        // margin: 1rem 0;
         align-self: flex-end;
         position: relative;
         top: 14px;  //'justify self' end
@@ -149,8 +139,7 @@ form {
     }
 
     .div-textarea {
-        height: 40%;
-        // background-color: green;
+        height: 45%;
     }
 }
 
