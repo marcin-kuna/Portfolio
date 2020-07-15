@@ -386,11 +386,12 @@
 
     // WORKS
     .works {
-        height: calc(240vw + 175px); // 4 x 60vw project + inner-wrapper padding top&bottom + 4 x margin
+        height: calc(240vw + 205px); // 4 x 60vw project + inner-wrapper padding top&bottom + 4 x margin
 
         .inner-wrapper {
             display: block;
-            background-color: blueviolet;
+            background-color: chocolate;
+            padding-top: 80px;
         }
 
         &-top {
