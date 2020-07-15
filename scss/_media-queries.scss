@@ -272,11 +272,10 @@
         }
     }
     
-    // powtórzenie z works.scss konieczne do poprawnego wyświetlania tekstu ???
     .project-open {
-        width: 100vw;
-        height: 100vh;
-        margin-top: 0; // .project-wrapper-right overwrite
+        width: 100vw;   // .project-wrapper overwrite
+        height: 100vh;  //
+        margin-top: 0;  //
 
         .project-image img{
             display: none;
