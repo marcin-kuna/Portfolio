@@ -390,7 +390,7 @@
 
         .inner-wrapper {
             display: block;
-            background-color: yellow;
+            background-color: green;
         }
 
         &-top {
@@ -398,7 +398,7 @@
             height: 50%;
             // top: 0;
             display: block;
-            // padding-top: 25px;
+            margin-top: 25px;
         }
 
         &-bottom {
