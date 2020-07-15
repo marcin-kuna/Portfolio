@@ -1289,7 +1289,7 @@ input:-webkit-autofill {
     font-size: 30px;
   }
   .footer span, .footer ul li a {
-    font-size: 22px;
+    font-size: 24px;
   }
   .button-up-wrapper {
     right: calc(5vw - 30px);
@@ -1300,6 +1300,10 @@ input:-webkit-autofill {
   .button-up {
     width: 50px;
     height: 50px;
+  }
+  .button-up img {
+    width: 32px;
+    height: 32px;
   }
 }
 
