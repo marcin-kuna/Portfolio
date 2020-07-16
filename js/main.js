@@ -90,23 +90,22 @@ function easeInOutQuad(t, b, c, d) {
 
 // WORKS
 const projects = document.querySelectorAll('.project-wrapper')
-// let y
-// if (window.matchMedia("(min-width: 1024px)").matches) {
-//     y = window.pageYOffset
-// } else {
-//     y = 0
-// }
 
 projects.forEach((element) => {
     element.addEventListener('click', () => {
         element.classList.toggle('project-open')
+
+        // For lerp scroll only
         // let y = window.pageYOffset
+
+        // For no lerp scroll on 'touchscreens'
         let y
-if (window.matchMedia("(min-width: 1024px)").matches) {
-y = window.pageYOffset
-} else {
-y = 0
-}
+        if (window.matchMedia("(min-width: 1024px)").matches) {
+            y = window.pageYOffset
+        } else {
+            y = 0
+        }
+        
         if(element.matches('.project-open')) {
 
             element.style.top = `${y}px`

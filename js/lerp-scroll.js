@@ -38,15 +38,17 @@ const lerpScroll = () => {
     }
 }
 
+// For no lerp scroll on 'touchscreens'
+
 if (window.matchMedia("(min-width: 1024px)").matches) {
     lerpScroll()
-
-// Adjustable height on orientation/screen size change (prevent fixed height whitespace 'bug')
-window.onresize = lerpScroll
+    // Adjustable height on orientation/screen size change (prevent fixed height whitespace 'bug')
+    window.onresize = lerpScroll
    } 
 
-// lerpScroll()
+// For lerp scroll only
 
+// lerpScroll()
 // Adjustable height on orientation/screen size change (prevent fixed height whitespace 'bug')
 // window.onresize = lerpScroll
 
