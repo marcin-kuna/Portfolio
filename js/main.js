@@ -88,14 +88,27 @@ function easeInOutQuad(t, b, c, d) {
     return -c/2 * (t*(t-2) - 1) + b;
 };
 
-const projects = document.querySelectorAll('.project-wrapper')
-
 // WORKS
+const projects = document.querySelectorAll('.project-wrapper')
+// let y
+// if (window.matchMedia("(min-width: 1024px)").matches) {
+//     y = window.pageYOffset
+// } else {
+//     y = 0
+// }
+
 projects.forEach((element) => {
     element.addEventListener('click', () => {
         element.classList.toggle('project-open')
-        let y = window.pageYOffset
+        // let y = window.pageYOffset
+        let y
+if (window.matchMedia("(min-width: 1024px)").matches) {
+y = window.pageYOffset
+} else {
+y = 0
+}
         if(element.matches('.project-open')) {
+
             element.style.top = `${y}px`
             menuBtn.classList.add('menu-btn-hidden')
             // firefox, chrome
