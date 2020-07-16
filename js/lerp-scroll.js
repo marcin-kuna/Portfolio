@@ -38,18 +38,22 @@ const lerpScroll = () => {
     }
 }
 
-// if(('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)) {
-//     console.log("Touch")
-// } else {
-//     lerpScroll()
-//     window.onresize = lerpScroll
-// }
-if((!'ontouchstart' in window) || (!navigator.MaxTouchPoints > 0) || (!navigator.msMaxTouchPoints > 0)) {
-    
-    lerpScroll()
-    window.onresize = lerpScroll
-}
+let touching = false
 
+window.addEventListener('touchstart', function onFirstTouch() {
+  
+    // or set some global variable
+    touching = true;
+  
+    
+  
+    // we only need to know once that a human touched the screen, so we can stop listening now
+    window.removeEventListener('touchstart', onFirstTouch, false);
+  }, false);
+
+  if(!touching) {
+    lerpScroll()
+  }
 // lerpScroll()
 
 // Adjustable height on orientation/screen size change (prevent fixed height whitespace 'bug')
