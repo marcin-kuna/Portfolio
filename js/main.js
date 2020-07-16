@@ -90,14 +90,6 @@ function easeInOutQuad(t, b, c, d) {
 
 const projects = document.querySelectorAll('.project-wrapper')
 
-// Adjust y position for proper project-open display
-// let y
-// if(('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)) {
-//     y = 0
-// }else {
-//     y = window.pageYOffset
-// }
-
 // WORKS
 projects.forEach((element) => {
     element.addEventListener('click', () => {
