@@ -38,9 +38,15 @@ const lerpScroll = () => {
     }
 }
 
+// if(('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)) {
+//     console.log("Touch")
+// } else {
+//     lerpScroll()
+//     window.onresize = lerpScroll
+// }
 if((!'ontouchstart' in window) || (!navigator.MaxTouchPoints > 0) || (!navigator.msMaxTouchPoints > 0)) {
-    lerpScroll()
     
+    lerpScroll()
     window.onresize = lerpScroll
 }
 
