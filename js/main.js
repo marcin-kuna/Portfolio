@@ -16,7 +16,6 @@ function enableScrolling(){
 }
 
 const openMenu = () => {
-    
     if(menuOverlay.matches('.menu-open')) {
         setTimeout(() => {
             menuOverlay.classList.remove('menu-open')
@@ -54,6 +53,7 @@ menuBtn.addEventListener('click', openMenu)
 
 // SMOOTH SCROLL
 navLinks.forEach(elem => elem.addEventListener('click', navLinkClick));
+document.querySelector('.button-up').addEventListener('click', smoothScroll);
 
 function navLinkClick(event) {
     smoothScroll(event);
@@ -90,21 +90,33 @@ function easeInOutQuad(t, b, c, d) {
 
 const projects = document.querySelectorAll('.project-wrapper')
 
+// Adjust y position for proper project-open display
+// let y
+// if(('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)) {
+//     y = 0
+// }else {
+//     y = window.pageYOffset
+// }
+
 // WORKS
 projects.forEach((element) => {
     element.addEventListener('click', () => {
         element.classList.toggle('project-open')
-        let y = window.pageYOffset;
+        let y = window.pageYOffset
         if(element.matches('.project-open')) {
             element.style.top = `${y}px`
             menuBtn.classList.add('menu-btn-hidden')
-            document.documentElement.style.overflow = 'hidden';  // firefox, chrome
-            document.body.scroll = "no"; // ie only
+            // firefox, chrome
+            document.documentElement.style.overflow = 'hidden';
+            // ie only
+            document.body.scroll = "no"
         } else {
             element.style.top = 'initial'
             menuBtn.classList.remove('menu-btn-hidden')
-            document.documentElement.style.overflow = 'initial';  // firefox, chrome
-            document.body.scroll = "yes"; // ie only
+            // firefox, chrome
+            document.documentElement.style.overflow = 'initial'
+            // ie only
+            document.body.scroll = "yes"
         }
     })
 })

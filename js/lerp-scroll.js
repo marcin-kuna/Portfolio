@@ -38,8 +38,14 @@ const lerpScroll = () => {
     }
 }
 
-lerpScroll()
+if((!'ontouchstart' in window) || (!navigator.MaxTouchPoints > 0) || (!navigator.msMaxTouchPoints > 0)) {
+    lerpScroll()
+    
+    window.onresize = lerpScroll
+}
+
+// lerpScroll()
 
 // Adjustable height on orientation/screen size change (prevent fixed height whitespace 'bug')
-window.onresize = lerpScroll
+// window.onresize = lerpScroll
 
