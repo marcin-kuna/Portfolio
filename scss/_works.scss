@@ -1,245 +1,260 @@
 @keyframes show {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes slide-up {
-    0% {opacity: 0; transform: translateY(40px);}
-    100% {opacity: 1; transform: translateX(0);}
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .works {
-    height: calc(75vw + 100px); // 2.5 x 30vw project + inner-wrapper padding
+  height: calc(90vw + 100px); // 3 x 30vw project + inner-wrapper padding
 
-    a {
-        color: inherit;
-    }
+  a {
+    color: inherit;
+  }
 
-    &-top {
-        width: 100%;
-        height: 45vw;
-        display: flex;
-    }
+  &-top,
+  &-middle,
+  &-bottom {
+    width: 100%;
+    height: 45vw;
+    display: flex;
+  }
 
-    &-bottom {
-        width: 100%;
-        height: 45vw;
-        display: flex;
-        position: absolute;
-        bottom: 50px;   //inner-wrapper padding
-    }
+  &-middle {
+    position: relative;
+    bottom: 15vw;
+  }
+
+  &-bottom {
+    height: 30vw; //one project
+    position: absolute;
+    bottom: 50px; //inner-wrapper padding
+  }
 }
 
 .project-wrapper {
-    height: 30vw;
-    // width: calc(50% - 1px);
-    width: 50%;
-    position: relative;
-    z-index: 1;
+  height: 30vw;
+  // width: calc(50% - 1px);
+  width: 50%;
+  position: relative;
+  z-index: 1;
 
-    &-right {
-        align-self: flex-end;
-        justify-self: end;
-    }
+  &-right {
+    align-self: flex-end;
+    justify-self: end;
+  }
 }
 
 .project {
-    position: relative;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  &-info {
     width: 100%;
     height: 100%;
-    z-index: 1;
 
-    &-info {
-        width: 100%;
-        height: 100%;
+    &-headers {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      pointer-events: none;
 
-        &-headers {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            z-index: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            pointer-events: none;
+      h2 {
+        @include font-header;
+        font-size: 120px;
+      }
 
-            h2 {
-                @include font-header;
-                font-size: 120px;
-            }
-
-            h4 {
-                @include font-regular;
-                font-size: 25px;
-                padding-top: 15px;
-                opacity: 0;
-                transition: opacity 1s ease;
-            }
-        }
-
-        &-details {
-            display: none;
-        }
-    }
-
-    &-image {
-        height: 100%;
-        width: 100%;
-        @include background-noise;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateY(-50px);
+      h4 {
+        @include font-regular;
+        font-size: 25px;
+        padding-top: 15px;
         opacity: 0;
-        transition: transform 1s ease, opacity .5s ease;
-
-        img {
-            width: 100%;
-            opacity: 0;
-            transition: opacity 1s ease;
-        }
+        transition: opacity 1s ease;
+      }
     }
 
-    &:hover {
-        cursor: pointer;
+    &-details {
+      display: none;
     }
+  }
 
-    &:hover h4{
-        opacity: 1;
+  &-image {
+    height: 100%;
+    width: 100%;
+    @include background-noise;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: transform 1s ease, opacity 0.5s ease;
+
+    img {
+      width: 100%;
+      opacity: 0;
+      transition: opacity 1s ease;
     }
+  }
 
-    &:hover .project-image {
-        opacity: 1;
-        transform: translateY(0);
+  &:hover {
+    cursor: pointer;
+  }
 
-        img {
-            opacity: .5;
-        }
+  &:hover h4 {
+    opacity: 1;
+  }
+
+  &:hover .project-image {
+    opacity: 1;
+    transform: translateY(0);
+
+    img {
+      opacity: 0.5;
     }
+  }
 
-    &.animate-on-scroll {
-        opacity: 0;
-        transform: translateX(-60px);
-        transition: transform 1s ease .5s,
-                    opacity 1s ease .5s;
-    
-        &.is-visible {
-            opacity: 1;
-            transform: translateX(0);
-        }
+  &.animate-on-scroll {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: transform 1s ease 0.5s, opacity 1s ease 0.5s;
+
+    &.is-visible {
+      opacity: 1;
+      transform: translateX(0);
     }
+  }
 
-    &-right.animate-on-scroll {
-        opacity: 0;
-        transform: translateX(60px);
-        transition: transform 1s ease .5s,
-                    opacity 1s ease .5s;
+  &-right.animate-on-scroll {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: transform 1s ease 0.5s, opacity 1s ease 0.5s;
 
-        &.is-visible {
-            opacity: 1;
-            transform: translateX(0);
-        }
+    &.is-visible {
+      opacity: 1;
+      transform: translateX(0);
     }
+  }
 }
 
 .project-open {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+
+  .project {
+    cursor: url(../img/close20.svg), auto !important;
+  }
+
+  &:hover .project-image {
+    img {
+      opacity: 1;
+    }
+  }
+
+  h2,
+  h4 {
+    opacity: 1;
+  }
+
+  .project-image {
+    opacity: 1;
+    transform: translateY(0);
+
+    img {
+      width: 50%;
+      opacity: 1;
+    }
+  }
+
+  .project-info {
+    width: 50%;
+    position: absolute;
     top: 0;
-    z-index: 5;
+    right: 0;
 
-    .project {
-        cursor: url(../img/close20.svg), auto !important;
+    &-headers {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 30%;
+      animation: show 1s ease;
     }
 
-    &:hover .project-image{
-        img {
-            opacity: 1;
+    &-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 100%;
+      height: 70%;
+      padding: 0 20px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      text-align: center;
+
+      h5 {
+        @include font-header;
+        font-size: 32px;
+        color: $accent-color;
+        animation: slide-up 1s ease;
+
+        span {
+          display: inline-block;
+          width: 27px;
+          height: 27px;
+          background-color: $accent-color;
+          margin-left: 5px;
         }
+      }
+
+      p {
+        @include font-regular;
+        font-size: 20px;
+        white-space: normal;
+        animation: show 2.5s ease;
+      }
+
+      img {
+        height: 40px;
+        padding: 0 5px;
+        animation: show 2.5s ease;
+      }
     }
 
-    h2, h4 {
-        opacity: 1;
+    &-btns {
+      a {
+        text-decoration: none;
+      }
+
+      img:hover {
+        filter: brightness(0) saturate(100%) invert(14%) sepia(99%)
+          saturate(3113%) hue-rotate(341deg) brightness(90%) contrast(108%);
+      }
     }
-
-    .project-image {
-        opacity: 1;
-        transform: translateY(0);
-
-        img {
-            width: 50%;
-            opacity: 1;
-        }
-    }
-
-    .project-info {
-        width: 50%;
-        position: absolute;
-        top: 0;
-        right: 0;
-
-        &-headers {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 30%;
-            animation: show 1s ease;
-        }
-
-        &-details {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            width: 100%;
-            height: 70%;
-            padding: 0 20px;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            z-index: 1;
-            text-align: center;
-
-            h5 {
-                @include font-header;
-                font-size: 32px;
-                color: $accent-color;
-                animation: slide-up 1s ease;
-
-                span {
-                    display: inline-block;
-                    width: 27px;
-                    height: 27px;
-                    background-color: $accent-color;
-                    margin-left: 5px;
-                }
-            }
-
-            p {
-                @include font-regular;
-                font-size: 20px;
-                white-space: normal;
-                animation: show 2.5s ease;
-            }
-
-            img {
-                height: 40px;
-                padding: 0 5px;
-                animation: show 2.5s ease;
-            }
-        }
-
-        &-btns {
-            a {
-                text-decoration: none;
-            }
-                
-            img:hover{
-                filter: brightness(0) saturate(100%) invert(14%) sepia(99%) saturate(3113%) hue-rotate(341deg) brightness(90%) contrast(108%);
-            }
-        }
-    }
+  }
 }

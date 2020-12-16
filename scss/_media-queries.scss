@@ -1,693 +1,710 @@
 // Fix option for touchscreens nav 'sticky hover'
 
-    // @media ((hover: hover) and (pointer: fine)) {
-    //     nav ul li:hover::after {
-    //         width: 100%;
-    //     }
-    // }
+// @media ((hover: hover) and (pointer: fine)) {
+//     nav ul li:hover::after {
+//         width: 100%;
+//     }
+// }
 
+@media (min-width: 1680px) {
+  // LARGE SCREENS
 
-@media (min-width: 1680px) {    // LARGE SCREENS
+  // BASE
+  .index-text {
+    font-size: 22px;
+  }
 
-    // BASE
-    .index-text {
-        font-size: 22px;
+  .bookmark {
+    height: 45px;
+
+    &-color {
+      width: 60px;
     }
 
-    .bookmark {
-        height: 45px;
-
-        &-color {
-            width: 60px;
-        }
-
-        &-text {
-            font-size: 52px;
-        }
+    &-text {
+      font-size: 52px;
     }
+  }
 
-    // MENU & NAV
-    .menu-btn {
-        width: 80px;
-        height: 80px;
-        right: calc(5% - 40px);
+  // MENU & NAV
+  .menu-btn {
+    width: 80px;
+    height: 80px;
+    right: calc(5% - 40px);
 
-        &-burger {
-            width: 5px;
-            height: 60px;
+    &-burger {
+      width: 5px;
+      height: 60px;
 
-            &::before, &::after {
-                width: 5px;
-                height: 60px;
-            }
-
-            &::before {
-                transform: translateX(-26px);
-            }
-    
-            &::after {
-                transform: translateX(26px);
-            }
-        }
-    }
-
-    .nav-link {
-        font-size: 100px;
-    }
-
-    // HERO
-    .hero-header h1 {
-        font-size: 140px;
-    }
-
-    // ABOUT
-    .about p {
-        font-size: 40px;
-    }
-
-    .tech-logos {
-        img {
-            height: 85px;
-        }
-    }
-
-    // WORKS
-    .project-info-headers {
-        h2 {
-            font-size: 150px;
-        }
-
-        h4 {
-            font-size: 32px;
-        }
-    }
-
-    .project-open .project-info-details {
-        h5{
-            font-size: 42px;
-
-            span {
-                width: 36px;
-                height: 36px;
-            }
-        }
-
-        p {
-            font-size: 30px;
-        }
-
-        img {
-            height: 50px;
-        }
-    }
-
-    // CONTACT
-    .contact h2 {
-        font-size: 100px;
-    }
-
-    form div {
-        label {
-            font-size: 20px;
-        }
-
-        input, textarea, button {
-            font-size: 30px;
-        }
-    }
-
-    // FOOTER
-    .footer {
-        span, ul li a {
-            font-size: 24px;
-        }
-    }
-
-    .button-up-wrapper {
-        right: calc(5vw - 30px);
-        bottom: 70px;
-        width: 60px;
+      &::before,
+      &::after {
+        width: 5px;
         height: 60px;
+      }
+
+      &::before {
+        transform: translateX(-26px);
+      }
+
+      &::after {
+        transform: translateX(26px);
+      }
+    }
+  }
+
+  .nav-link {
+    font-size: 100px;
+  }
+
+  // HERO
+  .hero-header h1 {
+    font-size: 140px;
+  }
+
+  // ABOUT
+  .about p {
+    font-size: 40px;
+  }
+
+  .tech-logos {
+    img {
+      height: 85px;
+    }
+  }
+
+  // WORKS
+  .project-info-headers {
+    h2 {
+      font-size: 150px;
     }
 
-    .button-up {
-        width: 50px;
-        height: 50px;
-
-        img {
-            width: 32px;
-            height: 32px;
-        }
+    h4 {
+      font-size: 32px;
     }
+  }
+
+  .project-open .project-info-details {
+    h5 {
+      font-size: 42px;
+
+      span {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+    p {
+      font-size: 30px;
+    }
+
+    img {
+      height: 50px;
+    }
+  }
+
+  // CONTACT
+  .contact h2 {
+    font-size: 100px;
+  }
+
+  form div {
+    label {
+      font-size: 20px;
+    }
+
+    input,
+    textarea,
+    button {
+      font-size: 30px;
+    }
+  }
+
+  // FOOTER
+  .footer {
+    span,
+    ul li a {
+      font-size: 24px;
+    }
+  }
+
+  .button-up-wrapper {
+    right: calc(5vw - 30px);
+    bottom: 70px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .button-up {
+    width: 50px;
+    height: 50px;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
 }
 
 @media (max-width: 1280px) {
-
-    // ABOUT
-    .about {
-        p {
-            font-size: 26px;
-        }
+  // ABOUT
+  .about {
+    p {
+      font-size: 26px;
     }
+  }
 
-    .tech-logos {
-        img {
-            height: 65px;
-        }
+  .tech-logos {
+    img {
+      height: 65px;
     }
+  }
 }
 
-@media (max-width: 1199px) {    //TABLET
+@media (max-width: 1199px) {
+  //TABLET
 
-    // HEADER & NAV
-    // Temporary fix for 'sticky hover' on touchscreens
-    .nav-link:active {
-        color: $accent-color;
+  // HEADER & NAV
+  // Temporary fix for 'sticky hover' on touchscreens
+  .nav-link:active {
+    color: $accent-color;
+  }
+
+  .nav ul li::after {
+    display: none;
+  }
+
+  // WORKS
+  .project h4 {
+    opacity: 1;
+  }
+
+  .project-image {
+    transform: translateY(0);
+    opacity: 1;
+    transition: none;
+
+    img {
+      opacity: 0.7;
+      transition: none;
     }
+  }
 
-    .nav ul li::after {
-        display: none;
+  .project:hover .project-image img {
+    opacity: 0.7;
+  }
+
+  .project-open:hover .project-image img {
+    opacity: 1;
+  }
+
+  // CONTACT
+  // Temporary fix for 'sticky hover' on touchscreens
+  form div button {
+    transition: none;
+
+    &:hover {
+      border: 2px solid transparent;
+      background-color: $accent-color;
+      color: $primary-color;
     }
+  }
 
-    // WORKS
-    .project h4 {
-        opacity: 1;
-    }
+  // FOOTER
+  // Temporary fix for 'sticky hover' on touchscreens
+  .footer ul li a:active {
+    color: $accent-color;
+  }
 
-    .project-image {
-        transform: translateY(0);
-        opacity: 1;
-        transition: none;
-
-        img {
-            opacity: .7;
-            transition: none;
-        }
-    }
-
-    .project:hover .project-image img {
-        opacity: .7;
-    }
-
-    .project-open:hover .project-image img {
-        opacity: 1;
-    }
-
-    // CONTACT
-    // Temporary fix for 'sticky hover' on touchscreens
-    form div button {
-        transition: none;
-
-        &:hover {
-            border: 2px solid transparent;
-            background-color: $accent-color;
-            color: $primary-color;
-        }
-    }
-
-    // FOOTER
-    // Temporary fix for 'sticky hover' on touchscreens
-    .footer ul li a:active {
-        color: $accent-color;
-    }
-
-    .footer ul li a::after {
-        display: none;
-    }
+  .footer ul li a::after {
+    display: none;
+  }
 }
 
 @media (max-width: 1024px) {
-    
-    // ABOUT
-    .about {
-        p {
-            font-size: 24px;
-            white-space: normal;
-        }
+  // ABOUT
+  .about {
+    p {
+      font-size: 24px;
+      white-space: normal;
     }
+  }
 
-    // CONTACT
-    .contact-header h2{
-        font-size: 65px;
-    }
-    
-    .form-wrapper {
-        width: 90%;
-    }
+  // CONTACT
+  .contact-header h2 {
+    font-size: 65px;
+  }
 
-    form div button {
-        width: calc(50% - 20px);
-    }
+  .form-wrapper {
+    width: 90%;
+  }
+
+  form div button {
+    width: calc(50% - 20px);
+  }
 }
 
 @media (max-width: 768px) {
+  // BASE
+  .index-text {
+    font-size: 14px;
+  }
 
-    // BASE
-    .index-text {
-        font-size: 14px;
+  // HERO
+  .hero-header h1 {
+    font-size: 80px;
+
+    &:nth-of-type(2),
+    &:nth-of-type(3) {
+      display: block;
     }
 
-    // HERO
-    .hero-header h1{
-        font-size: 80px;
+    &:nth-of-type(3) {
+      margin: 15px 0;
+    }
+  }
 
-        &:nth-of-type(2), &:nth-of-type(3) {
-            display: block;
-        }
+  // ABOUT
+  .about {
+    p {
+      font-size: 22px;
+    }
+  }
 
-        &:nth-of-type(3) {
-            margin: 15px 0;
-        }
+  .tech-logos {
+    img {
+      height: 60px;
+    }
+  }
+
+  // WORKS
+  .project-info-headers {
+    h2 {
+      font-size: 100px;
     }
 
-    // ABOUT
-    .about {    
-        p {
-            font-size: 22px;
-        }
+    h4 {
+      font-size: 20px;
     }
+  }
 
-    .tech-logos {
-        img {
-            height: 60px;
-        }
+  // CONTACT
+  .contact-header {
+    height: 120px;
+
+    h2 {
+      font-size: 60px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &:nth-of-type(1) {
+        top: 0;
+      }
+
+      &:nth-of-type(2) {
+        bottom: 0;
+      }
     }
+  }
 
-    // WORKS
-    .project-info-headers {
-        h2 {
-            font-size: 100px;
-        }
-
-        h4 {
-            font-size: 20px;
-        }
-    }
-
-    // CONTACT
-    .contact-header {
-        height: 120px;
-
-        h2{
-            font-size: 60px;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-
-            &:nth-of-type(1) {
-                top: 0;
-            }
-
-            &:nth-of-type(2) {
-                bottom: 0;
-            }
-        }
-    }
-
-    .form-wrapper {
-        width: 100%;
-    }
+  .form-wrapper {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
-    
-    // BODY
-    // body {
-    //     background: none;
-    //     background-color: $primary-color;
-    // }
+  // BODY
+  // body {
+  //     background: none;
+  //     background-color: $primary-color;
+  // }
 
-    // HEADER & NAV
-    .menu-btn {
-        right: calc(12.5% - 29px);
-        top: 15px;
+  // HEADER & NAV
+  .menu-btn {
+    right: calc(12.5% - 29px);
+    top: 15px;
 
-        &-burger {
-            width: 3px;
+    &-burger {
+      width: 3px;
 
-            &::before, &::after {
-                width: 3px;
-            }
+      &::before,
+      &::after {
+        width: 3px;
+      }
 
-            &::before {
-                transform: translateX(-14px);
-            }
-    
-            &::after {
-                transform: translateX(14px);
-            }
-        }
+      &::before {
+        transform: translateX(-14px);
+      }
+
+      &::after {
+        transform: translateX(14px);
+      }
+    }
+  }
+
+  section.menu-overlay {
+    .column-5 {
+      // For menu transformX
+      z-index: 0;
     }
 
-    section.menu-overlay {
-        .column-5 {     // For menu transformX
-            z-index: 0;
-        }
+    .column-4,
+    .column-3 {
+      z-index: 20;
+    }
+  }
 
-        .column-4, .column-3 {
-            z-index: 20;
-        }
+  .nav {
+    left: calc(-15vw + 5px);
+
+    &-link {
+      font-size: 70px;
+    }
+  }
+
+  // .logo {
+  //     left: calc(12.5% - 29px);
+  // }
+
+  // HERO
+  .hero-header {
+    left: calc(-15vw + 5px);
+
+    h1 {
+      font-size: 70px;
+    }
+  }
+
+  // ABOUT
+  .about {
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .tech-logos {
+    img {
+      height: 50px;
+      padding: 3px;
+    }
+  }
+
+  // WORKS
+  .works {
+    height: calc(
+      300vw + 175px
+    ); // 5 x 60vw project + inner-wrapper padding top&bottom + 3 x project 'margin'
+
+    &-top {
+      width: 100%;
+      height: calc(
+        50% - 12.5px
+      ); //12.5px = 1/2 of 25px 'margin' between projects
+      flex-direction: column;
+      justify-content: space-between;
     }
 
-    .nav {
-        left: calc(-15vw + 5px);
-
-        &-link {
-            font-size: 70px;
-        }
+    &-middle,
+    &-bottom {
+      width: 100%;
+      height: calc(
+        50% - 12.5px
+      ); //12.5px = 1/2 of 25px 'margin' between projects
+      position: static;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
-    // .logo {
-    //     left: calc(12.5% - 29px);
-    // }
+    .index-text {
+      font-size: 18px;
+      margin-bottom: 4px;
 
-    // HERO
-    .hero-header {
-        left: calc(-15vw + 5px);
-
-        h1{
-            font-size: 70px;
-        }
-    }
-
-    // ABOUT
-    .about {
-        p {
-            font-size: 20px;
-        }
-    }
-
-    .tech-logos {
-        img {
-            height: 50px;
-            padding: 3px;
-        }
-    }
-
-    // WORKS
-    .works {
-        height: calc(240vw + 175px); // 4 x 60vw project + inner-wrapper padding top&bottom + 3 x project 'margin'
-
-        &-top {
-            width: 100%;
-            height: calc(50% - 12.5px); //12.5px = 1/2 of 25px 'margin' between projects
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        &-bottom {
-            width: 100%;
-            height: calc(50% - 12.5px); //12.5px = 1/2 of 25px 'margin' between projects
-            position: static;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .index-text {
-            font-size: 18px;
-            margin-bottom: 4px;
-
-            span {
-                display: none;
-            }
-        }
-    }
-    
-    .project-wrapper {
-        width: 100%;
-        height: 60vw;
-    }
-    
-    .project-open {
-        width: 100vw;   // .project-wrapper overwrite
-        height: 100vh;  //
-
-        .project-image img{
-            display: none;
-        }
-
-        .project-info {
-            left: 0;
-            width: 100%;
-
-            &-headers {
-                height: 22%;
-
-                h2 {
-                    font-size: 90px;
-                }
-
-                h4 {
-                    font-size: 18px;
-                }
-            }
-
-            &-details {
-                height: 75%;
-            }
-        }
-    }
-
-    // CONTACT
-    .contact {
-        .inner-wrapper {
-            width: 80%;
-            left: 20%;
-
-            .index {
-                display: none;
-            }
-        }
-
-        &-header {
-            height: 100px;
-            top: 18px;
-
-            h2{
-                font-size: 50px;
-            }
-        }
-    }
-
-    form div {
-        label {
-            font-size: 12px;
-        }
-
-        input, textarea, button {
-            font-size: 18px; 
-        }
-
-        button {
-            width: calc(75% - 20px);
-        }
-    }
-
-    // FOOTER
-    .footer {
-        height: 40px;
-        bottom: 10px;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-
-        &-left, &-right {
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-        }
-
-        &-left {
-            padding-right: 0;
-        }
-
-        &-right {
-            padding-left: 0;
-        }
-
-        &-span-mobile {
-            display: none;
-        }
-    }
-
-    .button-up-wrapper {
+      span {
         display: none;
+      }
     }
+  }
+
+  .project-wrapper {
+    width: 100%;
+    height: 60vw;
+  }
+
+  .project-open {
+    width: 100vw; // .project-wrapper overwrite
+    height: 100vh; //
+
+    .project-image img {
+      display: none;
+    }
+
+    .project-info {
+      left: 0;
+      width: 100%;
+
+      &-headers {
+        height: 22%;
+
+        h2 {
+          font-size: 90px;
+        }
+
+        h4 {
+          font-size: 18px;
+        }
+      }
+
+      &-details {
+        height: 75%;
+      }
+    }
+  }
+
+  // CONTACT
+  .contact {
+    .inner-wrapper {
+      width: 80%;
+      left: 20%;
+
+      .index {
+        display: none;
+      }
+    }
+
+    &-header {
+      height: 100px;
+      top: 18px;
+
+      h2 {
+        font-size: 50px;
+      }
+    }
+  }
+
+  form div {
+    label {
+      font-size: 12px;
+    }
+
+    input,
+    textarea,
+    button {
+      font-size: 18px;
+    }
+
+    button {
+      width: calc(75% - 20px);
+    }
+  }
+
+  // FOOTER
+  .footer {
+    height: 40px;
+    bottom: 10px;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+
+    &-left,
+    &-right {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-left {
+      padding-right: 0;
+    }
+
+    &-right {
+      padding-left: 0;
+    }
+
+    &-span-mobile {
+      display: none;
+    }
+  }
+
+  .button-up-wrapper {
+    display: none;
+  }
 }
 
 @media (max-width: 375px) {
-
-    // ABOUT
-    .tech-logos {
-        img {
-            height: 45px;
-        }
+  // ABOUT
+  .tech-logos {
+    img {
+      height: 45px;
     }
+  }
 
-    // CONTACT
-    .contact-header {
-        top: 8px;
-    }
+  // CONTACT
+  .contact-header {
+    top: 8px;
+  }
 }
 
 // MOBILE LANDSCAPE
 @media (max-height: 480px) and (max-width: 768px) and (orientation: landscape) {
+  // NAV
+  .nav {
+    &-link {
+      font-size: 60px;
+    }
+  }
 
-    // NAV
-    .nav {
-        &-link {
-            font-size: 60px;
-        }
+  // SECTIONS
+  .about,
+  .contact {
+    height: 180vh;
+  }
+
+  // HERO
+  .hero-header h1 {
+    font-size: 70px;
+  }
+
+  // WORKS
+  .project-open {
+    .project-image img {
+      display: none;
     }
 
-    // SECTIONS
-    .about, .contact {
-        height: 180vh;
-    }
+    .project-info {
+      left: 0;
+      width: 100%;
 
-    // HERO
-    .hero-header h1{
-        font-size: 70px;
-    }
+      &-headers {
+        width: 30%;
+        height: 100%;
+      }
 
-    // WORKS
-    .project-open {
-        .project-image img{
-            display: none;
-        }
+      &-details {
+        width: 70%;
+        height: 100%;
+        left: 30%;
 
-        .project-info {
-            left: 0;
-            width: 100%;
-
-            &-headers {
-                width: 30%;
-                height: 100%;
-            }
-
-            &-details {
-                width: 70%;
-                height: 100%;
-                left: 30%;
-        
-                img {
-                    height: 36px;
-                }
-        
-                a img {
-                    width: 50px;
-                    height: 50px;
-                }
-
-                h5 {
-                    font-size: 28px;
-            
-                    span {
-                        width: 23px;
-                        height: 23px;
-                    }
-                }
-
-                p {
-                    font-size: 18px;
-                }
-            }
-        }
-    }
-}
-
-@media (max-height: 375px) and (max-width: 768px) and (orientation: landscape) {
-
-    // HERO
-    .hero {
-        height: 120vh;
-
-        &-header h1{
-            font-size: 65px;
-        }
-    }
-}
-
-@media (min-width: 768px) and (max-height: 1024px) and (orientation: portrait) {    // IPAD PORTRAIT
-
-    // BASE
-    .index-text {
-        font-size: 18px;
-    }
-
-    // NAV
-    .nav-link {
-        font-size: 80px;
-    }
-
-    // HERO
-    .hero-header h1 {
-        font-size: 100px;
-    }
-
-    // ABOUT
-    .about p {
-        font-size: 30px;
-    }
-
-    .tech-logos {
         img {
-            height: 70px;
-        }
-    }
-
-    // WORKS
-    .project-info-headers {
-        h2 {
-            font-size: 100px;
+          height: 36px;
         }
 
-        h4 {
-            font-size: 24px;
+        a img {
+          width: 50px;
+          height: 50px;
         }
-    }
 
-    .project-open .project-info-details {
-        h5{
-            font-size: 42px;
+        h5 {
+          font-size: 28px;
 
-            span {
-                width: 36px;
-                height: 36px;
-            }
+          span {
+            width: 23px;
+            height: 23px;
+          }
         }
 
         p {
-            font-size: 28px;
+          font-size: 18px;
         }
+      }
+    }
+  }
+}
 
-        img {
-            height: 40px;
-        }
+@media (max-height: 375px) and (max-width: 768px) and (orientation: landscape) {
+  // HERO
+  .hero {
+    height: 120vh;
+
+    &-header h1 {
+      font-size: 65px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  // IPAD PORTRAIT
+
+  // BASE
+  .index-text {
+    font-size: 18px;
+  }
+
+  // NAV
+  .nav-link {
+    font-size: 80px;
+  }
+
+  // HERO
+  .hero-header h1 {
+    font-size: 100px;
+  }
+
+  // ABOUT
+  .about p {
+    font-size: 30px;
+  }
+
+  .tech-logos {
+    img {
+      height: 70px;
+    }
+  }
+
+  // WORKS
+  .project-info-headers {
+    h2 {
+      font-size: 100px;
     }
 
-    // CONTACT
-    .contact-header {
-        height: 20%;
+    h4 {
+      font-size: 24px;
+    }
+  }
+
+  .project-open .project-info-details {
+    h5 {
+      font-size: 42px;
+
+      span {
+        width: 36px;
+        height: 36px;
+      }
     }
 
-    .contact h2 {
-        font-size: 85px;
+    p {
+      font-size: 28px;
     }
 
-    form div {
-        label {
-            font-size: 16px;
-        }
+    img {
+      height: 40px;
+    }
+  }
 
-        input, textarea, button {
-            font-size: 26px;
-        }
+  // CONTACT
+  .contact-header {
+    height: 20%;
+  }
+
+  .contact h2 {
+    font-size: 85px;
+  }
+
+  form div {
+    label {
+      font-size: 16px;
     }
 
-    // FOOTER
-    .footer {
-        span, ul li a {
-            font-size: 18px;
-        }
+    input,
+    textarea,
+    button {
+      font-size: 26px;
     }
+  }
+
+  // FOOTER
+  .footer {
+    span,
+    ul li a {
+      font-size: 18px;
+    }
+  }
 }
