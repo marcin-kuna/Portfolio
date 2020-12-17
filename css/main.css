@@ -1498,7 +1498,10 @@ input:-webkit-autofill {
     padding: 3px;
   }
   .works {
-    height: calc( 300vw + 175px);
+    height: calc( 300vw + 100px);
+  }
+  .works .inner-wrapper {
+    margin-top: 20px;
   }
   .works-top {
     width: 100%;

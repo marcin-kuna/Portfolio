@@ -392,8 +392,12 @@
   // WORKS
   .works {
     height: calc(
-      300vw + 175px
-    ); // 5 x 60vw project + inner-wrapper padding top&bottom + 3 x project 'margin'
+      300vw + 100px
+    ); // 5 x 60vw project + inner-wrapper padding top&bottom + project 'margin'
+
+    .inner-wrapper {
+      margin-top: 20px;
+    }
 
     &-top {
       width: 100%;
